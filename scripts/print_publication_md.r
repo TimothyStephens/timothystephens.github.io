@@ -2,7 +2,7 @@ library(tidyverse)
 library(knitr)
 library(lubridate)
 
-out.file <- "../_pages/cv.md"
+out.file <- "../_pages/publications.md"
 out.txt <- ""
 
 #### publications #####
@@ -37,15 +37,21 @@ p <- publications %>%
          ) %>%
   arrange(desc(date))
 
-out.txt <- paste(out.txt, sep='', "---\n")
-out.txt <- paste(out.txt, sep='', "  layout: archive\n")
-out.txt <- paste(out.txt, sep='', "title: \"CV\"\n")
-out.txt <- paste(out.txt, sep='', "permalink: /cv/\n")
-out.txt <- paste(out.txt, sep='', "  author_profile: true\n")
-out.txt <- paste(out.txt, sep='', "redirect_from:\n")
-out.txt <- paste(out.txt, sep='', "  - /resume\n")
-out.txt <- paste(out.txt, sep='', "---\n\n")
-out.txt <- paste(out.txt, sep='', "{% include base_path %}\n\n")
+out.txt <- paste(out.txt, sep='', '---\n')
+out.txt <- paste(out.txt, sep='', 'title: "Publications"\n')
+out.txt <- paste(out.txt, sep='', 'permalink: /publications/\n')
+out.txt <- paste(out.txt, sep='', 'author_profile: true\n')
+out.txt <- paste(out.txt, sep='', 'encoding: UTF-8\n')
+out.txt <- paste(out.txt, sep='', '---\n')
+out.txt <- paste(out.txt, sep='', '\n')
+out.txt <- paste(out.txt, sep='', '{% include base_path %}\n')
+out.txt <- paste(out.txt, sep='', '\n')
+out.txt <- paste(out.txt, sep='', '<style>\n')
+out.txt <- paste(out.txt, sep='', 'ul {\n')
+out.txt <- paste(out.txt, sep='', '  list-style-type: none;\n')
+out.txt <- paste(out.txt, sep='', '}\n')
+out.txt <- paste(out.txt, sep='', '</style>\n')
+out.txt <- paste(out.txt, sep='', '\n')
 
 pub.count <- nrow(p)
 n <- 0
@@ -53,9 +59,9 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
   tmp <- p %>% filter(year == select_year)
   out.txt <- paste(out.txt, sep='', "## ", select_year, "\n\n")
   for (i in 1:nrow(tmp)) {
-    n<-n+1
     print (pub.count-n)
     out.txt <- paste(out.txt, sep='', (pub.count-n), ". ", tmp[i,]$ref2print, "\n\n")
+    n<-n+1
   }
 }
 
