@@ -1,6 +1,6 @@
 ---
-title: "Publications"
-permalink: /publications/
+title: "Media"
+permalink: /media/
 author_profile: true
 encoding: UTF-8
 ---
@@ -11,5 +11,5 @@ ul {
 }
 </style>
 
-*  Paper 1, etc. etc.
+*  Media 1, etc. etc.
 
