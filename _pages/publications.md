@@ -5,6 +5,8 @@ author_profile: true
 encoding: UTF-8
 ---
 
+{% include base_path %}
+
 <style>
 ul {
   list-style-type: none;
