@@ -37,7 +37,6 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
   tmp <- p %>% filter(year == select_year)
   out.txt <- paste(out.txt, sep='', '## ', select_year, '\n\n')
   for (i in 1:nrow(tmp)) {
-    #out.txt <- paste(out.txt, sep='', (pub.count-n), '\\.\n')
     out.txt <- paste(out.txt, sep='', "### ", (pub.count-n), '\\. ', tmp[i,]$title, '\n')
     
     t <- tmp[i,] %>% mutate(ref2print = str_c(authors_full, ". *", journal, "*")) %>%
@@ -49,9 +48,12 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>% 
       mutate(ref2print = ifelse(!is.na(additional_info), 
-                                str_c(ref2print, additional_info, "\n"), 
+                                str_c(ref2print, additional_info), 
                                 ref2print)
-      ) %>%
+      )
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
+    
+    t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(preprint), 
                                 str_c(ref2print, "[[Preprint](", preprint, ")] "), 
                                 ref2print)
