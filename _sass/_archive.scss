@@ -15,8 +15,15 @@
   }
 
   a {
-    color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
   }
 }
 
@@ -33,7 +40,7 @@
 }
 
 .archive__item-title {
-  margin-bottom: 0em;
+  margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
 
   a + a {
@@ -45,9 +52,8 @@
 .page__content {
 
   .archive__item-title {
-    margin-top: 0em;
+    margin-top: 1em;
     border-bottom: none;
-    font-size: $type-size-6;
   }
 }
 
@@ -78,15 +84,6 @@
   }
 }
 
-h3.archive__item-title {
-    font-size: 1em;
-    margin-top: .25em;
-    margin-bottom: .25em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: normal;
-	color: #3FBFBF;
-	}
 
 /*
    List view
@@ -123,7 +120,7 @@ h3.archive__item-title {
   }
 
   .archive__item-title {
-    margin-top: 0em;
+    margin-top: 0.5em;
     font-size: $type-size-5;
   }
 
