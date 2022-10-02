@@ -36,14 +36,10 @@ redirect_from:
 ## 2021
 
 12. Williams A., Pathmanathan J. S., **Stephens T. G.**, Su X., Chiles E. N., Conetta D., Putnam H. M., and Bhattacharya D. Multi-omic characterization of the thermal stress phenome in the stony coral *Montipora capitata*. *PeerJ*, 9:e12335, 2021. [[Preprint](https://doi.org/10.1101/2021.02.05.429981)] [[URL](https://doi.org/10.7717/peerj.12335)]
-
-11. **Stephens T. G.**, Calatreva V., Gabr A., Grossman A. R., and Bhattacharya D. Why is primary endosymbiosis so rare?. *New Phytologist*, 231:5, 1693-1699, 2021. [[URL](https://doi.org/10.1111/nph.17478)]
-
-10. Bernard G., **Stephens T. G.**, Gonzalez-Pech R. A., and Chan C. X. Inferring phylogenomic relationship of microbes using scalable alignment-free methods. *In: Mengoni A., Bacci G., Fondi M. (eds) Bacterial Pangenomics. Methods in Molecular Biology Series, vol 2242*, 2021. [[URL](https://doi.org/10.1007/978-1-0716-1099-2_5)]
-
-9. Jacobus A. P., **Stephens T. G.**, Youssef P., Gonzalez-Pech R., Ciccotosto-Camp M. M., Dougan K. E., Chen Y., Basso L. C., Frazzon J., Chan C. X. and Gross J. Comparative genomics supports that Brazilian bioethanol *Saccharomyces cerevisiae* comprise a unified group of domesticated strains related to cacha<U+008D>a spirit yeasts. *Frontiers in Microbiology*, 12:644089, 687, 2021. [[Preprint](https://doi.org/10.1101/2020.12.15.422965)] [[URL](https://doi.org/10.3389/fmicb.2021.644089)]
-
-8. Gonzalez-Pech, R. A., **Stephens T. G.**, Chen Y., Mohamed A. R., Cheng Y., Shah S., Dougan K. E., Fortuin M. D. A., Lagorce R., Burt D. W., Bhattacharya D., Ragan M. A. and Chan C. X. Comparison of 15 dinoflagellate genomes reveals extensive sequence and structural divergence in family Symbiodiniaceae and genus *Symbiodinium*. *BMC Biology*, 19:1, 73, 2021. [[Preprint](https://doi.org/10.1101/783902)] [[URL](https://doi.org/10.1186/s12915-021-00994-6)]
+13. **Stephens T. G.**, Calatreva V., Gabr A., Grossman A. R., and Bhattacharya D. Why is primary endosymbiosis so rare?. *New Phytologist*, 231:5, 1693-1699, 2021. [[URL](https://doi.org/10.1111/nph.17478)]
+14. Bernard G., **Stephens T. G.**, Gonzalez-Pech R. A., and Chan C. X. Inferring phylogenomic relationship of microbes using scalable alignment-free methods. *In: Mengoni A., Bacci G., Fondi M. (eds) Bacterial Pangenomics. Methods in Molecular Biology Series, vol 2242*, 2021. [[URL](https://doi.org/10.1007/978-1-0716-1099-2_5)]
+15. Jacobus A. P., **Stephens T. G.**, Youssef P., Gonzalez-Pech R., Ciccotosto-Camp M. M., Dougan K. E., Chen Y., Basso L. C., Frazzon J., Chan C. X. and Gross J. Comparative genomics supports that Brazilian bioethanol *Saccharomyces cerevisiae* comprise a unified group of domesticated strains related to cacha<U+008D>a spirit yeasts. *Frontiers in Microbiology*, 12:644089, 687, 2021. [[Preprint](https://doi.org/10.1101/2020.12.15.422965)] [[URL](https://doi.org/10.3389/fmicb.2021.644089)]
+16. Gonzalez-Pech, R. A., **Stephens T. G.**, Chen Y., Mohamed A. R., Cheng Y., Shah S., Dougan K. E., Fortuin M. D. A., Lagorce R., Burt D. W., Bhattacharya D., Ragan M. A. and Chan C. X. Comparison of 15 dinoflagellate genomes reveals extensive sequence and structural divergence in family Symbiodiniaceae and genus *Symbiodinium*. *BMC Biology*, 19:1, 73, 2021. [[Preprint](https://doi.org/10.1101/783902)] [[URL](https://doi.org/10.1186/s12915-021-00994-6)]
 
 ## 2020
 
@@ -68,5 +64,4 @@ redirect_from:
 ## 2016
 
 0. **Stephens T. G.**, Bhattacharya D., Ragan M. A. and Chan C. X. PhySortR: a fast, flexible tool for sorting phylogenetic trees in R. *PeerJ*, 4:e2038, 2016. [[Preprint](https://doi.org/10.7287/peerj.preprints.1609v1)] [[URL](https://doi.org/10.7717/peerj.2038)]
-
 
