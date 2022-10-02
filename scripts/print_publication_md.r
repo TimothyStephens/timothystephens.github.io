@@ -30,6 +30,8 @@ out.txt <- paste(out.txt, sep='', '  list-style-type: none;\n')
 out.txt <- paste(out.txt, sep='', '}\n')
 out.txt <- paste(out.txt, sep='', '</style>\n')
 out.txt <- paste(out.txt, sep='', '\n')
+out.txt <- paste(out.txt, sep='', '<script type=\'text/javascript\' src=\'https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js\'></script>\n')
+out.txt <- paste(out.txt, sep='', '\n')
 
 pub.count <- nrow(p)
 n <- 0
@@ -44,29 +46,38 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
                                 str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 
                                 str_c(ref2print, ", ", year(date), "."))
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
+    out.txt <- paste(out.txt, sep='', t$ref2print)
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>% 
       mutate(ref2print = ifelse(!is.na(additional_info), 
                                 str_c(ref2print, additional_info), 
                                 ref2print)
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
+    out.txt <- paste(out.txt, sep='', t$ref2print)
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(preprint), 
-                                str_c(ref2print, "[[Preprint](", preprint, ")] "), 
+                                str_c(ref2print, " [[Preprint](", preprint, ")]"), 
                                 ref2print)
                         ) %>%
       mutate(ref2print = ifelse(!is.na(url), 
-                                str_c(ref2print, "[[URL](", url, ")] "), 
+                                str_c(ref2print, " [[URL](", url, ")]"), 
                                 ref2print)
              ) %>%
       mutate(ref2print = ifelse(!is.na(pdf), 
-                                str_c(ref2print, "[[PDF](", pdf, ")] "), 
+                                str_c(ref2print, " [[PDF](", pdf, ")]"), 
                                 ref2print)
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print, '\n\n\n\n')
+    out.txt <- paste(out.txt, sep='', t$ref2print)
+    
+    t <- tmp[i,] %>% mutate(ref2print = '') %>%
+      mutate(ref2print = ifelse(!is.na(doi), 
+                                str_c(ref2print, '\n<div class=\'altmetric-embed\' data-badge-type=\'donut\' data-doi="', doi, '"></div>'), 
+                                ref2print)
+      )
+    out.txt <- paste(out.txt, sep='', t$ref2print)
+    
+    out.txt <- paste(out.txt, sep='', '\n\n\n\n')
     
     n<-n+1
   }
