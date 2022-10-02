@@ -4,18 +4,18 @@
 ## Full CV
 ##
 # Knit the plain Markdown version
-rmarkdown::render("scripts/cv.rmd",
+rmarkdown::render("cv.rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "../cv/cv.md")
 
 # Knit the HTML version
-rmarkdown::render("scripts/cv.rmd",
+rmarkdown::render("cv.rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "../cv/cv.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("scripts/cv.rmd",
+rmarkdown::render("cv.rmd",
                   params = list(pdf_mode = TRUE),
                   output_file = tmp_html_cv_loc)
 
@@ -27,18 +27,18 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
 ## Short CV
 ##
 # Knit the plain Markdown version
-rmarkdown::render("scripts/cv_short.rmd",
+rmarkdown::render("cv_short.rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "../cv/cv.md")
 
 # Knit the HTML version
-rmarkdown::render("scripts/cv_short.rmd",
+rmarkdown::render("cv_short.rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "../cv/cv_short.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("scripts/cv_short.rmd",
+rmarkdown::render("cv_short.rmd",
                   params = list(pdf_mode = TRUE),
                   output_file = tmp_html_cv_loc)
 
