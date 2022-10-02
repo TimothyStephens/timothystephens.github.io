@@ -1,0 +1,195 @@
+---
+title: "Timothy Stephens <br> Curriculum vitae"
+output:
+  pagedown::html_paged:
+    css: ["cv.css", "https://use.fontawesome.com/releases/v5.7.2/css/all.css"]
+    number_sections: false
+links-to-footnotes: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(knitr)
+library(lubridate)
+
+#### publications #####
+publications <- read_csv("../publications.csv") %>%
+  filter(include_in_short_cv == 'y')
+
+#### cv entries #####
+cv_entries <- read_csv("../cv_entries.csv") %>% 
+  filter(include_in_short_cv == 'y') %>%
+  mutate(year_begin = year(date_start)) %>%
+  mutate(year_end = case_when(
+    date_end == "present" ~ date_end,
+    !is.na(date_end) ~ str_sub(date_end, 1, 4),
+    is.na(date_end) ~ date_end
+  )) %>%
+  mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
+                      year_begin,
+                      str_c(year_begin, " --- ", year_end)))
+```
+
+<div class="grid-container"> 
+<!-- top row -->
+```{block type="grid-item", echo=TRUE}
+## Personal summary {.summary}
+I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas.
+```
+
+```{block type='grid-item', echo=TRUE}
+## Contact information {.box}
+<div class="info-box">
+
+| left | Left |
+|:-|:--------------------------------------------|
+| <i class="fas fa-map-marker-alt"></i>|Department of Biochemistry and Microbiology, Rutgers University, USA|
+| <i class="fa fa-envelope"></i> | ts942\@sebs.rutgers.edu |
+| <i class="fas fa-globe"></i> | [timothystephens.com](https://timothystephens.com) |
+| <i class="fab fa-github"></i> | [TimothyStephens](https://github.com/TimothyStephens) |
+ 
+</div>
+```
+
+</div>
+
+## Education {.education .nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'education') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
+  select(year, what) %>% 
+  kable()
+```
+
+## Research Experience {.research_experience .nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'research_experience') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
+  select(year, what) %>% 
+  kable()
+```
+
+## Teaching experience {.teaching .nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'teaching') %>% 
+  mutate(what = ifelse(!is.na(additional_info), 
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
+  select(year, what) %>% 
+  kable()
+```
+
+## Professional development {.prof-dev .nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'prof-dev') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Awards and honours {.awards .nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'awards') %>% 
+  mutate(what = str_c(what, ", ", where)) %>%  
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Select Publications {.publications .nohead .set-width-year}
+```{r}
+publications %>%
+  arrange(desc(date)) %>%
+  mutate(year = year(date)) %>%
+  mutate(ref2print = str_c(authors_full, " ", title, ". *", journal, "*")) %>%
+  mutate(ref2print = ifelse(!is.na(ref_info), 
+                            str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 
+                            str_c(ref2print, ", ", year(date), "."))
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(preprint), 
+                            str_c(ref2print, " [[Preprint](", preprint, ")]"), 
+                            ref2print)
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(additional_info), 
+                            str_c(ref2print, " ", additional_info), 
+                            ref2print)
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(url), 
+                            str_c(ref2print, " [[URL](", url, ")]"), 
+                            ref2print)
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(pdf), 
+                            str_c(ref2print, " [[PDF](", pdf, ")]"), 
+                            ref2print)
+         ) %>%
+  arrange(desc(date)) %>% 
+  select(year, ref2print) %>%
+  knitr::kable()
+```
+
+## Talks {.talks .nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'talk') %>% 
+  select(year_begin, what) %>% 
+  kable()
+
+```
+
+```{r eval=FALSE}
+## Poster presentations {.posters .nohead .set-width-year}
+cv_entries %>% 
+  filter(type == 'poster') %>%
+  select(year_begin, what) %>% 
+  arrange(desc(year_begin)) %>% 
+  kable()
+```
+
+## Grants {.grants .nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'minor_grants' | type == 'major_grants') %>% 
+  mutate(what = if_else(!is.na(additional_info),
+                        str_c(what, ", ", additional_info, ", ", where),
+                        str_c(what, ", ", where))) %>% 
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Media coverage {.media .nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'media') %>%
+  select(year_begin, what) %>% 
+  kable()
+```
+
+```{r eval=FALSE}
+## Service {.service .nohead .set-width}
+cv_entries %>% 
+  filter(type == 'service') %>% 
+  mutate(year_end = ifelse(year_end == "present", "", year_end)) %>% 
+  mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>% 
+  mutate(what = str_c(what, ", ", where)) %>%
+  select(year, what) %>% 
+  kable()
+```
+
+```{r eval=FALSE}
+## Personal skills & volunteering {.volunteering .nohead .set-width}
+cv_entries %>%
+  filter(type == 'volunteering') %>%
+  mutate(what = str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where)) %>%
+  mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%
+  arrange(order, desc(year_end), desc(year)) %>%
+  select(year, what) %>%
+  kable()
+```
