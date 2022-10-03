@@ -46,26 +46,26 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
                                 str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 
                                 str_c(ref2print, ", ", year(date), "."))
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n\n')
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>% 
       mutate(ref2print = ifelse(!is.na(additional_info), 
                                 str_c(ref2print, additional_info), 
                                 ref2print)
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n\n')
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(url), 
-                                str_c(ref2print, "   [[URL](", url, ")]"), 
+                                str_c(ref2print, "[[URL](", url, ")]  "), 
                                 ref2print)
              ) %>%
       mutate(ref2print = ifelse(!is.na(pdf), 
-                                str_c(ref2print, "   [[PDF](", pdf, ")]"), 
+                                str_c(ref2print, "[[PDF](", pdf, ")]  "), 
                                 ref2print)
       ) %>%
       mutate(ref2print = ifelse(!is.na(preprint), 
-                                str_c(ref2print, "   [[Preprint](", preprint, ")]"), 
+                                str_c(ref2print, "[[Preprint](", preprint, ")]  "), 
                                 ref2print)
       )
     out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
