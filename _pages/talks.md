@@ -15,7 +15,7 @@ ul {
 
 ## 2022
 
-10\. **Stephens T. G.**, Strand E. L., Putnam H. M., and Bhattacharya D. Differences in ploidy and the prevalence of clonal propagation between *Montipora capitata* and *Pocillopora acuta* from K?ne?ohe Bay, Hawai?i. *15th International Coral Reef Symposium*. 3-8th July 2022, Bremen, Germany. [**talk**]
+10\. **Stephens T. G.**, Strand E. L., Putnam H. M., and Bhattacharya D. Differences in ploidy and the prevalence of clonal propagation between *Montipora capitata* and *Pocillopora acuta* from Kneohe Bay, Hawaii. *15th International Coral Reef Symposium*. 3-8th July 2022, Bremen, Germany. [**talk**]
 <br/><br/>
 9\. **Stephens T. G.**, Etten J. V., McDermott T., and Bhattacharya D. Analysis of environmental meta-omics data from the extremophilic red algae Cyanidiophyceae. *Joint Aquatic Sciences Meeting*. 14<d0>20th May, 2022, Grand Rapids, USA. [**talk**]
 <br/><br/>
