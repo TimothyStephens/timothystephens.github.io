@@ -38,7 +38,7 @@ out.txt <- paste(out.txt, sep='', '\n')
 
 count <- nrow(cv_entries)
 n <- 0
-for (select_year in sort(unique(c$year), decreasing=T)) {
+for (select_year in sort(unique(cv_entries$year), decreasing=T)) {
   tmp <- cv_entries %>% filter(year == select_year)
   for (i in 1:nrow(tmp)) {
     out.txt <- paste(out.txt, sep='', "### ", (count-n), '\\. ', tmp[i,]$what, ', ', tmp[i,]$where, ' (', tmp[i,]$year_begin, '-', tmp[i,]$year_end, ')', '\n')
