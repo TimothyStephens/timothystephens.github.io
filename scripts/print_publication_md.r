@@ -77,7 +77,7 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
       )
     out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
     
-    out.txt <- paste(out.txt, sep='', '<br/><br/>')
+    out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
     
     n<-n+1
   }
