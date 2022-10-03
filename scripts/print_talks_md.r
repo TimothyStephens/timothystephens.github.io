@@ -7,6 +7,7 @@ out.txt <- ""
 
 #### cv entries #####
 cv_entries <- read_csv("../cv_entries.csv") %>%
+  filter(type == 'talk') %>%
   filter(include_in_full_cv == 'y') %>%
   mutate(year_begin = year(date_start)) %>%
   mutate(year_end = case_when(
@@ -17,10 +18,6 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
   mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                        year_begin,
                        str_c(year_begin, " --- ", year_end)))
-#### Talks ####
-c <- cv_entries %>%
-  filter(type == 'talk')
-
 
 out.txt <- paste(out.txt, sep='', '---\n')
 out.txt <- paste(out.txt, sep='', 'title: "Talks"\n')
@@ -38,10 +35,10 @@ out.txt <- paste(out.txt, sep='', '}\n')
 out.txt <- paste(out.txt, sep='', '</style>\n')
 out.txt <- paste(out.txt, sep='', '\n')
 
-count <- nrow(c)
+count <- nrow(cv_entries)
 n <- 0
 for (select_year in sort(unique(c$year), decreasing=T)) {
-  tmp <- c %>% filter(year == select_year)
+  tmp <- cv_entries %>% filter(year == select_year)
   out.txt <- paste(out.txt, sep='', '## ', select_year, '\n\n')
   for (i in 1:nrow(tmp)) {
     out.txt <- paste(out.txt, sep='', "### ", (count-n), '\\. ', tmp[i,]$what, '\n')

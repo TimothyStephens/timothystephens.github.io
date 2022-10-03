@@ -7,19 +7,7 @@ out.txt <- ""
 
 #### cv entries #####
 cv_entries <- read_csv("../cv_entries.csv") %>%
-  filter(include_in_full_cv == 'y') %>%
-  mutate(year_begin = year(date_start)) %>%
-  mutate(year_end = case_when(
-    date_end == "present" ~ date_end,
-    !is.na(date_end) ~ str_sub(date_end, 1, 4),
-    is.na(date_end) ~ date_end
-  )) %>%
-  mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
-                       year_begin,
-                       str_c(year_begin, " --- ", year_end)))
-#### Talks ####
-c <- cv_entries %>%
-  filter(type == 'code')
+  filter(type == 'software')
 
 
 out.txt <- paste(out.txt, sep='', '---\n')
@@ -38,16 +26,11 @@ out.txt <- paste(out.txt, sep='', '}\n')
 out.txt <- paste(out.txt, sep='', '</style>\n')
 out.txt <- paste(out.txt, sep='', '\n')
 
-count <- nrow(c)
-n <- 0
-for (select_year in sort(unique(c$year), decreasing=T)) {
-  tmp <- c %>% filter(year == select_year)
-  out.txt <- paste(out.txt, sep='', '## ', select_year, '\n\n')
-  for (i in 1:nrow(tmp)) {
-    out.txt <- paste(out.txt, sep='', "### ", (count-n), '\\. ', tmp[i,]$what, '\n')
-    out.txt <- paste(out.txt, sep='', '<br/><br/><br/><br/>\n')
-    n<-n+1
-  }
+count <- nrow(cv_entries)
+for (i in 1:count) {
+  out.txt <- paste(out.txt, sep='', "### ", cv_entries[i,]$what, '\n')
+  out.txt <- paste(out.txt, sep='', cv_entries[i,]$additional_info, '\n')
+  out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
 }
 
 out.txt

@@ -1,6 +1,6 @@
 ---
-title: "Talks"
-permalink: /talks/
+title: "Teaching"
+permalink: /teaching/
 author_profile: true
 encoding: UTF-8
 ---
