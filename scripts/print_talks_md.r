@@ -44,7 +44,7 @@ for (select_year in sort(unique(cv_entries$year), decreasing=T)) {
   out.txt <- paste(out.txt, sep='', '## ', select_year, '\n\n')
   for (i in 1:nrow(tmp)) {
     out.txt <- paste(out.txt, sep='', (count-n), '\\. ', tmp[i,]$what, ' [**', tmp[i,]$type, '**]\n')
-    out.txt <- paste(out.txt, sep='', '<br/>\n')
+    out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
     n<-n+1
   }
 }
