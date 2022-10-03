@@ -5,11 +5,38 @@ author_profile: true
 encoding: UTF-8
 ---
 
+{% include base_path %}
+
 <style>
 ul {
   list-style-type: none;
 }
 </style>
 
-*  Talks 1, etc. etc.
+## 2022
+
+### 8\. **Stephens T. G.**, Etten J. V., McDermott T., and Bhattacharya D. Analysis of environmental meta-omics data from the extremophilic red algae Cyanidiophyceae. *Joint Aquatic Sciences Meeting*. 14<d0>20th May, 2022, Grand Rapids, USA.
+<br/><br/><br/><br/>
+### 7\. **Stephens T. G.**, Strand E. L., Putnam H. M., and Bhattacharya D. Differences in ploidy and the prevalence of clonal propagation between *Montipora capitata* and *Pocillopora acuta* from K?ne?ohe Bay, Hawai?i. *15th International Coral Reef Symposium*. 3<d0>8th July 2022, Bremen, Germany.
+<br/><br/><br/><br/>
+## 2021
+
+### 6\. **Stephens T. G.**, Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Insights into the evolution of a primary endosymbiosis through analysis of the *Paulinella* genome. *12th International Phycological Congress*. 22<d0>26th March 2021, Chile.
+<br/><br/><br/><br/>
+### 5\. **Stephens T. G.**, Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Insights into the evolution of a primary endosymbiosis through analysis of the *Paulinella* genome. *75th Annual Meeting of the Phycological Society of America*. 13<d0>22nd July 2021, online.
+<br/><br/><br/><br/>
+## 2019
+
+### 4\. **Stephens T. G.**, Bhattacharya D., Ragan M. A., and Chan C. X. *Polarella* genomics: understanding the evolutionary transition to algal symbiosis and cold adaptation. *Joint Academic Microbiology Seminars (JAMS)*. 9th April 2019, Brisbane, Australia.
+<br/><br/><br/><br/>
+## 2018
+
+### 3\. **Stephens T. G.**, Bhattacharya D., Ragan M. A., and Chan C. X. *Polarella* genomics: understanding the evolutionary transition to algal symbiosis and cold adaptation. *Botany Department, Biosciences Institute, University of Sao Paulo*. 14th December 2018, S<U+008B>o Paulo, Brazil.
+<br/><br/><br/><br/>
+### 2\. **Stephens T. G.**, Bhattacharya D., Ragan M. A., and Chan C. X. *Polarella* genomics: understanding the evolutionary transition to algal symbiosis and cold adaptation. *2nd Bioenergy Workshop, UNESP-USP-UNICAMP Integrated Postgraduate Program in Bioenergy, Institute for Research in Bioenergy, State University of S<U+008B>o Paulo (UNESP)*. 6th December 2018, S<U+008B>o Paulo, Brazil.
+<br/><br/><br/><br/>
+## 2017
+
+### 1\. **Stephens T. G.**, Bhattacharya D., Ragan M. A. and Chan C. X. Insights into coral reef symbiosis from the genome of cold-adapted algae. *EMBL Australia Postgraduate Symposium 2017*, 29th November<d0>1st December 2017, Sydney, Australia.
+<br/><br/><br/><br/>
 
