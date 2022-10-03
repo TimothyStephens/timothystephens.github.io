@@ -53,31 +53,31 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
                                 str_c(ref2print, additional_info), 
                                 ref2print)
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print)
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(preprint), 
-                                str_c(ref2print, " [[Preprint](", preprint, ")]"), 
+                                str_c(ref2print, "   :black_circle: [[Preprint](", preprint, ")]"), 
                                 ref2print)
                         ) %>%
       mutate(ref2print = ifelse(!is.na(url), 
-                                str_c(ref2print, " [[URL](", url, ")]"), 
+                                str_c(ref2print, "   :black_circle: [[URL](", url, ")]"), 
                                 ref2print)
              ) %>%
       mutate(ref2print = ifelse(!is.na(pdf), 
-                                str_c(ref2print, " [[PDF](", pdf, ")]"), 
+                                str_c(ref2print, "   :black_circle: [[PDF](", pdf, ")]"), 
                                 ref2print)
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print)
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(doi), 
                                 str_c(ref2print, '\n<div class=\'altmetric-embed\' data-badge-type=\'donut\' data-doi="', doi, '"></div>'), 
                                 ref2print)
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print)
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
     
-    out.txt <- paste(out.txt, sep='', '\n\n\n\n')
+    #out.txt <- paste(out.txt, sep='', '')
     
     n<-n+1
   }
