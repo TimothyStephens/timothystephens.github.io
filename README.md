@@ -2,6 +2,11 @@ My own version of the academic websites repository. This was forked (then detach
 
 The only major changes that I did was add `R` scripts for auto generating pages and CV files from csv files with all user info (i.e., build all the things at once).
 
+
+```bash
+R --slave -e "install.packages('pagedown', repos='http://cran.us.r-project.org')"
+```
+
 ### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
 
 # Instructions

@@ -1,14 +1,17 @@
-library(tidyverse)
-library(knitr)
-library(lubridate)
+suppressWarnings(suppressMessages(library(tidyverse)))
+suppressWarnings(suppressMessages(library(knitr)))
+suppressWarnings(suppressMessages(library(lubridate)))
+
+print('## Creating website markdown file: Code')
 
 out.file <- "../_pages/code.md"
 out.txt <- ""
 
 #### cv entries #####
-cv_entries <- read_csv("../cv_entries.csv") %>%
-  filter(type == 'software')
-
+suppressMessages(
+  cv_entries <- read_csv("../cv_entries.csv") %>%
+    filter(type == 'software')
+)
 
 out.txt <- paste(out.txt, sep='', '---\n')
 out.txt <- paste(out.txt, sep='', 'title: "Code"\n')
@@ -33,5 +36,4 @@ for (i in 1:count) {
   out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
 }
 
-out.txt
 write(out.txt, out.file)

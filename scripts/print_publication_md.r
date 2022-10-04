@@ -1,14 +1,17 @@
-library(tidyverse)
-library(knitr)
-library(lubridate)
+suppressWarnings(suppressMessages(library(tidyverse)))
+suppressWarnings(suppressMessages(library(knitr, quietly=TRUE)))
+suppressWarnings(suppressMessages(library(lubridate, quietly=TRUE)))
+
+print('## Creating website markdown file: Publications')
 
 out.file <- "../_pages/publications.md"
 out.txt <- ""
 
 #### publications #####
-publications <- read_csv("../publications.csv") %>%
-  filter(include_in_full_cv == 'y')
-
+suppressMessages(
+  publications <- read_csv("../publications.csv") %>%
+    filter(include_in_full_cv == 'y')
+)
 
 ## Publications
 p <- publications %>%
@@ -83,5 +86,4 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
   }
 }
 
-out.txt
 write(out.txt, out.file)

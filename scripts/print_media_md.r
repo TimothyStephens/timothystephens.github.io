@@ -1,24 +1,27 @@
-library(tidyverse)
-library(knitr)
-library(lubridate)
+suppressWarnings(suppressMessages(library(tidyverse)))
+suppressWarnings(suppressMessages(library(knitr)))
+suppressWarnings(suppressMessages(library(lubridate)))
+
+print('## Creating website markdown file: Media')
 
 out.file <- "../_pages/media.md"
 out.txt <- ""
 
 #### cv entries #####
-cv_entries <- read_csv("../cv_entries.csv") %>%
-  filter(type %in% c('media', 'video')) %>%
-  filter(include_in_full_cv == 'y') %>%
-  mutate(year_begin = year(date_start)) %>%
-  mutate(year_end = case_when(
-    date_end == "present" ~ date_end,
-    !is.na(date_end) ~ str_sub(date_end, 1, 4),
-    is.na(date_end) ~ date_end
-  )) %>%
-  mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
-                       year_begin,
-                       str_c(year_begin, " --- ", year_end)))
-
+suppressMessages(
+  cv_entries <- read_csv("../cv_entries.csv") %>%
+    filter(type %in% c('media', 'video')) %>%
+    filter(include_in_full_cv == 'y') %>%
+    mutate(year_begin = year(date_start)) %>%
+    mutate(year_end = case_when(
+      date_end == "present" ~ date_end,
+      !is.na(date_end) ~ str_sub(date_end, 1, 4),
+      is.na(date_end) ~ date_end
+    )) %>%
+    mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
+                         year_begin,
+                         str_c(year_begin, " --- ", year_end)))
+)
 
 out.txt <- paste(out.txt, sep='', '---\n')
 out.txt <- paste(out.txt, sep='', 'title: "Media"\n')
@@ -48,5 +51,4 @@ for (select_year in sort(unique(cv_entries$year), decreasing=T)) {
   }
 }
 
-out.txt
 write(out.txt, out.file)

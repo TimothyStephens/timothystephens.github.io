@@ -18,7 +18,7 @@ ul {
 ## 2022
 
 ### 24\. Building consensus around the assessment and interpretation of symbiodiniaceae diversity
-Davies S. W., Gamache M. H., Howe-Kerr L., Kriefall N.G., Baker A.C., Banaszak A., Bay L., Bellantuono A.J., Chan C. X., Claar D.C., Coffroth M.A., Cunning R., del Campo J., Frommlet J. C., Fuess L. E., Goulet T. L.,<ca>Hoadley K. D., Hume B. C. C., Kemp D. W., Kitchen S. A., LaJeunesse T. C., Lin S., McIlroy S., McMinds R., Nitschke M. R., Oakley C. A., Peixoto R. S., Prada C., Putnam H. M., Quigley K., Reich H. G., Reimer J. D., Rosales S., Saad O. S., Santos S. R., Shoguchi E., **Stephens T. G.**, Strader M. E., Suggett D. J., Swain T. D., Tran C., Traylor-Knowles N., Voolstra C. R., Weis V., Wright R., Yamashita H., Ziegler M., Correa A. M. S., and Parkinson J. E. *Under review in PeerJ*, 2022.
+Davies S. W., Gamache M. H., Howe-Kerr L., Kriefall N.G., Baker A.C., Banaszak A., Bay L., Bellantuono A.J., Chan C. X., Claar D.C., Coffroth M.A., Cunning R., del Campo J., Frommlet J. C., Fuess L. E., Goulet T. L., Hoadley K. D., Hume B. C. C., Kemp D. W., Kitchen S. A., LaJeunesse T. C., Lin S., McIlroy S., McMinds R., Nitschke M. R., Oakley C. A., Peixoto R. S., Prada C., Putnam H. M., Quigley K., Reich H. G., Reimer J. D., Rosales S., Saad O. S., Santos S. R., Shoguchi E., **Stephens T. G.**, Strader M. E., Suggett D. J., Swain T. D., Tran C., Traylor-Knowles N., Voolstra C. R., Weis V., Wright R., Yamashita H., Ziegler M., Correa A. M. S., and Parkinson J. E. *Under review in PeerJ*, 2022.
 
 
 
@@ -76,7 +76,7 @@ Bhattacharya D., **Stephens T. G.**, Tinoco A., Richmond R., and Cleves P. A. *L
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/lno.12181"></div>
 <br/><br/><br/><br/>
-### 17\. Retrotransposition facilitated the<ca>establishment<ca>of a primary plastid in<ca>the thecate<ca>amoeba<ca>*Paulinella*
+### 17\. Retrotransposition facilitated the establishment of a primary plastid in the thecate amoeba *Paulinella*
 \*Calatreva V., \***Stephens T. G.**, Gabr A., Grossman A. R., and Bhattacharya D. *PNAS*, 119:23, e2121241119, 2022.
 
 *Co-first authorship
@@ -141,7 +141,7 @@ Bernard G., **Stephens T. G.**, Gonzalez-Pech R. A., and Chan C. X. *In: Mengoni
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1007/978-1-0716-1099-2_5"></div>
 <br/><br/><br/><br/>
-### 10\. Comparative genomics supports that Brazilian bioethanol *Saccharomyces cerevisiae* comprise a unified group of domesticated strains related to cacha<U+008D>a spirit yeasts
+### 10\. Comparative genomics supports that Brazilian bioethanol *Saccharomyces cerevisiae* comprise a unified group of domesticated strains related to cachaça spirit yeasts
 Jacobus A. P., **Stephens T. G.**, Youssef P., Gonzalez-Pech R., Ciccotosto-Camp M. M., Dougan K. E., Chen Y., Basso L. C., Frazzon J., Chan C. X. and Gross J. *Frontiers in Microbiology*, 12:644089, 687, 2021.
 
 
@@ -162,7 +162,7 @@ Gonzalez-Pech, R. A., **Stephens T. G.**, Chen Y., Mohamed A. R., Cheng Y., Shah
 ## 2020
 
 ### 8\. Amoeba genome reveals dominant host contribution to plastid endosymbiosis
-Lhee D., Lee J., Ettahi K., Cho C. H., Ha J., Chan Y., Zelzion U., **Stephens T. G.**, Price D. C., Gabr A., Nowack E. C. M., Bhattacharya D. and Yoon H. S. *Molecular Biology and Evolution*, 38:2, 344<d0>357, 2020.
+Lhee D., Lee J., Ettahi K., Cho C. H., Ha J., Chan Y., Zelzion U., **Stephens T. G.**, Price D. C., Gabr A., Nowack E. C. M., Bhattacharya D. and Yoon H. S. *Molecular Biology and Evolution*, 38:2, 344–357, 2020.
 
 
 
