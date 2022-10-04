@@ -7,7 +7,7 @@ out.txt <- ""
 
 #### cv entries #####
 cv_entries <- read_csv("../cv_entries.csv") %>%
-  filter(type == 'media') %>%
+  filter(type %in% c('media', 'video')) %>%
   filter(include_in_full_cv == 'y') %>%
   mutate(year_begin = year(date_start)) %>%
   mutate(year_end = case_when(
