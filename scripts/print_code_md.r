@@ -10,7 +10,7 @@ out.txt <- ""
 #### cv entries #####
 suppressMessages(
   cv_entries <- read_csv("../cv_entries.csv") %>%
-    filter(type %in% c('software', 'github_repo'))
+    filter(type == 'software')
 )
 
 out.txt <- paste(out.txt, sep='', '---\n')
@@ -29,19 +29,12 @@ out.txt <- paste(out.txt, sep='', '}\n')
 out.txt <- paste(out.txt, sep='', '</style>\n')
 out.txt <- paste(out.txt, sep='', '\n')
 
-tmp <- cv_entries %>% filter(type == 'github_repo')
-out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', tmp$what, '" data-width="400" data-height="318" data-theme="medium"></div>\n')
-out.txt <- paste(out.txt, sep='', '<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n')
-out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
-  
-
-tmp <- cv_entries %>% filter(type == 'software')
-count <- nrow(tmp)
+count <- nrow(cv_entries)
 for (i in 1:count) {
-  out.txt <- paste(out.txt, sep='', "# ", tmp[i,]$what, '\n')
-  out.txt <- paste(out.txt, sep='', tmp[i,]$additional_info, '\n')
+  out.txt <- paste(out.txt, sep='', "# ", cv_entries[i,]$what, '\n')
+  out.txt <- paste(out.txt, sep='', cv_entries[i,]$additional_info, '\n')
   out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
-  out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', tmp[i,]$where, '" data-width="400" data-height="279" data-theme="medium"></div>\n')
+  out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', cv_entries[i,]$where, '" data-width="400" data-height="279" data-theme="medium"></div>\n')
   out.txt <- paste(out.txt, sep='', '<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n')
   out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
 }
