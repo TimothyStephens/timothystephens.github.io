@@ -72,7 +72,7 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
                                 str_c(ref2print, additional_info_2), 
                                 ref2print)
       )
-    out.txt <- paste(out.txt, sep='', t$ref2print, '\n\n')
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(doi), 

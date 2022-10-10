@@ -23,11 +23,9 @@ Davies S. W., Gamache M. H., Howe-Kerr L., Kriefall N.G., Baker A.C., Banaszak A
 [[Preprint](https://doi.org/10.20944/preprints202206.0284.v1)]  
 
 
-
 <br/><br/><br/><br/>
 ### 23\. Endosymbiotic ratchet accelerates divergence after organelle origin
 Bhattacharya D., Etten J. V., Benites L. F., and **Stephens T. G.** *Under review in BioEssays*, 2022.
-
 
 
 
@@ -39,14 +37,12 @@ Meng Z., Williams A., Liau P., **Stephens T. G.**, Drury C., Chiles E. N., Su X.
 [[URL](https://doi.org/10.1038/s41598-022-18653-3)]  
 
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s41598-022-18653-3"></div>
 <br/><br/><br/><br/>
 ### 21\. Multiple waves of viral invasions in Symbiodiniaceae algal genomes
 Benites L. F., **Stephens T. G.**, and Bhattacharya D. *Accepted for publication in Virus Evolution*, 2022.
 
 [[Preprint](https://doi.org/10.1101/2022.04.12.488082)]  
-
 
 
 <br/><br/><br/><br/>
@@ -56,12 +52,10 @@ Benites L. F., **Stephens T. G.**, and Bhattacharya D. *Accepted for publication
 [[URL](https://doi.org/10.1016/j.isci.2022.104974)]  
 *Co-first authorship
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.isci.2022.104974"></div>
 <br/><br/><br/><br/>
 ### 19\. High-quality genome assembles from key Hawaiian coral species
 **Stephens T. G.**, Lee J., Jeong Y., Yoon H. S., Putnam H. M., Majerova E., and Bhattacharya D. *Accepted for publication in GigaScience*, 2022.
-
 
 
 
@@ -73,7 +67,6 @@ Bhattacharya D., **Stephens T. G.**, Tinoco A., Richmond R., and Cleves P. A. *L
 [[URL](https://doi.org/10.1002/lno.12181)]  
 
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/lno.12181"></div>
 <br/><br/><br/><br/>
 ### 17\. Retrotransposition facilitated the establishment of a primary plastid in the thecate amoeba *Paulinella*
@@ -81,7 +74,6 @@ Bhattacharya D., **Stephens T. G.**, Tinoco A., Richmond R., and Cleves P. A. *L
 
 [[URL](https://doi.org/10.1073/pnas.2121241119)]  
 *Co-first authorship
-
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1073/pnas.2121241119"></div>
 <br/><br/><br/><br/>
@@ -91,7 +83,6 @@ Bhattacharya D., **Stephens T. G.**, Tinoco A., Richmond R., and Cleves P. A. *L
 [[URL](https://doi.org/10.1111/jpy.13247)]  
 *Co-first authorship
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jpy.13247"></div>
 <br/><br/><br/><br/>
 ### 15\. Genome-powered classification of microbial eukaryotes: focus on coral algal symbionts
@@ -100,14 +91,12 @@ Dougan K. E., Gonzalez-Pech R. A., **Stephens T. G.**, Shah S., Chen Y., Ragan M
 [[URL](https://doi.org/10.1016/j.tim.2022.02.001)]  
 
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.tim.2022.02.001"></div>
 <br/><br/><br/><br/>
 ### 14\. Evidence for a robust photosystem II in the photosynthetic amoeba *Paulinella*
 Gabr A., Zournas A., **Stephens T. G.**, Dismukes G., and Bhattacharya D. *New Phytologist*, 234:934-945, 2022.
 
 [[URL](https://doi.org/10.1111/nph.18052)]  
-
 
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/nph.18052"></div>
@@ -120,14 +109,12 @@ Gabr A., Zournas A., **Stephens T. G.**, Dismukes G., and Bhattacharya D. *New P
 [[URL](https://doi.org/10.1111/nph.17478)]  
 
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/nph.17478"></div>
 <br/><br/><br/><br/>
 ### 12\. Inferring phylogenomic relationship of microbes using scalable alignment-free methods
 Bernard G., **Stephens T. G.**, Gonzalez-Pech R. A., and Chan C. X. *Methods in Molecular Biology*, 2242:69-76, 2021.
 
 [[URL](https://doi.org/10.1007/978-1-0716-1099-2_5)]  
-
 
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1007/978-1-0716-1099-2_5"></div>
@@ -138,7 +125,6 @@ Jacobus A. P., **Stephens T. G.**, Youssef P., Gonzalez-Pech R., Ciccotosto-Camp
 [[URL](https://doi.org/10.3389/fmicb.2021.644089)]  [[Preprint](https://doi.org/10.1101/2020.12.15.422965)]  
 
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.3389/fmicb.2021.644089"></div>
 <br/><br/><br/><br/>
 ### 10\. Comparison of 15 dinoflagellate genomes reveals extensive sequence and structural divergence in family Symbiodiniaceae and genus *Symbiodinium*
@@ -147,14 +133,12 @@ Gonzalez-Pech, R. A., **Stephens T. G.**, Chen Y., Mohamed A. R., Cheng Y., Shah
 [[URL](https://doi.org/10.1186/s12915-021-00994-6)]  [[Preprint](https://doi.org/10.1101/783902)]  
 
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1186/s12915-021-00994-6"></div>
 <br/><br/><br/><br/>
 ### 9\. Multi-omic characterization of the thermal stress phenome in the stony coral *Montipora capitata*
 Williams A., Pathmanathan J. S., **Stephens T. G.**, Su X., Chiles E. N., Conetta D., Putnam H. M., and Bhattacharya D. *PeerJ*, 9:e12335, 2021.
 
 [[URL](https://doi.org/10.7717/peerj.12335)]  [[Preprint](https://doi.org/10.1101/2021.02.05.429981)]  
-
 
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.12335"></div>
@@ -167,7 +151,6 @@ Lhee D., Lee J., Ettahi K., Cho C. H., Ha J., Chan Y., Zelzion U., **Stephens T.
 [[URL](https://doi.org/10.1093/molbev/msaa206)]  
 
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/molbev/msaa206"></div>
 <br/><br/><br/><br/>
 ### 7\. Genomes of the dinoflagellate *Polarella glacialis* encode tandemly repeated single-exon genes with adaptive functions
@@ -175,7 +158,6 @@ Lhee D., Lee J., Ettahi K., Cho C. H., Ha J., Chan Y., Zelzion U., **Stephens T.
 
 [[URL](https://doi.org/10.1186/s12915-020-00782-8)]  [[Preprint](https://doi.org/10.1101/704437)]  
 Featured in: [IMB News: Algae use distinct method when swapping DNA during sex](https://imb.uq.edu.au/article/2020/07/algae-use-distinct-method-when-swapping-dna-during-sex)
-
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1186/s12915-020-00782-8"></div>
 <br/><br/><br/><br/>
@@ -185,7 +167,6 @@ Featured in: [IMB News: Algae use distinct method when swapping DNA during sex](
 Chen Y., Gonzalez-Pech R. A., **Stephens T. G.**, Bhattacharya D., and Chan C. X. *Journal of Phycology*, 56:6-10, 2019.
 
 [[URL](https://doi.org/10.1111/jpy.12947)]  [[Preprint](https://doi.org/10.1101/690040)]  
-
 
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jpy.12947"></div>
@@ -202,14 +183,12 @@ Featured in:
 [Video Feature](https://youtu.be/k7Dg6D1hXtk)
 [Featured in IMB 2018 year in review](https://youtu.be/HimliKBZ-eY)
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s42003-018-0098-3"></div>
 <br/><br/><br/><br/>
 ### 4\. Analysis of the draft genome of the red seaweed *Gracilariopsis chorda* provides insights into genome size evolution in Rhodophyta
 Lee J, Yang E. C., Graf L., Yang J. H., Qiu H., Zelzion U., Chan C. X., **Stephens T. G.**, Weber A. P. M., Boo G. H., Boo S. M., Kim K. M., Shin Y., Jung M., Lee S. J., Yim H. S., Lee J. Y., Bhattacharya D., and Yoon H. S. *Molecular Biology and Evolution*, 35:1869-1886, 2018.
 
 [[URL](https://doi.org/10.1093/molbev/msy081)]  
-
 
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/molbev/msy081"></div>
@@ -220,14 +199,12 @@ Lee J, Yang E. C., Graf L., Yang J. H., Qiu H., Zelzion U., Chan C. X., **Stephe
 [[URL](https://doi.org/10.1093/bioinformatics/bty1018)]  
 *Co-first authorship [F1000 recommended]
 
-
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/bioinformatics/bty1018"></div>
 <br/><br/><br/><br/>
 ### 2\. Core genes in diverse dinoflagellate lineages include a wealth of conserved dark genes with unknown functions
 **Stephens T. G.**, Ragan M. A., Bhattacharya D., and Chan C. X. *Scientific Reports*, 8:17175, 2018.
 
 [[URL](https://doi.org/10.1038/s41598-018-35620-z)]  
-
 
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s41598-018-35620-z"></div>
@@ -238,7 +215,6 @@ Lee J, Yang E. C., Graf L., Yang J. H., Qiu H., Zelzion U., Chan C. X., **Stephe
 **Stephens T. G.**, Bhattacharya D., Ragan M. A., and Chan C. X. *PeerJ*, 4:e2038, 2016.
 
 [[URL](https://doi.org/10.7717/peerj.2038)]  [[Preprint](https://doi.org/10.7287/peerj.preprints.1609v1)]  
-
 
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.2038"></div>
