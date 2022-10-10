@@ -29,11 +29,20 @@ out.txt <- paste(out.txt, sep='', '}\n')
 out.txt <- paste(out.txt, sep='', '</style>\n')
 out.txt <- paste(out.txt, sep='', '\n')
 
-count <- nrow(cv_entries)
+tmp <- cv_entries %>% filter(type == 'github_repo')
+out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', tmp$what, '" data-width="400" data-height="318" data-theme="medium"></div>\n')
+out.txt <- paste(out.txt, sep='', '<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n')
+out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
+  
+
+tmp <- cv_entries %>% filter(type == 'software')
+count <- nrow(tmp)
 for (i in 1:count) {
-  out.txt <- paste(out.txt, sep='', "# ", cv_entries[i,]$what, '\n')
-  out.txt <- paste(out.txt, sep='', cv_entries[i,]$additional_info, '\n')
-  out.txt <- paste(out.txt, sep='', '<iframe src="', cv_entries[i,]$url, '" width="100%" height="400" frameborder="0" scrolling="no"></iframe>\n')
+  out.txt <- paste(out.txt, sep='', "# ", tmp[i,]$what, '\n')
+  out.txt <- paste(out.txt, sep='', tmp[i,]$additional_info, '\n')
+  out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
+  out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', tmp[i,]$where, '" data-width="400" data-height="279" data-theme="medium"></div>\n')
+  out.txt <- paste(out.txt, sep='', '<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n')
   out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
 }
 
