@@ -10,7 +10,7 @@ out.txt <- ""
 #### cv entries #####
 suppressMessages(
   cv_entries <- read_csv("../cv_entries.csv") %>%
-    filter(type == 'software')
+    filter(type %in% c('software', 'github_repo'))
 )
 
 out.txt <- paste(out.txt, sep='', '---\n')

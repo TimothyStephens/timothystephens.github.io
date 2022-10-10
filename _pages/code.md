@@ -22,7 +22,6 @@ ul {
 
 # Dinoflagellate Annotation Workflow
 a workflow for the prediction of protein-coding genes in dinoflagellate genomes. It integrates evidence from multiple sources, including transcriptome, proteome, and other ab initio gene prediction tools.
-<iframe src="https://TimothyStephens.github.io/Dinoflagellate_Annotation_Workflow" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
 <br/><br/>
 
 <div class="github-card" data-github="TimothyStephens/Dinoflagellate_Annotation_Workflow" data-width="500" data-height="300" data-theme="medium"></div>
