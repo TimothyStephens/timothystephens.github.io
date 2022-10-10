@@ -33,6 +33,7 @@ count <- nrow(cv_entries)
 for (i in 1:count) {
   out.txt <- paste(out.txt, sep='', "# ", cv_entries[i,]$what, '\n')
   out.txt <- paste(out.txt, sep='', cv_entries[i,]$additional_info, '\n')
+  out.txt <- paste(out.txt, sep='', '<iframe src="', cv_entries[i,]$url, '"></iframe>\n')
   out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
 }
 
