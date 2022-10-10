@@ -23,12 +23,10 @@ publications <- read_csv("../publications.csv") %>%
 #### cv entries #####
 cv_entries <- read_csv("../cv_entries.csv") %>% 
   filter(include_in_full_cv == 'y') %>%
-  mutate(year_begin = year(date_start)) %>%
-  mutate(year_end = case_when(
-    date_end == "present" ~ date_end,
-    !is.na(date_end) ~ str_sub(date_end, 1, 4),
-    is.na(date_end) ~ date_end
-  )) %>%
+  mutate(date_start=paste(date_start_year, date_start_month, date_start_day, sep='-')) %>%
+  mutate(date_end=paste(date_end_year, date_end_month, date_end_day, sep='-')) %>%
+  mutate(year_begin = date_start_year) %>%
+  mutate(year_end = date_end_year) %>%
   mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                       year_begin,
                       str_c(year_begin, " --- ", year_end)))

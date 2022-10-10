@@ -12,12 +12,10 @@ suppressMessages(
   cv_entries <- read_csv("../cv_entries.csv") %>%
     filter(type %in% c('media', 'video')) %>%
     filter(include_in_full_cv == 'y') %>%
-    mutate(year_begin = year(date_start)) %>%
-    mutate(year_end = case_when(
-      date_end == "present" ~ date_end,
-      !is.na(date_end) ~ str_sub(date_end, 1, 4),
-      is.na(date_end) ~ date_end
-    )) %>%
+    mutate(date_start=paste(date_start_year, date_start_month, date_start_day, sep='-')) %>%
+    mutate(date_end=paste(date_end_year, date_end_month, date_end_day, sep='-')) %>%
+    mutate(year_begin = date_start_year) %>%
+    mutate(year_end = date_end_year) %>%
     mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                          year_begin,
                          str_c(year_begin, " --- ", year_end)))
@@ -46,6 +44,12 @@ for (select_year in sort(unique(cv_entries$year), decreasing=T)) {
   out.txt <- paste(out.txt, sep='', '## ', select_year, '\n\n')
   for (i in 1:nrow(tmp)) {
     out.txt <- paste(out.txt, sep='', "### ", (count-n), '\\. ', tmp[i,]$what, '\n')
+    t <- tmp[i,] %>% mutate(ref2print = '') %>% 
+      mutate(ref2print = ifelse(!is.na(additional_info), 
+                                str_c(ref2print, additional_info), 
+                                ref2print)
+      )
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
     out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
     n<-n+1
   }

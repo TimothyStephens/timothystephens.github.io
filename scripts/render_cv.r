@@ -3,11 +3,6 @@
 ##
 ## Full CV
 ##
-# Knit the plain Markdown version
-rmarkdown::render("cv.rmd",
-                  params = list(pdf_mode = FALSE),
-                  output_file = "../cv/cv.md")
-
 # Knit the HTML version
 rmarkdown::render("cv.rmd",
                   params = list(pdf_mode = FALSE),
@@ -26,11 +21,6 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
 ##
 ## Short CV
 ##
-# Knit the plain Markdown version
-rmarkdown::render("cv_short.rmd",
-                  params = list(pdf_mode = FALSE),
-                  output_file = "../cv/cv.md")
-
 # Knit the HTML version
 rmarkdown::render("cv_short.rmd",
                   params = list(pdf_mode = FALSE),
