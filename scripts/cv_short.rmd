@@ -16,6 +16,8 @@ library(lubridate)
 
 #### publications #####
 publications <- read_csv("../publications.csv") %>%
+  mutate(date=paste(publication_date_year, publication_date_month, publication_date_day, sep='-')) %>%
+  mutate(year = publication_date_year) %>%
   filter(include_in_short_cv == 'y')
 
 #### cv entries #####
@@ -108,7 +110,6 @@ cv_entries %>%
 ```{r}
 publications %>%
   arrange(desc(date)) %>%
-  mutate(year = year(date)) %>%
   mutate(ref2print = str_c(authors_full, " ", title, ". *", journal, "*")) %>%
   mutate(ref2print = ifelse(!is.na(ref_info), 
                             str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 

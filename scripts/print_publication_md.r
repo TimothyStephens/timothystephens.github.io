@@ -15,8 +15,9 @@ suppressMessages(
 
 ## Publications
 p <- publications %>%
-  arrange(desc(date)) %>%
-  mutate(year = year(date))
+  mutate(date=paste(publication_date_year, publication_date_month, publication_date_day, sep='-')) %>%
+  mutate(year = publication_date_year) %>%
+  arrange(desc(date))
 
 out.txt <- paste(out.txt, sep='', '---\n')
 out.txt <- paste(out.txt, sep='', 'title: "Publications"\n')
@@ -51,13 +52,6 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
       )
     out.txt <- paste(out.txt, sep='', t$ref2print, '\n\n')
     
-    t <- tmp[i,] %>% mutate(ref2print = '') %>% 
-      mutate(ref2print = ifelse(!is.na(additional_info), 
-                                str_c(ref2print, additional_info), 
-                                ref2print)
-      )
-    out.txt <- paste(out.txt, sep='', t$ref2print, '\n\n')
-    
     t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(url), 
                                 str_c(ref2print, "[[URL](", url, ")]  "), 
@@ -72,6 +66,13 @@ for (select_year in sort(unique(p$year), decreasing=T)) {
                                 ref2print)
       )
     out.txt <- paste(out.txt, sep='', t$ref2print, '\n')
+    
+    t <- tmp[i,] %>% mutate(ref2print = '') %>% 
+      mutate(ref2print = ifelse(!is.na(additional_info_2), 
+                                str_c(ref2print, additional_info_2), 
+                                ref2print)
+      )
+    out.txt <- paste(out.txt, sep='', t$ref2print, '\n\n')
     
     t <- tmp[i,] %>% mutate(ref2print = '') %>%
       mutate(ref2print = ifelse(!is.na(doi), 

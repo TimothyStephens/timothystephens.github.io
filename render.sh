@@ -17,5 +17,5 @@ Rscript render_cv.r
 )
 
 echo -e "\n#### Pushing changes to github"
-
+git add --all && git commit -m "Update pages on $(date)" && git push
 
