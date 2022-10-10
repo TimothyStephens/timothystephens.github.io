@@ -12,7 +12,7 @@ ul {
   list-style-type: none;
 }
 </style>
-
+<br/><br/>
 <div class="github-card" data-github="TimothyStephens" data-width="400" data-height="318" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 <br/><br/>
