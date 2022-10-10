@@ -16,6 +16,8 @@ ul {
 
 <br/><br/>
 
+# My GitHub profile
+
 <div class="github-card" data-github="TimothyStephens" data-width="400" data-height="318" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
