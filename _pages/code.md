@@ -13,6 +13,7 @@ ul {
 }
 </style>
 
+<br/><br/>
 # Dinoflagellate Annotation Workflow
 a workflow for the prediction of protein-coding genes in dinoflagellate genomes. It integrates evidence from multiple sources, including transcriptome, proteome, and other ab initio gene prediction tools.
 <br/><br/>

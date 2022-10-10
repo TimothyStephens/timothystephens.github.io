@@ -28,6 +28,7 @@ out.txt <- paste(out.txt, sep='', '  list-style-type: none;\n')
 out.txt <- paste(out.txt, sep='', '}\n')
 out.txt <- paste(out.txt, sep='', '</style>\n')
 out.txt <- paste(out.txt, sep='', '\n')
+out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
 
 count <- nrow(cv_entries)
 for (i in 1:count) {
