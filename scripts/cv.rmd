@@ -47,7 +47,7 @@ I am a computational biologist working on understanding the forces that govern t
 |:-|:--------------------------------------------|
 | <i class="fas fa-map-marker-alt"></i>|Department of Biochemistry and Microbiology, Rutgers University, USA|
 | <i class="fa fa-envelope"></i> | ts942\@sebs.rutgers.edu |
-| <i class="fas fa-globe"></i> | [timothystephens.com](https://timothystephens.com) |
+| <i class="fas fa-globe"></i> | [timothystephens.github.io](https://timothystephens.github.io) |
 | <i class="fab fa-github"></i> | [TimothyStephens](https://github.com/TimothyStephens) |
  
 </div>

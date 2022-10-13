@@ -157,7 +157,7 @@ Lhee D., Lee J., Ettahi K., Cho C. H., Ha J., Chan Y., Zelzion U., **Stephens T.
 **Stephens T. G.**, Gonzalez-Pech R. A., Cheng Y., Mohamed A. R., Burt D. W., Bhattacharya D., Ragan M. A., and Chan C. X. *BMC Biology*, 18:56, 2020.
 
 [[URL](https://doi.org/10.1186/s12915-020-00782-8)]  [[Preprint](https://doi.org/10.1101/704437)]  
-Featured in: [IMB News: Algae use distinct method when swapping DNA during sex](https://imb.uq.edu.au/article/2020/07/algae-use-distinct-method-when-swapping-dna-during-sex)
+Featured in: <a href="https://imb.uq.edu.au/article/2020/07/algae-use-distinct-method-when-swapping-dna-during-sex" target="_blank">IMB News: Algae use distinct method when swapping DNA during sex</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1186/s12915-020-00782-8"></div>
 <br/><br/><br/><br/>
@@ -177,7 +177,7 @@ Chen Y., Gonzalez-Pech R. A., **Stephens T. G.**, Bhattacharya D., and Chan C. X
 Liu H., **Stephens T. G.**, Gonzalez-Pech R. A., Beltran V. H., Lapeyre B., Bongaerts P., Cooke I., Aranda M., Bourne D. G., Foret S., Miller D. J., van Oppen M. J. H., Voolstra C. R., Ragan M.A., and Chan C.X. *Communications Biology*, 1:95, 2018.
 
 [[URL](https://doi.org/10.1038/s42003-018-0098-3)]  [[Preprint](https://doi.org/10.1101/198762)]  
-Featured in:<br />[IMB News: Unlocking genetic secrets to help save the Great Barrier Reef](https://imb.uq.edu.au/article/2018/07/unlocking-genetic-secrets-help-save-great-barrier-reef)<br />[GBRF: Decoding the Reef leads to world first<U+0097>Unlocking genetic secrets of coral symbiosis to preserve iconic Great Barrier Reef](https://www.barrierreef.org/latest/news/decoding-the-reef)<br />[Video Feature](https://youtu.be/k7Dg6D1hXtk)<br />[Featured in IMB 2018 year in review](https://youtu.be/HimliKBZ-eY)
+Featured in:<br /> - <a href="https://imb.uq.edu.au/article/2018/07/unlocking-genetic-secrets-help-save-great-barrier-reef" target="_blank">IMB News: Unlocking genetic secrets to help save the Great Barrier Reef</a><br /> - <a href="https://www.barrierreef.org/latest/news/decoding-the-reef" target="_blank">GBRF: Decoding the Reef leads to world first<U+0097>Unlocking genetic secrets of coral symbiosis to preserve iconic Great Barrier Reef</a><br /> - <a href="https://youtu.be/k7Dg6D1hXtk" target="_blank">Video Feature</a><br /> - <a href="https://youtu.be/HimliKBZ-eY" target="_blank">Featured in IMB 2018 year in review</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s42003-018-0098-3"></div>
 <br/><br/><br/><br/>

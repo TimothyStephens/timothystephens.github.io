@@ -18,7 +18,8 @@ library(lubridate)
 publications <- read_csv("../publications.csv") %>%
   mutate(date=paste(publication_date_year, publication_date_month, publication_date_day, sep='-')) %>%
   mutate(year = publication_date_year) %>%
-  filter(include_in_short_cv == 'y')
+  filter(include_in_short_cv == 'y') %>%
+  arrange(desc(year))
 
 #### cv entries #####
 cv_entries <- read_csv("../cv_entries.csv") %>% 
@@ -29,7 +30,8 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
   mutate(year_end = date_end_year) %>%
   mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                       year_begin,
-                      str_c(year_begin, " --- ", year_end)))
+                      str_c(year_begin, " --- ", year_end))) %>%
+  arrange(desc(year))
 ```
 
 <div class="grid-container"> 
@@ -47,7 +49,7 @@ I am a computational biologist working on understanding the forces that govern t
 |:-|:--------------------------------------------|
 | <i class="fas fa-map-marker-alt"></i>|Department of Biochemistry and Microbiology, Rutgers University, USA|
 | <i class="fa fa-envelope"></i> | ts942\@sebs.rutgers.edu |
-| <i class="fas fa-globe"></i> | [timothystephens.com](https://timothystephens.com) |
+| <i class="fas fa-globe"></i> | [timothystephens.github.io](https://timothystephens.gitgub,io) |
 | <i class="fab fa-github"></i> | [TimothyStephens](https://github.com/TimothyStephens) |
  
 </div>
