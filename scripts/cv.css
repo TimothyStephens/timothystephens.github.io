@@ -153,6 +153,7 @@ h2.box {
 /* don't make page breaks inside an entry */
 tr {
   break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .vertical-top td {

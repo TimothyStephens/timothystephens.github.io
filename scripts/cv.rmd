@@ -49,7 +49,8 @@ I am a computational biologist working on understanding the forces that govern t
 | <i class="fa fa-envelope"></i> | ts942\@sebs.rutgers.edu |
 | <i class="fas fa-globe"></i> | [timothystephens.github.io](https://timothystephens.github.io) |
 | <i class="fab fa-github"></i> | [TimothyStephens](https://github.com/TimothyStephens) |
- 
+| <i class="fab fa-twitter"></i> | [\@timstep1383](https://mobile.twitter.com/timstep1383) |
+
 </div>
 ```
 
@@ -62,6 +63,7 @@ cv_entries %>%
   mutate(what = str_c(what, ", ", where)) %>% 
   mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
   select(year, what) %>% 
+  arrange(desc(year)) %>%
   kable()
 ```
 
@@ -72,6 +74,7 @@ cv_entries %>%
   mutate(what = str_c(what, ", ", where)) %>% 
   mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
   select(year, what) %>% 
+  arrange(desc(year)) %>%
   kable()
 ```
 
@@ -83,6 +86,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>% 
+  arrange(desc(year)) %>%
   kable()
 ```
 
@@ -92,6 +96,7 @@ cv_entries %>%
   filter(type == 'prof-dev') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year_begin, what) %>% 
+  arrange(desc(year_begin)) %>%
   kable()
 ```
 
@@ -101,13 +106,14 @@ cv_entries %>%
   filter(type == 'awards') %>% 
   mutate(what = str_c(what, ", ", where)) %>%  
   select(year_begin, what) %>% 
+  arrange(desc(year_begin)) %>%
   kable()
 ```
 
 ## Publications {.publications .nohead .set-width-year}
 ```{r}
 publications %>%
-  arrange(desc(date)) %>%
+  arrange(-publication_date_year, -publication_date_month, -publication_date_day) %>%
   mutate(ref2print = str_c(authors_full, " ", title, ". *", journal, "*")) %>%
   mutate(ref2print = ifelse(!is.na(ref_info), 
                             str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 
@@ -129,7 +135,6 @@ publications %>%
                             str_c(ref2print, " ", additional_info), 
                             ref2print)
          ) %>%
-  arrange(desc(date)) %>% 
   select(year, ref2print) %>%
   knitr::kable()
 ```
@@ -139,6 +144,7 @@ publications %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>% 
+  arrange(desc(year_begin)) %>%
   kable()
 
 ```
@@ -148,7 +154,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'poster') %>%
   select(year_begin, what) %>% 
-  arrange(desc(year_begin)) %>% 
+  arrange(desc(year_begin)) %>%
   kable()
 ```
 
@@ -160,6 +166,7 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>% 
+  arrange(desc(year_begin)) %>%
   kable()
 ```
 
@@ -168,6 +175,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'media') %>%
   select(year_begin, what) %>% 
+  arrange(desc(year_begin)) %>%
   kable()
 ```
 
@@ -179,6 +187,7 @@ cv_entries %>%
   mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>% 
   mutate(what = str_c(what, ", ", where)) %>%
   select(year, what) %>% 
+  arrange(desc(year)) %>%
   kable()
 ```
 
