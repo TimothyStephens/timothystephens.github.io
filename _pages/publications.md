@@ -107,7 +107,7 @@ Gonzalez-Pech, R. A., **Stephens T. G.**, Chen Y., Mohamed A. R., Cheng Y., Shah
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1186/s12915-021-00994-6"></div>
 <br/><br/><br/><br/>
-### 12\. Comparative genomics supports that Brazilian bioethanol *Saccharomyces cerevisiae* comprise a unified group of domesticated strains related to cachaça spirit yeasts
+### 12\. Comparative genomics supports that Brazilian bioethanol *Saccharomyces cerevisiae* comprise a unified group of domesticated strains related to cachaca spirit yeasts
 Jacobus A. P., **Stephens T. G.**, Youssef P., Gonzalez-Pech R., Ciccotosto-Camp M. M., Dougan K. E., Chen Y., Basso L. C., Frazzon J., Chan C. X., and Gross J. *Frontiers in Microbiology*, 12:644089, 2021.
 
 [[URL](https://doi.org/10.3389/fmicb.2021.644089)]  [[Preprint](https://doi.org/10.1101/2020.12.15.422965)]  
@@ -181,7 +181,7 @@ Lee J, Yang E. C., Graf L., Yang J. H., Qiu H., Zelzion U., Chan C. X., **Stephe
 Liu H., **Stephens T. G.**, Gonzalez-Pech R. A., Beltran V. H., Lapeyre B., Bongaerts P., Cooke I., Aranda M., Bourne D. G., Foret S., Miller D. J., van Oppen M. J. H., Voolstra C. R., Ragan M.A., and Chan C.X. *Communications Biology*, 0.107638889, 2018.
 
 [[URL](https://doi.org/10.1038/s42003-018-0098-3)]  [[Preprint](https://doi.org/10.1101/198762)]  
-Featured in:<br /> - <a href="https://imb.uq.edu.au/article/2018/07/unlocking-genetic-secrets-help-save-great-barrier-reef" target="_blank">IMB News: Unlocking genetic secrets to help save the Great Barrier Reef</a><br /> - <a href="https://www.barrierreef.org/latest/news/decoding-the-reef" target="_blank">GBRF: Decoding the Reef leads to world firstóUnlocking genetic secrets of coral symbiosis to preserve iconic Great Barrier Reef</a><br /> - <a href="https://youtu.be/k7Dg6D1hXtk" target="_blank">Video Feature</a><br /> - <a href="https://youtu.be/HimliKBZ-eY" target="_blank">Featured in IMB 2018 year in review</a>
+Featured in:<br /> - <a href="https://imb.uq.edu.au/article/2018/07/unlocking-genetic-secrets-help-save-great-barrier-reef" target="_blank">IMB News: Unlocking genetic secrets to help save the Great Barrier Reef</a><br /> - <a href="https://www.barrierreef.org/latest/news/decoding-the-reef" target="_blank">GBRF: Decoding the Reef leads to world first. Unlocking genetic secrets of coral symbiosis to preserve iconic Great Barrier Reef</a><br /> - <a href="https://youtu.be/k7Dg6D1hXtk" target="_blank">Video Feature</a><br /> - <a href="https://youtu.be/HimliKBZ-eY" target="_blank">Featured in IMB 2018 year in review</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s42003-018-0098-3"></div>
 <br/><br/><br/><br/>
