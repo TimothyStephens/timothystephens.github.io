@@ -239,7 +239,7 @@ render_site_publications <- function(in.csv="publications.csv", out.file="_pages
   p <- publications %>%
     mutate(date=paste(publication_date_year, publication_date_month, publication_date_day, sep='-')) %>%
     mutate(year = publication_date_year) %>%
-    arrange(desc(year))
+    arrange(-publication_date_year, -publication_date_month, -publication_date_day)
   
   out.txt <- paste(out.txt, sep='', '---\n')
   out.txt <- paste(out.txt, sep='', 'title: "Publications"\n')
