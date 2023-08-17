@@ -25,7 +25,7 @@ ul {
 
 <br/><br/><br/><br/>
 ### 26\. Ploidy variation and its implications for reproduction and population dynamics in two sympatric Hawaiian coral species
-**Stephens T. G.**, **Strand E. L.**, Mohamed A. R., Williams A., Chiles E. N., Su X., Bhattacharya D., and Putnam H. M. *Genome Biology and Evolution*, evad149, 2023.
+**Stephens T. G.**, Strand E. L., Putnam H. M., and Bhattacharya D. *Genome Biology and Evolution*, evad149, 2023.
 
 [[URL](https://doi.org/10.1093/gbe/evad149)]  [[Preprint](https://doi.org/10.1101/2021.11.21.469467)]  
 
