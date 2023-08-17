@@ -121,31 +121,14 @@ h2.box {
 .nohead thead{
   display: none;
 }
-/* set the width of the first column in the tables */
-/* this will make td column resizing work */
-.education tbody,
-.research_experience tbody,
-.teaching tbody,
-.prof_dev tbody,
-.awards tbody,
-.publications tbody,
-.talks tbody,
-.posters tbody,
-.grants tbody,
-.media tbody,
-.service tbody,
-.volunteering tbody,
-.set-width tbody {
-  display: block;
-}
 
+/* set the width of the first column in the tables */
 .set-width-range td:first-child {
-  width: 120px;
+  width: 14%;
   text-align: left;
 }
-
 .set-width-year td:first-child {
-  width: 60px;
+  width: 5.5%;
   text-align: left;
 }
 

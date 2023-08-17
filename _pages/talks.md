@@ -13,6 +13,12 @@ ul {
 }
 </style>
 
+## 2023
+
+13\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using Paulinella as a model system. *New Phytologist Next Generation Scientists Conference 2023*. 3rd July 2023, National University of Singapore, Singapore. [**talk**]
+<br/><br/>
+12\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring endosymbiosis and biotic interactions using niche, non-model algae. *Invited talk at SCMB GenGen/ACE Special Seminar*. 10th January 2023, The University of Queensland, Brisbane, Australia. [**talk**]
+<br/><br/>
 ## 2022
 
 11\. **Stephens T. G.**, Strand E. L., Putnam H. M., and Bhattacharya D. Differences in ploidy and the prevalence of clonal propagation between *Montipora capitata* and *Pocillopora acuta* from Kane'ohe Bay, Hawai'i. *15th International Coral Reef Symposium*. 3-8th July 2022, Bremen, Germany. [**talk**]

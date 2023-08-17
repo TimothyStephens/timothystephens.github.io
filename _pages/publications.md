@@ -15,6 +15,39 @@ ul {
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+## 2023
+
+### 27\. Peeling back the layers of coral holobiont multi-omics data
+\*Williams A., \***Stephens T. G.**, Shumaker A., and Bhattacharya D. *iScience*, 2023.
+
+
+
+
+<br/><br/><br/><br/>
+### 26\. Ploidy variation and its implications for reproduction and population dynamics in two sympatric Hawaiian coral species
+**Stephens T. G.**, **Strand E. L.**, Mohamed A. R., Williams A., Chiles E. N., Su X., Bhattacharya D., and Putnam H. M. *Genome Biology and Evolution*, evad149, 2023.
+
+[[URL](https://doi.org/10.1093/gbe/evad149)]  [[Preprint](https://doi.org/10.1101/2021.11.21.469467)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/gbe/evad149"></div>
+<br/><br/><br/><br/>
+### 25\. A *k*-mer-based approach for inferring phylogenetic relatedness of environmental genomic data
+Etten J. V, **Stephens T. G.**, and Bhattacharya D. *Systems Biology*, syad037, 2023.
+
+[[URL](https://doi.org/10.1093/sysbio/syad037)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/sysbio/syad037"></div>
+<br/><br/><br/><br/>
+### 24\. Algae obscura: The potential of rare species as model systems
+Etten J. V., Benites F. L., **Stephens T. G.**, Yoon H. S., and Bhattacharya D. *Journal of Phycology*, 59(2):293-300, 2023.
+
+[[URL](https://doi.org/10.1111/jpy.13321)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jpy.13321"></div>
+<br/><br/><br/><br/>
 ## 2022
 
 ### 23\. High-quality genome assemblies from key Hawaiian coral species
@@ -25,15 +58,7 @@ ul {
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/gigascience/giac098"></div>
 <br/><br/><br/><br/>
-### 22\. Endosymbiotic ratchet accelerates divergence after organelle origin
-Bhattacharya D., Etten J. V., Benites L. F., and **Stephens T. G.** *BioEssays*, e2200165, 2022.
-
-[[URL](https://doi.org/10.1002/bies.202200165)]  
-
-
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/bies.202200165"></div>
-<br/><br/><br/><br/>
-### 21\. Multiple waves of viral invasions in Symbiodiniaceae algal genomes
+### 22\. Multiple waves of viral invasions in Symbiodiniaceae algal genomes
 Benites L. F., **Stephens T. G.**, and Bhattacharya D. *Virus Evolution*, 8:veac101, 2022.
 
 [[URL](https://doi.org/10.1093/ve/veac101)]  [[Preprint](https://doi.org/10.1101/2022.04.12.488082)]  
@@ -41,21 +66,29 @@ Benites L. F., **Stephens T. G.**, and Bhattacharya D. *Virus Evolution*, 8:veac
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/ve/veac101"></div>
 <br/><br/><br/><br/>
-### 20\. Development of a portable toolkit to diagnose coral thermal stress
-Meng Z., Williams A., Liau P., **Stephens T. G.**, Drury C., Chiles E. N., Su X., Javanmard M., and Bhattacharya D. *Scientific Reports*, 12:14398, 2022.
+### 21\. Endosymbiotic ratchet accelerates divergence after organelle origin
+Bhattacharya D., Etten J. V., Benites L. F., and **Stephens T. G.** *BioEssays*, e2200165, 2022.
 
-[[URL](https://doi.org/10.1038/s41598-022-18653-3)]  
+[[URL](https://doi.org/10.1002/bies.202200165)]  
 
 
-<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s41598-022-18653-3"></div>
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/bies.202200165"></div>
 <br/><br/><br/><br/>
-### 19\. Loss of key endosymbiont genes may facilitate early host control of the chromatophore in *Paulinella*
+### 20\. Loss of key endosymbiont genes may facilitate early host control of the chromatophore in *Paulinella*
 \*Gabr A., \***Stephens T. G.**, and Bhattacharya D. *iScience*, 25:104974, 2022.
 
 [[URL](https://doi.org/10.1016/j.isci.2022.104974)]  
 *Co-first authorship
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.isci.2022.104974"></div>
+<br/><br/><br/><br/>
+### 19\. Development of a portable toolkit to diagnose coral thermal stress
+Meng Z., Williams A., Liau P., **Stephens T. G.**, Drury C., Chiles E. N., Su X., Javanmard M., and Bhattacharya D. *Scientific Reports*, 12:14398, 2022.
+
+[[URL](https://doi.org/10.1038/s41598-022-18653-3)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s41598-022-18653-3"></div>
 <br/><br/><br/><br/>
 ### 18\. Life on the edge: Hawaiian model for coral evolution
 Bhattacharya D., **Stephens T. G.**, Tinoco A., Richmond R., and Cleves P. A. *Limnology and Oceanography*, 67:1976-1985, 2022.

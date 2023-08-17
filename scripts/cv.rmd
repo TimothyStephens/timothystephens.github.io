@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(knitr)
 library(lubridate)
+source("utility-functions.R")
 
 #### publications #####
 publications <- read_csv("../publications.csv") %>%
@@ -56,29 +57,27 @@ I am a computational biologist working on understanding the forces that govern t
 
 </div>
 
-## Education {.education .nohead .set-width-range}
+## Education {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
   filter(type == 'education') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
-  mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
   select(year, what) %>% 
   arrange(desc(year)) %>%
   kable()
 ```
 
-## Research Experience {.research_experience .nohead .set-width-range}
+## Research Experience {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
   filter(type == 'research_experience') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
-  mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
   select(year, what) %>% 
   arrange(desc(year)) %>%
   kable()
 ```
 
-## Teaching experience {.teaching .nohead .set-width-range}
+## Teaching experience {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
   filter(type == 'teaching') %>% 
@@ -90,7 +89,7 @@ cv_entries %>%
   kable()
 ```
 
-## Professional development {.prof_dev .nohead .set-width-year}
+## Professional development {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'prof-dev') %>% 
@@ -100,7 +99,7 @@ cv_entries %>%
   kable()
 ```
 
-## Awards and honours {.awards .nohead .set-width-year}
+## Awards and honours {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'awards') %>% 
@@ -110,7 +109,7 @@ cv_entries %>%
   kable()
 ```
 
-## Publications {.publications .nohead .set-width-year}
+## Publications {.nohead .set-width-year}
 ```{r}
 publications %>%
   arrange(-publication_date_year, -publication_date_month, -publication_date_day) %>%
@@ -136,20 +135,22 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
+  manual_page_break_after_row("ref2print", "Multiple waves of viral invasions in") %>%
+  manual_page_break_after_row("ref2print", "Commonly misunderstood parameters of NCBI BLAST") %>%
   knitr::kable()
 ```
 
-## Talks {.talks .nohead .set-width-year}
+## Talks {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>% 
   arrange(desc(year_begin)) %>%
+  manual_page_break_after_row("what", "Botany Department, Biosciences Institute") %>%
   kable()
-
 ```
 
-## Poster presentations {.posters .nohead .set-width-year}
+## Poster presentations {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'poster') %>%
@@ -158,7 +159,7 @@ cv_entries %>%
   kable()
 ```
 
-## Grants {.grants .nohead .set-width-year}
+## Grants {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'minor_grants' | type == 'major_grants') %>% 
@@ -170,7 +171,7 @@ cv_entries %>%
   kable()
 ```
 
-## Media coverage {.media .nohead .set-width-year}
+## Media coverage {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'media') %>%
@@ -180,7 +181,7 @@ cv_entries %>%
 ```
 
 ```{r eval=FALSE}
-## Service {.service .nohead .set-width}
+## Service {.nohead .set-width}
 cv_entries %>% 
   filter(type == 'service') %>% 
   mutate(year_end = ifelse(year_end == "present", "", year_end)) %>% 
@@ -192,7 +193,7 @@ cv_entries %>%
 ```
 
 ```{r eval=FALSE}
-## Personal skills & volunteering {.volunteering .nohead .set-width}
+## Personal skills & volunteering {.nohead .set-width}
 cv_entries %>%
   filter(type == 'volunteering') %>%
   mutate(what = str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where)) %>%
