@@ -14,7 +14,7 @@ ul {
 </style>
 
 ### 6\. Guest lecturer, Rutgers University (2020-present)
-Design and conducted lectures on de novo next-generation sequencing, genome and transcriptome sequencing, metagenomics, phylogenetics, and phylogenomics in a join undergraduate and postgraduate course titled "Fundamentals of Microbial Genomics". Duties include designing and marking student' exam questions and oral presentations.
+Design and conducted lectures on de novo next-generation genome and transcriptome sequencing, metabolomics, proteomics, metagenomics, phylogenetics, and phylogenomics in a join undergraduate and postgraduate course titled "Fundamentals of Microbial Genomics". Duties include designing and marking student' exam questions and oral presentations.
 <br/><br/>
 ### 5\. Head Practical Tutor, University of Queensland (2018-2018)
 Duties included designing and developing assessment material for the course and organising marking of assignments.
