@@ -19,7 +19,8 @@ source("utility-functions.R")
 publications <- read_csv("../publications.csv") %>%
   mutate(date=paste(publication_date_year, publication_date_month, publication_date_day, sep='-')) %>%
   mutate(year = publication_date_year) %>%
-  filter(include_in_full_cv == 'y')
+  filter(include_in_full_cv == 'y') %>%
+  arrange(-publication_date_year, -publication_date_month, -publication_date_day)
 
 #### cv entries #####
 cv_entries <- read_csv("../cv_entries.csv") %>% 
@@ -30,7 +31,9 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
   mutate(year_end = date_end_year) %>%
   mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                       year_begin,
-                      str_c(year_begin, " --- ", year_end)))
+                      str_c(year_begin, " --- ", year_end))) %>%
+  mutate(across(2:4, as.numeric)) %>%
+  arrange(-date_start_year, -date_start_month, -date_start_day)
 ```
 
 <div class="grid-container"> 
@@ -63,7 +66,6 @@ cv_entries %>%
   filter(type == 'education') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year, what) %>% 
-  arrange(desc(year)) %>%
   kable()
 ```
 
@@ -73,7 +75,6 @@ cv_entries %>%
   filter(type == 'research_experience') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year, what) %>% 
-  arrange(desc(year)) %>%
   kable()
 ```
 
@@ -85,7 +86,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>% 
-  arrange(desc(year)) %>%
+  manual_page_break_after_row("what", "Head Practical Tutor") %>%
   kable()
 ```
 
@@ -95,7 +96,6 @@ cv_entries %>%
   filter(type == 'prof-dev') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year_begin, what) %>% 
-  arrange(desc(year_begin)) %>%
   kable()
 ```
 
@@ -105,14 +105,12 @@ cv_entries %>%
   filter(type == 'awards') %>% 
   mutate(what = str_c(what, ", ", where)) %>%  
   select(year_begin, what) %>% 
-  arrange(desc(year_begin)) %>%
   kable()
 ```
 
 ## Publications {.nohead .set-width-year}
 ```{r}
 publications %>%
-  arrange(-publication_date_year, -publication_date_month, -publication_date_day) %>%
   mutate(ref2print = str_c(authors_full, " ", title, ". *", journal, "*")) %>%
   mutate(ref2print = ifelse(!is.na(ref_info), 
                             str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 
@@ -135,8 +133,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Multiple waves of viral invasions in") %>%
-  manual_page_break_after_row("ref2print", "Commonly misunderstood parameters of NCBI BLAST") %>%
+  manual_page_break_after_row("ref2print", "High-quality genome assemblies from key Hawaiian coral species") %>%
+  manual_page_break_after_row("ref2print", "Evidence that inconsistent gene prediction can mislead analysis of") %>%
   knitr::kable()
 ```
 
@@ -145,8 +143,6 @@ publications %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>% 
-  arrange(desc(year_begin)) %>%
-  manual_page_break_after_row("what", "Botany Department, Biosciences Institute") %>%
   kable()
 ```
 
@@ -155,7 +151,6 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'poster') %>%
   select(year_begin, what) %>% 
-  arrange(desc(year_begin)) %>%
   kable()
 ```
 
@@ -167,7 +162,7 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>% 
-  arrange(desc(year_begin)) %>%
+  manual_page_break_after_row("what", "UQ-FAPESP Strategic Research Fund SPRINT") %>%
   kable()
 ```
 
@@ -176,7 +171,6 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'media') %>%
   select(year_begin, what) %>% 
-  arrange(desc(year_begin)) %>%
   kable()
 ```
 
@@ -188,7 +182,6 @@ cv_entries %>%
   mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>% 
   mutate(what = str_c(what, ", ", where)) %>%
   select(year, what) %>% 
-  arrange(desc(year)) %>%
   kable()
 ```
 
@@ -198,7 +191,6 @@ cv_entries %>%
   filter(type == 'volunteering') %>%
   mutate(what = str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where)) %>%
   mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%
-  arrange(order, desc(year_end), desc(year)) %>%
   select(year, what) %>%
   kable()
 ```

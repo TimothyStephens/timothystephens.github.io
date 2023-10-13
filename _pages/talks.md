@@ -15,7 +15,17 @@ ul {
 
 ## 2023
 
-13\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using Paulinella as a model system. *New Phytologist Next Generation Scientists Conference 2023*. 3rd July 2023, National University of Singapore, Singapore. [**talk**]
+18\. **Stephens T. G.**, Chille E., Wong K., Andrade N., Hulett R., Cleves P., Bhattacharya D., Traylor-Knowles N. Shining a light on “dark” proteins in corals. *From Postdoc to Principal Investigator: An NSF Division of Integrative Organismal Systems (IOS) Virtual Colloquium 2023*. 13-14th September 2023, Virtual. [**talk**]
+<br/><br/>
+17\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using *Paulinella* as a model system. *International Society of Endocytobiology conference 2023*. 10-14th September 2023, Field Museum, Chicago, 2023. [**talk**]
+<br/><br/>
+16\. **Stephens T. G.**, Chille E., Strand E. L., Putnam H. M., and Bhattacharya D. Multi-omics investigation of coral resilience. *Invited talk at Carnegie Plant Biology Seminar, August 2023*. 25th August 2023, Carnegie Department of Plant Biology, Stanford University, USA. [**talk**]
+<br/><br/>
+15\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using *Paulinella* as a model system. *JGI Annual User Meeting 2023*. 21-24th August 2023, JGI, Berkeley, California, USA. [**poster**]
+<br/><br/>
+14\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using *Paulinella* as a model system. *New Phytologist Next Generation Scientists Conference 2023*. 3rd July 2023, National University of Singapore, Singapore. [**talk**]
+<br/><br/>
+13\. **Stephens T. G.**, Chille E., Wong K., Andrade N., Hulett R., Cleves P., Bhattacharya D., Traylor-Knowles N. Shining a light on “dark” proteins in corals. *NSF EDGE PI Meeting 2023*. 10-11th October 2023, Alexandria, Virginia, USA. [**poster**]
 <br/><br/>
 12\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring endosymbiosis and biotic interactions using niche, non-model algae. *Invited talk at SCMB GenGen/ACE Special Seminar*. 10th January 2023, The University of Queensland, Brisbane, Australia. [**talk**]
 <br/><br/>
