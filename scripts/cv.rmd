@@ -143,6 +143,7 @@ publications %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>% 
+  manual_page_break_after_row("what", "Annual Meeting of the Phycological Society of America") %>%
   kable()
 ```
 
@@ -162,7 +163,6 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>% 
-  manual_page_break_after_row("what", "UQ-FAPESP Strategic Research Fund SPRINT") %>%
   kable()
 ```
 

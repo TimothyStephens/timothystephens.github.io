@@ -17,5 +17,6 @@ Rscript render_cv.r
 )
 
 echo -e "\n#### Pushing changes to github"
+cp scripts/cv.pdf cv/Timothy_Stephens_CV.pdf
 git add --all && git commit -m "Update pages on $(date)" && git push
 

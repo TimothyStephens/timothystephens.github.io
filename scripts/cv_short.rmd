@@ -134,7 +134,7 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Genome-powered classification of microbial") %>%
+  manual_page_break_after_row("ref2print", "generates evolutionary novelty in the photosynthetic amoeba") %>%
   knitr::kable()
 ```
 
@@ -143,7 +143,7 @@ publications %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "International Coral Reef Symposium") %>%
+  manual_page_break_after_row("what", "4th Institute for Food, Nutrition, and Health") %>%
   kable()
 ```
 

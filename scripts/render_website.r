@@ -6,13 +6,15 @@ suppressWarnings(suppressMessages(library(lubridate)))
 ######################
 ####     Talks    ####
 ######################
-render_site_talks <- function(in.csv="cv_entries.csv", out.file="_pages/talks.md", out.txt=""){
+render_site_talks <- function(in.csv="../cv_entries.csv", out.file="../_pages/talks.md", out.txt=""){
   print('## Creating website markdown file: Talks')
   
   #### cv entries #####
   suppressMessages(
     cv_entries <- read_csv(in.csv) %>%
       filter(type %in% c('talk', 'poster')) %>%
+      mutate(across(2:4, as.numeric)) %>%
+      arrange(-date_start_year, -date_start_month, -date_start_day) %>%
       filter(include_in_full_cv == 'y') %>%
       mutate(date_start=paste(date_start_year, date_start_month, date_start_day, sep='-')) %>%
       mutate(date_end=paste(date_end_year, date_end_month, date_end_day, sep='-')) %>%
@@ -20,8 +22,7 @@ render_site_talks <- function(in.csv="cv_entries.csv", out.file="_pages/talks.md
       mutate(year_end = date_end_year) %>%
       mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                            year_begin,
-                           str_c(year_begin, " --- ", year_end))) %>%
-      arrange(desc(date_start))
+                           str_c(year_begin, " --- ", year_end)))
   )
   
   out.txt <- paste(out.txt, sep='', '---\n')
@@ -62,13 +63,15 @@ render_site_talks <- function(in.csv="cv_entries.csv", out.file="_pages/talks.md
 ######################
 ####   Teaching   ####
 ######################
-render_site_teaching <- function(in.csv="cv_entries.csv", out.file="_pages/teaching.md", out.txt=""){
+render_site_teaching <- function(in.csv="../cv_entries.csv", out.file="../_pages/teaching.md", out.txt=""){
   print('## Creating website markdown file: Teaching')
   
   #### cv entries #####
   suppressMessages(
     cv_entries <- read_csv(in.csv) %>%
       filter(type == 'teaching') %>%
+      mutate(across(2:4, as.numeric)) %>%
+      arrange(-date_start_year, -date_start_month, -date_start_day) %>%
       filter(include_in_full_cv == 'y') %>%
       mutate(date_start=paste(date_start_year, date_start_month, date_start_day, sep='-')) %>%
       mutate(date_end=paste(date_end_year, date_end_month, date_end_day, sep='-')) %>%
@@ -76,8 +79,7 @@ render_site_teaching <- function(in.csv="cv_entries.csv", out.file="_pages/teach
       mutate(year_end = date_end_year) %>%
       mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                            year_begin,
-                           str_c(year_begin, " --- ", year_end))) %>%
-      arrange(desc(year))
+                           str_c(year_begin, " --- ", year_end)))
   )
   
   out.txt <- paste(out.txt, sep='', '---\n')
@@ -118,13 +120,15 @@ render_site_teaching <- function(in.csv="cv_entries.csv", out.file="_pages/teach
 ######################
 ####     Media    ####
 ######################
-render_site_media <- function(in.csv="cv_entries.csv", out.file="_pages/media.md", out.txt=""){
+render_site_media <- function(in.csv="../cv_entries.csv", out.file="../_pages/media.md", out.txt=""){
   print('## Creating website markdown file: Media')
   
   #### cv entries #####
   suppressMessages(
     cv_entries <- read_csv(in.csv) %>%
       filter(type %in% c('media', 'video')) %>%
+      mutate(across(2:4, as.numeric)) %>%
+      arrange(-date_start_year, -date_start_month, -date_start_day) %>%
       filter(include_in_full_cv == 'y') %>%
       mutate(date_start=paste(date_start_year, date_start_month, date_start_day, sep='-')) %>%
       mutate(date_end=paste(date_end_year, date_end_month, date_end_day, sep='-')) %>%
@@ -132,8 +136,7 @@ render_site_media <- function(in.csv="cv_entries.csv", out.file="_pages/media.md
       mutate(year_end = date_end_year) %>%
       mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                            year_begin,
-                           str_c(year_begin, " --- ", year_end))) %>%
-      arrange(desc(year))
+                           str_c(year_begin, " --- ", year_end)))
   )
   
   out.txt <- paste(out.txt, sep='', '---\n')
@@ -180,13 +183,15 @@ render_site_media <- function(in.csv="cv_entries.csv", out.file="_pages/media.md
 ######################
 ####     Code     ####
 ######################
-render_site_code <- function(in.csv="cv_entries.csv", out.file="_pages/code.md", out.txt=""){
+render_site_code <- function(in.csv="../cv_entries.csv", out.file="../_pages/code.md", out.txt=""){
   print('## Creating website markdown file: Code')
   
   #### cv entries #####
   suppressMessages(
     cv_entries <- read_csv(in.csv) %>%
-      filter(type == 'software')
+      filter(type == 'software') %>%
+      mutate(across(2:4, as.numeric)) %>%
+      arrange(-date_start_year, -date_start_month, -date_start_day)
   )
   
   out.txt <- paste(out.txt, sep='', '---\n')
@@ -226,7 +231,7 @@ render_site_code <- function(in.csv="cv_entries.csv", out.file="_pages/code.md",
 ######################
 #### Publications ####
 ######################
-render_site_publications <- function(in.csv="publications.csv", out.file="_pages/publications.md", out.txt=""){
+render_site_publications <- function(in.csv="../publications.csv", out.file="../_pages/publications.md", out.txt=""){
   print('## Creating website markdown file: Publications')
   
   #### publications #####
