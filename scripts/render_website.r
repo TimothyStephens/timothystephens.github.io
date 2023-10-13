@@ -6,7 +6,7 @@ suppressWarnings(suppressMessages(library(lubridate)))
 ######################
 ####     Talks    ####
 ######################
-render_site_talks <- function(in.csv="../cv_entries.csv", out.file="../_pages/talks.md", out.txt=""){
+render_site_talks <- function(in.csv="cv_entries.csv", out.file="_pages/talks.md", out.txt=""){
   print('## Creating website markdown file: Talks')
   
   #### cv entries #####
@@ -63,7 +63,7 @@ render_site_talks <- function(in.csv="../cv_entries.csv", out.file="../_pages/ta
 ######################
 ####   Teaching   ####
 ######################
-render_site_teaching <- function(in.csv="../cv_entries.csv", out.file="../_pages/teaching.md", out.txt=""){
+render_site_teaching <- function(in.csv="cv_entries.csv", out.file="_pages/teaching.md", out.txt=""){
   print('## Creating website markdown file: Teaching')
   
   #### cv entries #####
@@ -120,7 +120,7 @@ render_site_teaching <- function(in.csv="../cv_entries.csv", out.file="../_pages
 ######################
 ####     Media    ####
 ######################
-render_site_media <- function(in.csv="../cv_entries.csv", out.file="../_pages/media.md", out.txt=""){
+render_site_media <- function(in.csv="cv_entries.csv", out.file="_pages/media.md", out.txt=""){
   print('## Creating website markdown file: Media')
   
   #### cv entries #####
@@ -183,7 +183,7 @@ render_site_media <- function(in.csv="../cv_entries.csv", out.file="../_pages/me
 ######################
 ####     Code     ####
 ######################
-render_site_code <- function(in.csv="../cv_entries.csv", out.file="../_pages/code.md", out.txt=""){
+render_site_code <- function(in.csv="cv_entries.csv", out.file="_pages/code.md", out.txt=""){
   print('## Creating website markdown file: Code')
   
   #### cv entries #####
@@ -231,7 +231,7 @@ render_site_code <- function(in.csv="../cv_entries.csv", out.file="../_pages/cod
 ######################
 #### Publications ####
 ######################
-render_site_publications <- function(in.csv="../publications.csv", out.file="../_pages/publications.md", out.txt=""){
+render_site_publications <- function(in.csv="publications.csv", out.file="_pages/publications.md", out.txt=""){
   print('## Creating website markdown file: Publications')
   
   #### publications #####
