@@ -133,8 +133,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "High-quality genome assemblies from key Hawaiian coral species") %>%
-  manual_page_break_after_row("ref2print", "Evidence that inconsistent gene prediction can mislead analysis of") %>%
+  manual_page_break_after_row("ref2print", "Algae obscura") %>%
+  manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
 ```
 
@@ -143,7 +143,7 @@ publications %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>% 
-  manual_page_break_after_row("what", "Annual Meeting of the Phycological Society of America") %>%
+  manual_page_break_after_row("what", "Integration of multi-omics coral data under thermal stress") %>%
   kable()
 ```
 
@@ -174,8 +174,8 @@ cv_entries %>%
   kable()
 ```
 
-```{r eval=FALSE}
 ## Service {.nohead .set-width}
+```{r}
 cv_entries %>% 
   filter(type == 'service') %>% 
   mutate(year_end = ifelse(year_end == "present", "", year_end)) %>% 

@@ -134,7 +134,6 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "generates evolutionary novelty in the photosynthetic amoeba") %>%
   knitr::kable()
 ```
 
@@ -143,7 +142,7 @@ publications %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "4th Institute for Food, Nutrition, and Health") %>%
+  manual_page_break_after_row("what", "New Phytologist Next Generation Scientists Conference 2023") %>%
   kable()
 ```
 
@@ -174,8 +173,8 @@ cv_entries %>%
   kable()
 ```
 
-```{r eval=FALSE}
 ## Service {.service .nohead .set-width}
+```{r}
 cv_entries %>% 
   filter(type == 'service') %>% 
   mutate(year_end = ifelse(year_end == "present", "", year_end)) %>% 

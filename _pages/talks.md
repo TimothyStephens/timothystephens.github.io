@@ -15,11 +15,15 @@ ul {
 
 ## 2023
 
+20\. **Stephens T. G.**, Etten J. V., Benites L. F., Mcdermott T., and Bhattacharya D. Cyanidiophyceae: The extremophilic red algae that underpin hot spring microbial communities in Yellowstone National Park. *UQ Marine Ecogenomics Symposium 2023*. 13-14 December 2023, University of Queensland, Australia. [**talk**]
+<br/><br/>
+19\. **Stephens T. G.**, Etten J. V., Benites L. F., Mcdermott T., and Bhattacharya D. Cyanidiophyceae: The extremophilic red algae that underpin hot spring microbial communities in Yellowstone National Park. *Department of Molecular Biology and Biochemistry Seminar*, Rutgers University. [**talk**]
+<br/><br/>
 18\. **Stephens T. G.**, Chille E., Wong K., Andrade N., Hulett R., Cleves P., Bhattacharya D., Traylor-Knowles N. Shining a light on "dark" proteins in corals. *NSF EDGE PI Meeting 2023*. 10-11th October 2023, Alexandria, Virginia, USA. [**poster**]
 <br/><br/>
 17\. **Stephens T. G.**, Chille E., Wong K., Andrade N., Hulett R., Cleves P., Bhattacharya D., Traylor-Knowles N. Shining a light on "dark" proteins in corals. *From Postdoc to Principal Investigator: An NSF Division of Integrative Organismal Systems (IOS) Virtual Colloquium 2023*. 13-14th September 2023, Virtual. [**talk**]
 <br/><br/>
-16\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using *Paulinella* as a model system. *International Society of Endocytobiology conference 2023*. 10-14th September 2023, Field Museum, Chicago, 2023. [**talk**]
+16\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using *Paulinella* as a model system. *International Society of Endocytobiology conference 2023*. 10-14th September 2023, Field Museum, Chicago. [**talk**]
 <br/><br/>
 15\. **Stephens T. G.**, Chille E., Strand E. L., Putnam H. M., and Bhattacharya D. Multi-omics investigation of coral resilience. *Invited talk at Carnegie Plant Biology Seminar, August 2023*. 25th August 2023, Carnegie Department of Plant Biology, Stanford University, USA. [**talk**]
 <br/><br/>

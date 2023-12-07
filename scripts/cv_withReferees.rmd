@@ -1,0 +1,203 @@
+---
+title: "Timothy Stephens <br> Curriculum vitae"
+output:
+  pagedown::html_paged:
+    css: ["cv.css", "https://use.fontawesome.com/releases/v5.7.2/css/all.css"]
+    number_sections: false
+links-to-footnotes: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(knitr)
+library(lubridate)
+source("utility-functions.R")
+
+#### publications #####
+publications <- read_csv("../publications.csv") %>%
+  mutate(date=paste(publication_date_year, publication_date_month, publication_date_day, sep='-')) %>%
+  mutate(year = publication_date_year) %>%
+  filter(include_in_full_cv == 'y') %>%
+  arrange(-publication_date_year, -publication_date_month, -publication_date_day)
+
+#### cv entries #####
+cv_entries <- read_csv("../cv_entries.csv") %>% 
+  filter(include_in_full_cv == 'y') %>%
+  mutate(date_start=paste(date_start_year, date_start_month, date_start_day, sep='-')) %>%
+  mutate(date_end=paste(date_end_year, date_end_month, date_end_day, sep='-')) %>%
+  mutate(year_begin = date_start_year) %>%
+  mutate(year_end = date_end_year) %>%
+  mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
+                      year_begin,
+                      str_c(year_begin, " --- ", year_end))) %>%
+  mutate(across(2:4, as.numeric)) %>%
+  arrange(-date_start_year, -date_start_month, -date_start_day)
+```
+
+<div class="grid-container"> 
+<!-- top row -->
+```{block type="grid-item", echo=TRUE}
+## Personal summary {.summary}
+I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas.
+```
+
+```{block type='grid-item', echo=TRUE}
+## Contact information {.box}
+<div class="info-box">
+
+| left | Left |
+|:-|:--------------------------------------------|
+| <i class="fas fa-map-marker-alt"></i>|Department of Biochemistry and Microbiology, Rutgers University, USA|
+| <i class="fa fa-envelope"></i> | ts942\@sebs.rutgers.edu |
+| <i class="fas fa-globe"></i> | [timothystephens.github.io](https://timothystephens.github.io) |
+| <i class="fab fa-github"></i> | [TimothyStephens](https://github.com/TimothyStephens) |
+| <i class="fab fa-twitter"></i> | [\@timstep1383](https://mobile.twitter.com/timstep1383) |
+
+</div>
+```
+
+</div>
+
+## Education {.nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'education') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  select(year, what) %>% 
+  kable()
+```
+
+## Research Experience {.nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'research_experience') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  select(year, what) %>% 
+  kable()
+```
+
+## Teaching experience {.nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'teaching') %>% 
+  mutate(what = ifelse(!is.na(additional_info), 
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
+  select(year, what) %>% 
+  manual_page_break_after_row("what", "Head Practical Tutor") %>%
+  kable()
+```
+
+## Professional development {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'prof-dev') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Awards and honours {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'awards') %>% 
+  mutate(what = str_c(what, ", ", where)) %>%  
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Publications {.nohead .set-width-year}
+```{r}
+publications %>%
+  mutate(ref2print = str_c(authors_full, " ", title, ". *", journal, "*")) %>%
+  mutate(ref2print = ifelse(!is.na(ref_info), 
+                            str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 
+                            str_c(ref2print, ", ", year(date), "."))
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(preprint), 
+                            str_c(ref2print, " [[Preprint](", preprint, ")]"), 
+                            ref2print)
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(url), 
+                            str_c(ref2print, " [[URL](", url, ")]"), 
+                            ref2print)
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(pdf), 
+                            str_c(ref2print, " [[PDF](", pdf, ")]"), 
+                            ref2print)
+         ) %>%
+  mutate(ref2print = ifelse(!is.na(additional_info), 
+                            str_c(ref2print, " ", additional_info), 
+                            ref2print)
+         ) %>%
+  select(year, ref2print) %>%
+  manual_page_break_after_row("ref2print", "High-quality genome assemblies from key Hawaiian coral species") %>%
+  manual_page_break_after_row("ref2print", "Evidence that inconsistent gene prediction can mislead analysis of") %>%
+  knitr::kable()
+```
+
+## Talks {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'talk') %>% 
+  select(year_begin, what) %>% 
+  manual_page_break_after_row("what", "Annual Meeting of the Phycological Society of America") %>%
+  kable()
+```
+
+## Poster presentations {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'poster') %>%
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Grants {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'minor_grants' | type == 'major_grants') %>% 
+  mutate(what = if_else(!is.na(additional_info),
+                        str_c(what, ", ", additional_info, ", ", where),
+                        str_c(what, ", ", where))) %>% 
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Media coverage {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'media') %>%
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Service {.nohead .set-width}
+```{r}
+cv_entries %>% 
+  filter(type == 'service') %>% 
+  mutate(year_end = ifelse(year_end == "present", "", year_end)) %>% 
+  mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>% 
+  mutate(what = str_c(what, ", ", where)) %>%
+  select(year, what) %>% 
+  kable()
+```
+
+## Reference letter writers {.nohead .set-width}
+Prof. Debashish Bhattacharya (dbhattac@rutgers.edu)
+
+Dr. Cheong Xin Chan (c.chan1@uq.edu.au)
+
+Dr. Arthur Grossman (arthurg@stanford.edu)
+
+```{r eval=FALSE}
+## Personal skills & volunteering {.nohead .set-width}
+cv_entries %>%
+  filter(type == 'volunteering') %>%
+  mutate(what = str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where)) %>%
+  mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%
+  select(year, what) %>%
+  kable()
+```
