@@ -40,7 +40,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal summary {.summary}
-I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas.
+I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CEO of OceanOmics, a company dedicated to developing salable tools for environmental health monitoring.
 ```
 
 ```{block type='grid-item', echo=TRUE}
@@ -60,19 +60,10 @@ I am a computational biologist working on understanding the forces that govern t
 
 </div>
 
-## Education {.nohead .set-width-range}
+## Education and Research Experience {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
   filter(type == 'education') %>% 
-  mutate(what = str_c(what, ", ", where)) %>% 
-  select(year, what) %>% 
-  kable()
-```
-
-## Research Experience {.nohead .set-width-range}
-```{r}
-cv_entries %>% 
-  filter(type == 'research_experience') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year, what) %>% 
   kable()
@@ -112,7 +103,7 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Why is primary endosymbiosis so rare") %>%
+  manual_page_break_after_row("ref2print", " Comparative genomics supports that Brazilian bioethanol") %>%
   #manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
 ```
@@ -124,7 +115,8 @@ cv_entries %>%
   mutate(what = if_else(!is.na(additional_info),
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
-  select(year_begin, what) %>% 
+  select(year_begin, what) %>%
+  manual_page_break_after_row("what", "Characterizing the coral microbiome biogeography across colonies and reefs") %>%
   kable()
 ```
 
@@ -153,7 +145,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "UQ Marine Ecogenomics Symposium 2023") %>%
+  manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
   kable()
 ```
 

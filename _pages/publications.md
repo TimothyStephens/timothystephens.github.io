@@ -155,7 +155,7 @@ Gabr A., Zournas A., **Stephens T. G.**, Dismukes G., and Bhattacharya D. *New P
 Williams A., Pathmanathan J. S., **Stephens T. G.**, Su X., Chiles E. N., Conetta D., Putnam H. M., and Bhattacharya D. *PeerJ*, 9:e12335, 2021.
 
 [[URL](https://doi.org/10.7717/peerj.12335)]  [[Preprint](https://doi.org/10.1101/2021.02.05.429981)]  
-Featured by PeerJ Expert Curations: Molecular Ecology: <a href="https://peerj.com/special-issues/140-molecular-ecology" target="_blank">PeerJ Expert Curations</a> <a href="https://peerj.com/blog/post/115284888922/molecular-ecology" target="_blank">PeerJ Blog</a>
+Featured by PeerJ Expert Curations: Molecular Ecology: <a href="https://peerj.com/special-issues/140-molecular-ecology" target="_blank">PeerJ Expert Curations</a>, <a href="https://peerj.com/blog/post/115284888922/molecular-ecology" target="_blank">PeerJ Blog</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.12335"></div>
 <br/><br/><br/><br/>

@@ -113,8 +113,8 @@ h2.box {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 44%;
-  grid-column-gap: 6%;
+  grid-template-columns: 60% 36%;
+  grid-column-gap: 4%;
 }
 
 /* remove header in select table */

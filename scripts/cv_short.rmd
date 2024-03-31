@@ -40,7 +40,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal summary {.summary}
-I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas.
+I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CEO of OceanOmics, a company dedicated to developing salable tools for environmental health monitoring.
 ```
 
 ```{block type='grid-item', echo=TRUE}
@@ -60,21 +60,12 @@ I am a computational biologist working on understanding the forces that govern t
 
 </div>
 
-## Education {.nohead .set-width-range}
+## Education and Research Experience {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
   filter(type == 'education') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
-  select(year, what) %>%
-  kable()
-```
-
-## Research Experience {.nohead .set-width-range}
-```{r}
-cv_entries %>% 
-  filter(type == 'research_experience') %>% 
-  mutate(what = str_c(what, ", ", where)) %>% 
   select(year, what) %>%
   kable()
 ```
@@ -113,7 +104,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Comparison of 15 dinoflagellate genomes") %>%
+  manual_page_break_after_row("ref2print", "Ploidy variation and its implications for reproduction and population dynamics in two sympatric Hawaiian coral species") %>%
+  #manual_page_break_after_row("ref2print", "Core genes in diverse dinoflagellate lineages include a wealth of conserved dark genes with unknown functions") %>%
   knitr::kable()
 ```
 
@@ -136,16 +128,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>%
-  manual_page_break_after_row("what", "Head Practical Tutor") %>%
-  kable()
-```
-
-## Professional development {.nohead .set-width-year}
-```{r}
-cv_entries %>% 
-  filter(type == 'prof-dev') %>% 
-  mutate(what = str_c(what, ", ", where)) %>% 
-  select(year_begin, what) %>%
+  #manual_page_break_after_row("what", "Head Practical Tutor") %>%
   kable()
 ```
 
@@ -154,6 +137,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
+  manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
   kable()
 ```
 
