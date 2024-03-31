@@ -215,9 +215,12 @@ render_site_code <- function(in.csv="cv_entries.csv", out.file="_pages/code.md",
   for (i in 1:count) {
     out.txt <- paste(out.txt, sep='', "# ", cv_entries[i,]$what, '\n')
     out.txt <- paste(out.txt, sep='', cv_entries[i,]$additional_info, '\n')
-    out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
-    out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', cv_entries[i,]$where, '" data-width="400" data-height="279" data-theme="medium"></div>\n')
-    out.txt <- paste(out.txt, sep='', '<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n')
+    print(cv_entries[i,]$where)
+    if(! is.na(cv_entries[i,]$where)){
+      out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
+      out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', cv_entries[i,]$where, '" data-width="400" data-height="279" data-theme="medium"></div>\n')
+      out.txt <- paste(out.txt, sep='', '<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n')
+    }
     out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
   }
   

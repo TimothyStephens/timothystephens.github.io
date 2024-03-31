@@ -23,7 +23,4 @@ a workflow for the prediction of protein-coding genes in dinoflagellate genomes.
 # A Fast, Flexible Tool for Sorting Phylogenetic Trees
 Screens and sorts phylogenetic trees in both traditional and extended Newick format. Allows for the fast and flexible screening (within a tree) of Exclusive clades that comprise only the target taxa and/or Non- Exclusive clades that includes a defined portion of non-target taxa.
 <br/><br/>
-<div class="github-card" data-github="NA" data-width="400" data-height="279" data-theme="medium"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-<br/><br/>
 
