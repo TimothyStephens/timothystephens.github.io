@@ -15,12 +15,12 @@ ul {
 
 ## 2024
 
-### 6\. Featured by PeerJ Expert Curations: Molecular Ecology: <a href="https://peerj.com/special-issues/140-molecular-ecology" target="_blank">PeerJ Expert Curations</a> <a href="https://peerj.com/blog/post/115284888922/molecular-ecology" target="_blank">PeerJ Blog</a>
+### 6\. Our paper <a href="https://peerj.com/articles/12335/" target="_blank">Multi-omic characterization of the thermal stress phenome in the stony coral *Montipora capitata*</a> was featured as part of PeerJ Expert Curations: Molecular Ecology: <a href="https://peerj.com/special-issues/140-molecular-ecology" target="_blank">PeerJ Expert Curations</a>, <a href="https://peerj.com/blog/post/115284888922/molecular-ecology" target="_blank">PeerJ Blog</a>
 
 <br/><br/>
 ## 2023
 
-### 5\. Won the <a href="https://www.systbio.org/publishers-award.html" target="_blank">Publisher's Award for Excellence in Systematic Research</a>
+### 5\. Our paper <a href="https://doi.org/10.1093/sysbio/syad037" target="_blank">A *k*-mer-Based Approach for Phylogenetic Classification of Taxa in Environmental Genomic Data</a> won the <a href="https://www.systbio.org/publishers-award.html" target="_blank">Publisher's Award for Excellence in Systematic Research</a>
 
 <br/><br/>
 ## 2022
