@@ -8,3 +8,5 @@ source("scripts/render_website.r")
 render_sites()
 
 cat(paste("Update pages on", Sys.time()))
+
+# git add --all && git commit -m "Update `date`" && git push
