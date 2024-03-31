@@ -23,12 +23,13 @@ Coral reef ecosystems are under increasing pressure due to anthropogenic climate
 
 ### Representative publication
 1. Ploidy variation and its implications for reproduction and population dynamics in two sympatric Hawaiian coral species. **Stephens T. G.**, Strand E. L., Putnam H. M., and Bhattacharya D. *Genome Biology and Evolution*, evad149, 2023.
-2. High-quality genome assembles from key Hawaiian coral species. **Stephens T. G.**, Lee J., Jeong Y., Yoon H. S., Putnam H. M., Majerova E., and Bhattacharya D. *Accepted for publication in GigaScience*, 2022.
-3. Development of a portable toolkit to diagnose coral thermal stress. Meng Z., Williams A., Liau P., **Stephens T. G.**, Drury C., Chiles E. N., Su X., Javanmard M., and Bhattacharya D. *Scientific Reports*, 12:14398, 2022.
-4. Multi-omic characterization of the thermal stress phenome in the stony coral *Montipora capitata*. Williams A., Pathmanathan J. S., **Stephens T. G.**, Su X., Chiles E. N., Conetta D., Putnam H. M., and Bhattacharya D. *PeerJ*, 9:e12335, 2021.
-5. Life on the edge: Hawaiian model for coral evolution Bhattacharya D., **Stephens T. G.**, Tinoco A., Richmond R., and Cleves P. A. *Limnology and Oceanography*, 67:1976-1985, 2022.
-6. Comparison of 15 dinoflagellate genomes reveals extensive sequence and structural divergence in family Symbiodiniaceae and genus *Symbiodinium*
-Gonzalez-Pech, R. A., **Stephens T. G.**, Chen Y., Mohamed A. R., Cheng Y., Shah S., Dougan K. E., Fortuin M. D. A., Lagorce R., Burt D. W., Bhattacharya D., Ragan M. A., and Chan C. X. *BMC Biology*, 19:73, 2021.
+2. Peeling back the layers of coral holobiont multi-omics data. \*Williams A., \***Stephens T. G.**, Shumaker A., and Bhattacharya D. iScience, 26(9):107623, 2023.
+3. Facultative lifestyle drives diversity of coral algal symbionts. Bhattacharya D., **Stephens T. G.**, Chille E. E., Benites L. F., Chan C. X. Trends in Ecology and Evolution, 39(3):239-247, 2023.
+4. High-quality genome assembles from key Hawaiian coral species. **Stephens T. G.**, Lee J., Jeong Y., Yoon H. S., Putnam H. M., Majerova E., and Bhattacharya D. *GigaScience*, 11:giac098, 2022.
+5. Development of a portable toolkit to diagnose coral thermal stress. Meng Z., Williams A., Liau P., **Stephens T. G.**, Drury C., Chiles E. N., Su X., Javanmard M., and Bhattacharya D. *Scientific Reports*, 12:14398, 2022.
+6. Multi-omic characterization of the thermal stress phenome in the stony coral *Montipora capitata*. Williams A., Pathmanathan J. S., **Stephens T. G.**, Su X., Chiles E. N., Conetta D., Putnam H. M., and Bhattacharya D. *PeerJ*, 9:e12335, 2021.
+7. Life on the edge: Hawaiian model for coral evolution. Bhattacharya D., **Stephens T. G.**, Tinoco A., Richmond R., and Cleves P. A. *Limnology and Oceanography*, 67:1976-1985, 2022.
+8. Comparison of 15 dinoflagellate genomes reveals extensive sequence and structural divergence in family Symbiodiniaceae and genus *Symbiodinium*. Gonzalez-Pech, R. A., **Stephens T. G.**, Chen Y., Mohamed A. R., Cheng Y., Shah S., Dougan K. E., Fortuin M. D. A., Lagorce R., Burt D. W., Bhattacharya D., Ragan M. A., and Chan C. X. *BMC Biology*, 19:73, 2021.
 
 
 
@@ -42,11 +43,15 @@ The evolution of photosynthesis in eukaryotes, which occurred when a photosynthe
 1. Retrotransposition facilitated the establishment of a primary plastid in the thecate amoeba *Paulinella*. \*Calatreva V., \***Stephens T. G.**, Gabr A., Grossman A. R., and Bhattacharya D. *PNAS*, 119:e2121241119, 2022.
 2. Loss of key endosymbiont genes may facilitate early host control of the chromatophore in *Paulinella*. \*Gabr A., \***Stephens T. G.**, and Bhattacharya D. *iScience*, 25:104974, 2022.
 3. Why is primary endosymbiosis so rare? **Stephens T. G.**,  Gabr A., Calatreva V., Grossman A. R., and Bhattacharya D. *New Phytologist*, 231:1693-1699, 2021.
-4. Endosymbiotic ratchet accelerates divergence after organelle origin. Bhattacharya D., Etten J. V., Benites L. F., and **Stephens T. G.** *Under review in BioEssays*, 2022.
+4. Endosymbiotic ratchet accelerates divergence after organelle origin. Bhattacharya D., Etten J. V., Benites L. F., and **Stephens T. G.** *BioEssays*, e2200165, 2022.
 
 
 
 Evolution of life in early earth-like hot spring environments
 ------
+![](images/YNP_Cyanidiophyceae_20240331.png)
 Bacteria and Archaea are usually recognized as the masters of extreme environments, with until recently, eukaryotes, particularly algae, being largely overlooked. Extremophilic red algae in Cyanidiophyceae occupy habitats such as hot springs and acid mine drainage sites that have low light, low pH, high temperature, and high salt and toxic heavy metal concentrations. These conditions, which are inhospitable for most organisms, in particular other photoautotrophs, are virtually the only locations where these organisms can be found. Analysis of genome data has demonstrated that genes transferred horizontally from prokaryotes have contributed to the adaption of Cyanidiophyceae to extreme environments. Nonetheless, much still needs to be learned about how native pathways and regulatory systems in these organisms have evolved in response to extreme conditions and how external biota, such as other extremophilic bacteria and archaea, contribute to their survival. To address this gap in our understanding of Cyanidiophyceae, we worked with collaborators at the Joint Genome Institute and Timothy McDermott from Montana State University to generate meta-genomic, meta-transcriptomic, and meta-metabolomic data from three distinct hot spring habitats at Lemonade Creek in Yellowstone National Park. The projects I have worked on from this research area include: (1) developing a workflow for the integration and analysis of temporal meta-multi-omics data; (2) characterizing the prokaryotic, eukaryotic, and viral (in collaboration with my colleague L. Felipe Benites) diversity and abundance across the sampled environments; and (3) exploring the biosynthetic functions and activity of each species in each environment over the diurnal cycle and how the synergy between the different species combined to form stable, persistent ecosystems.
 
+### Representative publication
+1. Viruses associated with extremophilic red algal mats reveal signatures of early thermal adaptation. Benites L. F., **Stephens T. G.**, Etten J. V., James T., Christian W. C., Barry K., Grigoriev I. V., McDermott T. R. & Bhattacharya D. Communications Biology, 2024.
+2. Algae obscura: The potential of rare species as model systems. Etten J. V., Benites F. L., **Stephens T. G.**, Yoon H. S., and Bhattacharya D. Journal of Phycology, 59(2):293-300, 2023.
