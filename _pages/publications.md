@@ -15,14 +15,33 @@ ul {
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+## 2024
+
+### 29\. Viruses associated with extremophilic red algal mats reveal signatures of early thermal adaptation
+Benites L. F., **Stephens T. G.**, Etten J. V., James T., Christian W. C., Barry K., Grigoriev I. V., McDermott T. R. & Bhattacharya D. *Communications Biology*, 2024.
+
+[[URL](https://doi.org/10.1038/s42003-024-05931-1)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s42003-024-05931-1"></div>
+<br/><br/><br/><br/>
 ## 2023
 
+### 28\. Facultative lifestyle drives diversity of coral algal symbionts
+Bhattacharya D., **Stephens T. G.**, Chille E. E., Benites L. F., Chan C. X. *Trends in Ecology and Evolution*, 39(3):239-247, 2023.
+
+[[URL](https://doi.org/10.1016/j.tree.2023.10.005)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.tree.2023.10.005"></div>
+<br/><br/><br/><br/>
 ### 27\. Peeling back the layers of coral holobiont multi-omics data
-\*Williams A., \***Stephens T. G.**, Shumaker A., and Bhattacharya D. *iScience*, 2023.
+\*Williams A., \***Stephens T. G.**, Shumaker A., and Bhattacharya D. *iScience*, 26(9):107623, 2023.
+
+[[URL](https://doi.org/10.1016/j.isci.2023.107623)]  
 
 
-
-
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.isci.2023.107623"></div>
 <br/><br/><br/><br/>
 ### 26\. Ploidy variation and its implications for reproduction and population dynamics in two sympatric Hawaiian coral species
 **Stephens T. G.**, Strand E. L., Putnam H. M., and Bhattacharya D. *Genome Biology and Evolution*, evad149, 2023.
@@ -36,7 +55,7 @@ ul {
 Etten J. V, **Stephens T. G.**, and Bhattacharya D. *Systems Biology*, syad037, 2023.
 
 [[URL](https://doi.org/10.1093/sysbio/syad037)]  
-
+Won the <a href="https://www.systbio.org/publishers-award.html" target="_blank">Publisher's Award for Excellence in Systematic Research</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/sysbio/syad037"></div>
 <br/><br/><br/><br/>
@@ -136,7 +155,7 @@ Gabr A., Zournas A., **Stephens T. G.**, Dismukes G., and Bhattacharya D. *New P
 Williams A., Pathmanathan J. S., **Stephens T. G.**, Su X., Chiles E. N., Conetta D., Putnam H. M., and Bhattacharya D. *PeerJ*, 9:e12335, 2021.
 
 [[URL](https://doi.org/10.7717/peerj.12335)]  [[Preprint](https://doi.org/10.1101/2021.02.05.429981)]  
-
+Featured by PeerJ Expert Curations: Molecular Ecology: <a href="https://peerj.com/special-issues/140-molecular-ecology" target="_blank">PeerJ Expert Curations</a> <a href="https://peerj.com/blog/post/115284888922/molecular-ecology" target="_blank">PeerJ Blog</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.7717/peerj.12335"></div>
 <br/><br/><br/><br/>

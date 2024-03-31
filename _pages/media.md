@@ -13,6 +13,16 @@ ul {
 }
 </style>
 
+## 2024
+
+### 6\. Featured by PeerJ Expert Curations: Molecular Ecology: <a href="https://peerj.com/special-issues/140-molecular-ecology" target="_blank">PeerJ Expert Curations</a> <a href="https://peerj.com/blog/post/115284888922/molecular-ecology" target="_blank">PeerJ Blog</a>
+
+<br/><br/>
+## 2023
+
+### 5\. Won the <a href="https://www.systbio.org/publishers-award.html" target="_blank">Publisher's Award for Excellence in Systematic Research</a>
+
+<br/><br/>
 ## 2022
 
 ### 4\. Our paper <a href="https://www.pnas.org/doi/10.1073/pnas.2121241119" target="_blank">Retrotransposition facilitated the establishment of a primary plastid in the thecate amoeba *Paulinella*</a> covered by <a href="https://research.rutgers.edu/news/dynamic-evolution-photosynthetic-organelle" target="_blank">Rutgers Research</a>

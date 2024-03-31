@@ -78,27 +78,6 @@ cv_entries %>%
   kable()
 ```
 
-## Teaching experience {.nohead .set-width-range}
-```{r}
-cv_entries %>% 
-  filter(type == 'teaching') %>% 
-  mutate(what = ifelse(!is.na(additional_info), 
-    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
-    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
-  select(year, what) %>% 
-  manual_page_break_after_row("what", "Head Practical Tutor") %>%
-  kable()
-```
-
-## Professional development {.nohead .set-width-year}
-```{r}
-cv_entries %>% 
-  filter(type == 'prof-dev') %>% 
-  mutate(what = str_c(what, ", ", where)) %>% 
-  select(year_begin, what) %>% 
-  kable()
-```
-
 ## Awards and honours {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
@@ -133,26 +112,9 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Algae obscura") %>%
-  manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
+  manual_page_break_after_row("ref2print", "Why is primary endosymbiosis so rare") %>%
+  #manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
-```
-
-## Talks {.nohead .set-width-year}
-```{r}
-cv_entries %>% 
-  filter(type == 'talk') %>% 
-  select(year_begin, what) %>% 
-  manual_page_break_after_row("what", "Integration of multi-omics coral data under thermal stress") %>%
-  kable()
-```
-
-## Poster presentations {.nohead .set-width-year}
-```{r}
-cv_entries %>% 
-  filter(type == 'poster') %>%
-  select(year_begin, what) %>% 
-  kable()
 ```
 
 ## Grants {.nohead .set-width-year}
@@ -162,6 +124,43 @@ cv_entries %>%
   mutate(what = if_else(!is.na(additional_info),
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Teaching experience {.nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'teaching') %>% 
+  mutate(what = ifelse(!is.na(additional_info), 
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
+  select(year, what) %>% 
+  kable()
+```
+
+## Professional development {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'prof-dev') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  select(year_begin, what) %>% 
+  kable()
+```
+
+## Talks {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'talk') %>% 
+  select(year_begin, what) %>%
+  manual_page_break_after_row("what", "UQ Marine Ecogenomics Symposium 2023") %>%
+  kable()
+```
+
+## Poster presentations {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'poster') %>%
   select(year_begin, what) %>% 
   kable()
 ```
@@ -183,6 +182,24 @@ cv_entries %>%
   mutate(what = str_c(what, ", ", where)) %>%
   select(year, what) %>% 
   kable()
+```
+
+## Patents {.nohead .set-width}
+```{r}
+cv_entries %>%
+  filter(type == 'patent') %>%
+  mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%  
+  select(year, what) %>% 
+  kable()
+```
+
+```{r eval=FALSE}
+## Reference letter writers {.nohead .set-width}
+Prof. Debashish Bhattacharya (dbhattac@rutgers.edu)
+
+Dr. Cheong Xin Chan (c.chan1@uq.edu.au)
+
+Dr. Arthur Grossman (arthurg@stanford.edu)
 ```
 
 ```{r eval=FALSE}

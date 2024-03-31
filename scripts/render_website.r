@@ -318,3 +318,16 @@ render_site_publications <- function(in.csv="publications.csv", out.file="_pages
 }
 
 
+
+
+
+##########################
+#### Render All Sites ####
+##########################
+render_sites <- function() {
+  render_site_talks()
+  render_site_teaching()
+  render_site_media()
+  render_site_code()
+  render_site_publications()
+}

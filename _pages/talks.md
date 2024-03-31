@@ -13,6 +13,10 @@ ul {
 }
 </style>
 
+## 2024
+
+21\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using *Paulinella* as a model system. *RUMP Annual Retreat 2024*. 16th March 2024, Rutgers University, New Jersey, USA. [**poster**]
+<br/><br/>
 ## 2023
 
 20\. **Stephens T. G.**, Etten J. V., Benites L. F., Mcdermott T., and Bhattacharya D. Cyanidiophyceae: The extremophilic red algae that underpin hot spring microbial communities in Yellowstone National Park. *UQ Marine Ecogenomics Symposium 2023*. 13-14 December 2023, University of Queensland, Australia. [**talk**]
