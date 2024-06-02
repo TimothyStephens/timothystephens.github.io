@@ -116,7 +116,7 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "Characterizing the coral microbiome biogeography across colonies and reefs") %>%
+  manual_page_break_after_row("what", "Core Facility Utilization Application 2022") %>%
   kable()
 ```
 
@@ -145,7 +145,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
+  manual_page_break_after_row("what", "13-14 December 2023, University of Queensland, Australia.") %>%
   kable()
 ```
 

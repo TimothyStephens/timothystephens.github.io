@@ -15,6 +15,8 @@ ul {
 
 ## 2024
 
+22\. **Stephens T. G.**,  Etten J. V., McDermott T. R., and Bhattacharya D. Cyanidiophyceae: The Extremophilic Red Algae That Underpin Hot Spring Microbial Communities In Yellowstone National Park. *Eastern Regional Photosynthesis Conference 2024*. 12-14th April 2024, Marine Biological Laboratory, Massachusetts, USA. [**poster**]
+<br/><br/>
 21\. **Stephens T. G.**,  Calatrava V., Gabr A., Grossman A., and Bhattacharya D. Exploring the origin and evolution of primary plastids using *Paulinella* as a model system. *RUMP Annual Retreat 2024*. 16th March 2024, Rutgers University, New Jersey, USA. [**poster**]
 <br/><br/>
 ## 2023

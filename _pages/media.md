@@ -15,7 +15,7 @@ ul {
 
 ## 2024
 
-### 6\. Our paper <a href="https://peerj.com/articles/12335/" target="_blank">Multi-omic characterization of the thermal stress phenome in the stony coral *Montipora capitata*</a> was featured as part of PeerJ Expert Curations: Molecular Ecology: <a href="https://peerj.com/special-issues/140-molecular-ecology" target="_blank">PeerJ Expert Curations</a>, <a href="https://peerj.com/blog/post/115284888922/molecular-ecology" target="_blank">PeerJ Blog</a>
+### 6\. Our paper <a href="https://doi.org/10.1038/s42003-024-05931-1" target="_blank">Viruses associated with extremophilic red algal mats reveal signatures of early thermal adaptation</a> was featured by <a href="https://www.science.org/content/article/giant-viruses-played-key-role-early-life-study-yellowstone-hot-spring-suggests?utm_source=sfmc&utm_medium=email&utm_campaign=ScienceAdviser&utm_content=distillation&et_rid=960447322&et_cid=5171391" target="_blank">Science</a>
 
 <br/><br/>
 ## 2023

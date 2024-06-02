@@ -104,8 +104,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Ploidy variation and its implications for reproduction and population dynamics in two sympatric Hawaiian coral species") %>%
-  #manual_page_break_after_row("ref2print", "Core genes in diverse dinoflagellate lineages include a wealth of conserved dark genes with unknown functions") %>%
+  manual_page_break_after_row("ref2print", "Peeling back the layers of coral holobiont multi-omics data") %>%
+  manual_page_break_after_row("ref2print", "Core genes in diverse dinoflagellate lineages include a wealth of conserved dark genes with unknown functions") %>%
   knitr::kable()
 ```
 
