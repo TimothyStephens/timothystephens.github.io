@@ -29,7 +29,7 @@ Etten J. V., **Stephens T. G.**, Chille E., Lipzen A., Peterson D., Barry K., Gr
 Benites L. F., **Stephens T. G.**, Etten J. V., James T., Christian W. C., Barry K., Grigoriev I. V., McDermott T. R. & Bhattacharya D. *Communications Biology*, 2024.
 
 [[URL](https://doi.org/10.1038/s42003-024-05931-1)]  
-Featured by Science: <a href="https://www.science.org/content/article/giant-viruses-played-key-role-early-life-study-yellowstone-hot-spring-suggests?utm_source=sfmc&utm_medium=email&utm_campaign=ScienceAdviser&utm_content=distillation&et_rid=960447322&et_cid=5171391" target="_blank">Srticle</a>
+Featured by <a href="https://www.science.org/content/article/giant-viruses-played-key-role-early-life-study-yellowstone-hot-spring-suggests?utm_source=sfmc&utm_medium=email&utm_campaign=ScienceAdviser&utm_content=distillation&et_rid=960447322&et_cid=5171391" target="_blank">Science</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1038/s42003-024-05931-1"></div>
 <br/><br/><br/><br/>
