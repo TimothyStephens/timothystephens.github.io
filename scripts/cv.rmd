@@ -116,7 +116,7 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "Core Facility Utilization Application 2022") %>%
+  #manual_page_break_after_row("what", "Core Facility Utilization Application 2022") %>%
   kable()
 ```
 
@@ -137,6 +137,7 @@ cv_entries %>%
   filter(type == 'prof-dev') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year_begin, what) %>% 
+  manual_page_break_after_row("what", "UQ Idea Hub") %>%
   kable()
 ```
 
@@ -145,7 +146,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "13-14 December 2023, University of Queensland, Australia.") %>%
+  manual_page_break_after_row("what", "14th December 2018, Sao Paulo, Brazil") %>%
   kable()
 ```
 
@@ -173,6 +174,7 @@ cv_entries %>%
   mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>% 
   mutate(what = str_c(what, ", ", where)) %>%
   select(year, what) %>% 
+  manual_page_break_after_row("what", "Associate Editor: Symbiotic and Parasitic Protists section") %>%
   kable()
 ```
 

@@ -128,7 +128,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>%
-  #manual_page_break_after_row("what", "Head Practical Tutor") %>%
+  manual_page_break_after_row("what", "Head Practical Tutor") %>%
   kable()
 ```
 
@@ -137,7 +137,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
+  #manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
   kable()
 ```
 
