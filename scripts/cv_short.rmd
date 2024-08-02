@@ -104,8 +104,7 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Peeling back the layers of coral holobiont multi-omics data") %>%
-  manual_page_break_after_row("ref2print", "Core genes in diverse dinoflagellate lineages include a wealth of conserved dark genes with unknown functions") %>%
+  manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
 ```
 
@@ -128,7 +127,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>%
-  manual_page_break_after_row("what", "Head Practical Tutor") %>%
+  manual_page_break_after_row("what", "Co-lecturer") %>%
   kable()
 ```
 

@@ -103,7 +103,7 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", " Comparative genomics supports that Brazilian bioethanol") %>%
+  #manual_page_break_after_row("ref2print", "Inferring phylogenomic relationship of microbes using scalable alignment-free methods") %>%
   #manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
 ```
@@ -116,7 +116,7 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>%
-  #manual_page_break_after_row("what", "Core Facility Utilization Application 2022") %>%
+  #manual_page_break_after_row("what", "Funds to continue development of our coral health monitoring toolkit.") %>%
   kable()
 ```
 
@@ -128,6 +128,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>% 
+  manual_page_break_after_row("what", "Duties included guiding undergraduate chemistry students through") %>%
   kable()
 ```
 
@@ -137,7 +138,7 @@ cv_entries %>%
   filter(type == 'prof-dev') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year_begin, what) %>% 
-  manual_page_break_after_row("what", "UQ Idea Hub") %>%
+  #manual_page_break_after_row("what", "UQ Idea Hub") %>%
   kable()
 ```
 
@@ -146,7 +147,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "14th December 2018, Sao Paulo, Brazil") %>%
+  manual_page_break_after_row("what", "22-26th March 2021") %>%
   kable()
 ```
 
@@ -163,6 +164,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'media') %>%
   select(year_begin, what) %>% 
+  #manual_page_break_after_row("what", "Amoeba Genome Reveals Dominant Host Contribution to Plastid Endosymbiosis") %>%
   kable()
 ```
 
@@ -174,7 +176,7 @@ cv_entries %>%
   mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>% 
   mutate(what = str_c(what, ", ", where)) %>%
   select(year, what) %>% 
-  manual_page_break_after_row("what", "Associate Editor: Symbiotic and Parasitic Protists section") %>%
+  #manual_page_break_after_row("what", "Associate Editor: Symbiotic and Parasitic Protists section") %>%
   kable()
 ```
 

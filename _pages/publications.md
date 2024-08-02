@@ -17,6 +17,30 @@ ul {
 
 ## 2024
 
+### 33\. What has *Paulinella* taught us about endosymbiont metabolic integration?
+Calatrava V.\*, **Stephens T. G.**\*, Grossman A. R., and Bhattacharya D. *Schwartzbach, S.D., Kroth, P.G., Obornik, M. (eds) Endosymbiotic Organelle Acquisition. Springer, Cham.*, 2024.
+
+[[URL](https://doi.org/10.1007/978-3-031-57446-7_12)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1007/978-3-031-57446-7_12"></div>
+<br/><br/><br/><br/>
+### 32\. Gene expression response under thermal stress in two Hawaiian corals is dominated by ploidy and genotype
+Chille E. E., **Stephens T. G.**, Misri D., Strand E. L, Putnam H. M., and Bhattacharya D. *Ecology and Evolution*, 14:e70037, 2024.
+
+[[URL](https://doi.org/10.1002/ece3.70037)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ece3.70037"></div>
+<br/><br/><br/><br/>
+### 31\. Evidence of a putative CO2 delivery system to the chromatophore in the photosynthetic amoeba *Paulinella*
+Gabr A., **Stephens T. G.**, Reinfelder J. R., Liau P., Calatrava V., Grossman A. R., and Bhattacharya D. *Environmental Microbiology Reports*, e13304, 2024.
+
+[[URL](https://doi.org/10.1111/1758-2229.13304)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/1758-2229.13304"></div>
+<br/><br/><br/><br/>
 ### 30\. Diverse fates of ancient horizontal gene transfers in extremophilic red algae
 Etten J. V., **Stephens T. G.**, Chille E., Lipzen A., Peterson D., Barry K., Grigoriev I. V., and Bhattacharya D. *Environmental Microbiology*, 26(5):e16629, 2024.
 
