@@ -17,6 +17,14 @@ ul {
 
 ## 2024
 
+### 34\. Fpa (YlaN) is an iron(II) binding protein that functions to relieve Fur-mediated repression of gene expression in *Staphylococcus aureus*
+Boyd J. M, Kaler K. R., Esquilin-Lebron K., Pall A., Campbell C. J., Foley M. E., Rios-Delgado G., Mustor E. M., **Stephens T. G.**, Bovermann H., Greco T. M., Cristea I. M., Carabetta V. J., Beavers W. N., Bhattacharya D., Skaar E. P., Shaw L. N., Stemmler T. L. *mBio*, 2024.
+
+[[URL](https://doi.org/10.1128/mbio.02310-24)]  [[Preprint](https://doi.org/10.1101/2023.10.03.560778)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1128/mbio.02310-24"></div>
+<br/><br/><br/><br/>
 ### 33\. What has *Paulinella* taught us about endosymbiont metabolic integration?
 Calatrava V.\*, **Stephens T. G.**\*, Grossman A. R., and Bhattacharya D. *Schwartzbach, S.D., Kroth, P.G., Obornik, M. (eds) Endosymbiotic Organelle Acquisition. Springer, Cham.*, 2024.
 

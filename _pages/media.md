@@ -15,6 +15,9 @@ ul {
 
 ## 2024
 
+### 7\. Our Sargassum Biofuel project was featured by <a href="https://soe.rutgers.edu/news/transforming-troublesome-seaweed-feedstock-future" target="_blank">Rutgers News</a>
+
+<br/><br/>
 ### 6\. Our paper <a href="https://doi.org/10.1038/s42003-024-05931-1" target="_blank">Viruses associated with extremophilic red algal mats reveal signatures of early thermal adaptation</a> was featured by <a href="https://www.science.org/content/article/giant-viruses-played-key-role-early-life-study-yellowstone-hot-spring-suggests?utm_source=sfmc&utm_medium=email&utm_campaign=ScienceAdviser&utm_content=distillation&et_rid=960447322&et_cid=5171391" target="_blank">Science</a>
 
 <br/><br/>

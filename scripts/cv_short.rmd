@@ -40,7 +40,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal summary {.summary}
-I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CEO of OceanOmics, a company dedicated to developing salable tools for environmental health monitoring.
+I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CTO of OceanOmics, a company dedicated to developing salable tools for environmental health monitoring.
 ```
 
 ```{block type='grid-item', echo=TRUE}
@@ -104,7 +104,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
+  manual_page_break_after_row("ref2print", "taught us about endosymbiont metabolic integration") %>%
+  manual_page_break_after_row("ref2print", "Multi-omic characterization of the thermal stress phenome in the stony coral") %>%
   knitr::kable()
 ```
 
@@ -127,7 +128,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>%
-  manual_page_break_after_row("what", "Co-lecturer") %>%
+  #manual_page_break_after_row("what", "Co-lecturer") %>%
   kable()
 ```
 
@@ -136,7 +137,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  #manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
+  manual_page_break_after_row("what", "22-26th March 2021") %>%
   kable()
 ```
 
@@ -163,7 +164,7 @@ cv_entries %>%
 ```{r}
 cv_entries %>%
   filter(type == 'patent') %>%
-  mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%  
+  #mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%  
   select(year, what) %>% 
   kable()
 ```

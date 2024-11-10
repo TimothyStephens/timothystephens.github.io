@@ -15,6 +15,8 @@ ul {
 
 ## 2024
 
+24\. **Stephens T. G.**, Etten J. V., Benites L. F., Mcdermott T., and Bhattacharya D. Community-wide interactions sustain life in geothermal spring habitats. *Rutgers University Microbiome Program Work in Progress Seminar*. Rutgers, USA. [**talk**]
+<br/><br/>
 23\. **Stephens T. G.**, Kulczyk A. W., and Bhattacharya D. Cosmopolitan gene families with known functions are hotspots for the evolution of novel genes in stony corals. *3rd Joint Congress on Evolutionary Biology*. 26-30 July 2024, Montreal, Canada. [**talk**]
 <br/><br/>
 22\. **Stephens T. G.**,  Etten J. V., McDermott T. R., and Bhattacharya D. Cyanidiophyceae: The Extremophilic Red Algae That Underpin Hot Spring Microbial Communities In Yellowstone National Park. *Eastern Regional Photosynthesis Conference 2024*. 12-14th April 2024, Marine Biological Laboratory, Massachusetts, USA. [**poster**]
