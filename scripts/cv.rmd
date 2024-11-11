@@ -63,7 +63,7 @@ I am a computational biologist working on understanding the forces that govern t
 ## Education and Research Experience {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
-  filter(type == 'education') %>% 
+  filter(type == 'education' | what == 'Research Associate') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   select(year, what) %>% 
   kable()
@@ -75,6 +75,7 @@ cv_entries %>%
   filter(type == 'awards') %>% 
   mutate(what = str_c(what, ", ", where)) %>%  
   select(year_begin, what) %>% 
+  manual_page_break_after_row("what", "Merit Scholarship for academic achievement") %>%
   kable()
 ```
 
@@ -103,9 +104,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "binding protein that functions to relieve Fur-mediated repression of gene expression in") %>%
-  manual_page_break_after_row("ref2print", "splicing generates evolutionary novelty in the photosynthetic amoeba") %>%
-  manual_page_break_after_row("ref2print", "PhySortR") %>%
+  manual_page_break_after_row("ref2print", "Life on the edge: Hawaiian model for coral evolution") %>%
+  manual_page_break_after_row("ref2print", "genomes reveal adaptive evolution of functions related to coral-dinoflagellate symbiosis") %>%
   knitr::kable()
 ```
 
@@ -129,7 +129,7 @@ cv_entries %>%
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
     str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
   select(year, what) %>% 
-  manual_page_break_after_row("what", "Duties included assisting students with the completion of set questions and marking of assignments") %>%
+  manual_page_break_after_row("what", "Design and conducted lectures on de novo next-generation genome and") %>%
   kable()
 ```
 
@@ -148,7 +148,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "10th January 2023") %>%
+  manual_page_break_after_row("what", "Carnegie Department of Plant Biology,") %>%
   kable()
 ```
 
@@ -157,7 +157,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'poster') %>%
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "13th Jul 2016") %>%
+  manual_page_break_after_row("what", "21-24th August 2023") %>%
   kable()
 ```
 

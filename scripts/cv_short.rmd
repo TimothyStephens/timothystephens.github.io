@@ -63,7 +63,7 @@ I am a computational biologist working on understanding the forces that govern t
 ## Education and Research Experience {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
-  filter(type == 'education') %>% 
+  filter(type == 'education' | what == 'Research Associate') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
   mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
   select(year, what) %>%
