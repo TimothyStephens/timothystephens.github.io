@@ -15,8 +15,25 @@ ul {
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+## 2025
+
+### 36\. Genetic transfer in action: uncovering DNA flow in an extremophilic microbial community
+Van Etten J., **Stephens T. G.**, and Bhattacharya D. *Environmental Microbiology (Accepted)*, 2025.
+
+
+
+
+<br/><br/><br/><br/>
 ## 2024
 
+### 35\. Temporal dynamics in a red alga dominated geothermal feature in Yellowstone National Park
+**Stephens T. G.**, Van Etten J., McDermott T., Christian W., Chaverra M., Gurney J., Lee Y., Kim H., Hyun Cho C., Chovancek E., Westhoff P., Otte A., Northen T. R., Bowen B. P., Louie K. B., Barry K., Grigoriev I. V., Mock T., Liu S., Miyagishima S., Yoshinaga M, Weber A. P.M., Yoon H. S., and Bhattacharya D. *ISME Communications*, 4:1, 2024.
+
+[[URL](https://doi.org/10.1093/ismeco/ycae151)]  [[Preprint](https://doi.org/10.1101/2024.09.03.611078)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/ismeco/ycae151"></div>
+<br/><br/><br/><br/>
 ### 34\. Fpa (YlaN) is an iron(II) binding protein that functions to relieve Fur-mediated repression of gene expression in *Staphylococcus aureus*
 Boyd J. M, Kaler K. R., Esquilin-Lebron K., Pall A., Campbell C. J., Foley M. E., Rios-Delgado G., Mustor E. M., **Stephens T. G.**, Bovermann H., Greco T. M., Cristea I. M., Carabetta V. J., Beavers W. N., Bhattacharya D., Skaar E. P., Shaw L. N., Stemmler T. L. *mBio*, 2024.
 
