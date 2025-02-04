@@ -20,14 +20,15 @@ ul {
 ### 36\. Genetic transfer in action: uncovering DNA flow in an extremophilic microbial community
 Van Etten J., **Stephens T. G.**, and Bhattacharya D. *Environmental Microbiology (Accepted)*, 2025.
 
+[[URL](https://doi.org/10.1111/1462-2920.70048)]  
 
 
-
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/1462-2920.70048"></div>
 <br/><br/><br/><br/>
 ## 2024
 
 ### 35\. Temporal dynamics in a red alga dominated geothermal feature in Yellowstone National Park
-**Stephens T. G.**, Van Etten J., McDermott T., Christian W., Chaverra M., Gurney J., Lee Y., Kim H., Hyun Cho C., Chovancek E., Westhoff P., Otte A., Northen T. R., Bowen B. P., Louie K. B., Barry K., Grigoriev I. V., Mock T., Liu S., Miyagishima S., Yoshinaga M, Weber A. P.M., Yoon H. S., and Bhattacharya D. *ISME Communications*, 4:1, 2024.
+**Stephens T. G.**, Van Etten J., McDermott T., Christian W., Chaverra M., Gurney J., Lee Y., Kim H., Hyun Cho C., Chovancek E., Westhoff P., Otte A., Northen T. R., Bowen B. P., Louie K. B., Barry K., Grigoriev I. V., Mock T., Liu S., Miyagishima S., Yoshinaga M, Weber A. P.M., Yoon H. S., and Bhattacharya D. *ISME Communications*, 4:01, 2024.
 
 [[URL](https://doi.org/10.1093/ismeco/ycae151)]  [[Preprint](https://doi.org/10.1101/2024.09.03.611078)]  
 

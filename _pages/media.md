@@ -15,6 +15,9 @@ ul {
 
 ## 2024
 
+### 8\. News release by the New Jersey CSIT announcing the recipients of the <a href="https://www.njeda.gov/csit-awards-3m-to-41-new-jersey-based-start-ups-through-round-3-catalyst-and-clean-tech-seed-grant-programs/" target="_blank">Clean Tech Seed Grant</a>, which includes our company, OceanOmics.
+
+<br/><br/>
 ### 7\. Our Sargassum Biofuel project was featured by <a href="https://soe.rutgers.edu/news/transforming-troublesome-seaweed-feedstock-future" target="_blank">Rutgers News</a>
 
 <br/><br/>
