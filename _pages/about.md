@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral researcher in the lab of Professor Debashish Bhattacharya at Rutgers University. I specialize in the application and development of multi-omics data analysis workflows to explore foundational biological questions, such as how photosynthesis evolved in eukaryotes, how life evolves in early earth-like hot spring environments, and most importantly, how we can use and explore the natural adaptability of corals to aid their survival and restoration in a world affected by climate change. I am also CEO of OceanOmics, a company dedicated to developing salable tools for environmental health monitoring.
+I am a postdoctoral researcher in the lab of Professor Debashish Bhattacharya at Rutgers University. I specialize in the application and development of multi-omics data analysis workflows to explore foundational biological questions, such as how photosynthesis evolved in eukaryotes, how life evolves in early earth-like hot spring environments, and most importantly, how we can use and explore the natural adaptability of corals to aid their survival and restoration in a world affected by climate change. I am also CEO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
 
 <a href="cv/Timothy_Stephens_CV.pdf " target="_blank">Current CV</a>
 

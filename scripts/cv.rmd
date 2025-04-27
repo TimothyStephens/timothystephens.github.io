@@ -40,7 +40,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal summary {.summary}
-I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CTO of OceanOmics, a company dedicated to developing salable tools for environmental health monitoring.
+I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CTO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
 ```
 
 ```{block type='grid-item', echo=TRUE}
@@ -104,8 +104,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Endosymbiotic ratchet accelerates divergence after organelle origin") %>%
-  manual_page_break_after_row("ref2print", "Commonly misunderstood parameters of NCBI BLAST and important considerations for users") %>%
+  manual_page_break_after_row("ref2print", "High-quality genome assemblies from key Hawaiian coral species") %>%
+  manual_page_break_after_row("ref2print", "Evidence that inconsistent gene prediction can mislead analysis of dinoflagellate genomes") %>%
   knitr::kable()
 ```
 

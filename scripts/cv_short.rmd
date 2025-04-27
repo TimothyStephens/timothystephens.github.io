@@ -40,7 +40,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal summary {.summary}
-I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CTO of OceanOmics, a company dedicated to developing salable tools for environmental health monitoring.
+I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CTO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
 ```
 
 ```{block type='grid-item', echo=TRUE}

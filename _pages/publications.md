@@ -17,8 +17,16 @@ ul {
 
 ## 2025
 
+### 37\. Coral Restoration in the Omics Era: Development of Point-of-Care Tools for Monitoring Disease, Reproduction, and Thermal Stress
+Chille E. E., **Stephens T. G.**, Nandi S., Jiang H., Gerdes M., Williamson O. M., Neufeld A., Montoya-Maya P., Bhattacharya D. *BioEssays*, e70007, 2025.
+
+[[URL](https://doi.org/10.1002/bies.70007)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/bies.70007"></div>
+<br/><br/><br/><br/>
 ### 36\. Genetic transfer in action: uncovering DNA flow in an extremophilic microbial community
-Van Etten J., **Stephens T. G.**, and Bhattacharya D. *Environmental Microbiology (Accepted)*, 2025.
+Van Etten J., **Stephens T. G.**, and Bhattacharya D. *Environmental Microbiology*, 27(2):e70048, 2025.
 
 [[URL](https://doi.org/10.1111/1462-2920.70048)]  
 
@@ -121,7 +129,7 @@ Won the <a href="https://www.systbio.org/publishers-award.html" target="_blank">
 Etten J. V., Benites F. L., **Stephens T. G.**, Yoon H. S., and Bhattacharya D. *Journal of Phycology*, 59(2):293-300, 2023.
 
 [[URL](https://doi.org/10.1111/jpy.13321)]  
-
+Ranked within the top 10% of most-viewed papers published by the journal in 2023.
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jpy.13321"></div>
 <br/><br/><br/><br/>
