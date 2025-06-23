@@ -104,8 +104,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "High-quality genome assemblies from key Hawaiian coral species") %>%
-  manual_page_break_after_row("ref2print", "Evidence that inconsistent gene prediction can mislead analysis of dinoflagellate genomes") %>%
+  manual_page_break_after_row("ref2print", "Algae obscura") %>%
+  manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
 ```
 

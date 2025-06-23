@@ -17,6 +17,14 @@ ul {
 
 ## 2025
 
+### 38\. Gene transfer drives community cooperation in geothermal habitats
+Bhattacharya D., Etten J. V., Panayotakis G., McDermott T., **Stephens T. G.** *Trend in Microbiology*, 2025.
+
+[[URL](https://doi.org/10.1016/j.tim.2025.06.004)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.tim.2025.06.004"></div>
+<br/><br/><br/><br/>
 ### 37\. Coral Restoration in the Omics Era: Development of Point-of-Care Tools for Monitoring Disease, Reproduction, and Thermal Stress
 Chille E. E., **Stephens T. G.**, Nandi S., Jiang H., Gerdes M., Williamson O. M., Neufeld A., Montoya-Maya P., Bhattacharya D. *BioEssays*, e70007, 2025.
 
