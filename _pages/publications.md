@@ -17,6 +17,22 @@ ul {
 
 ## 2025
 
+### 40\. Shifts in the microbiome and virome are associated with stony coral tissue loss disease (SCTLD)
+Nandi S., **Stephens T. G.**, Walsh K., Garcia R., Villalpando M. F., Sellares-Blasco R. I., Zubillaga A. L., Croquer A., Bhattacharya D. *ISME Communications*, ycaf226, 2025.
+
+[[URL](https://doi.org/10.1093/ismeco/ycaf226)]  [[Preprint](https://doi.org/10.1101/2025.06.19.660612)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/ismeco/ycaf226"></div>
+<br/><br/><br/><br/>
+### 39\. Green fluorescent proteins show divergent patterns among species and strains of *Porites* from the Great Barrier Reef
+Goyen S., Chille E. E., **Stephens T. G.**, Nandi S., Bay L. K., Bhattacharya D. *Coral Reef*, 2025.
+
+[[URL](https://doi.org/10.1007/s00338-025-02781-z)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1007/s00338-025-02781-z"></div>
+<br/><br/><br/><br/>
 ### 38\. Gene transfer drives community cooperation in geothermal habitats
 Bhattacharya D., Etten J. V., Panayotakis G., McDermott T., **Stephens T. G.** *Trend in Microbiology*, 2025.
 

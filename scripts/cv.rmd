@@ -40,7 +40,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal summary {.summary}
-I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CTO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
+I am a computational biologist working on understanding and characterizing functionally uncharacterized "dark genes", which are found in all non-model genomes, but often ignored despite their immense biological importance. I am also CTO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
 ```
 
 ```{block type='grid-item', echo=TRUE}
@@ -104,8 +104,8 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "Algae obscura") %>%
-  manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
+  manual_page_break_after_row("ref2print", "implications for reproduction and population dynamics in two sympatric Hawaiian coral") %>%
+  #manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
 ```
 
@@ -117,7 +117,7 @@ cv_entries %>%
                         str_c(what, ", ", additional_info),
                         str_c(what))) %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "Integrated genomic approaches to understand stress tolerance in bioethanol-producing yeasts and coral reef symbionts") %>%
+  #manual_page_break_after_row("what", "Integrated genomic approaches to understand stress tolerance in bioethanol-producing yeasts and coral reef symbionts") %>%
   kable()
 ```
 
@@ -148,8 +148,8 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
-  manual_page_break_after_row("what", "EMBL Australia Postgraduate Symposium") %>%
+  #manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
+  #manual_page_break_after_row("what", "EMBL Australia Postgraduate Symposium") %>%
   kable()
 ```
 

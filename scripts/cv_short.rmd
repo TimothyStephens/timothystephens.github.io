@@ -40,7 +40,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <!-- top row -->
 ```{block type="grid-item", echo=TRUE}
 ## Personal summary {.summary}
-I am a computational biologist working on understanding the forces that govern the interactions between organisms in ecologically critical environments, such as coral reefs, and the forces that drive major evolutionary transitions, such as the one that gave rise to the first photosynthetic Eukaryotas. I am also CTO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
+I am a computational biologist working on understanding and characterizing functionally uncharacterized "dark genes", which are found in all non-model genomes, but often ignored despite their immense biological importance. I am also CTO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
 ```
 
 ```{block type='grid-item', echo=TRUE}
@@ -70,7 +70,7 @@ cv_entries %>%
   kable()
 ```
 
-## Awards and honours {.nohead .set-width-year}
+## Selected Awards and honours {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'awards') %>%
@@ -104,12 +104,12 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "taught us about endosymbiont metabolic integration") %>%
-  manual_page_break_after_row("ref2print", "Multi-omic characterization of the thermal stress phenome in the stony coral") %>%
+  #manual_page_break_after_row("ref2print", "Ploidy variation and its") %>%
+  #manual_page_break_after_row("ref2print", "Multi-omic characterization of the thermal stress phenome in the stony coral") %>%
   knitr::kable()
 ```
 
-## Grants {.nohead .set-width-year}
+## Selected Grants {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'minor_grants' | type == 'major_grants') %>% 
@@ -117,10 +117,11 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>%
+  manual_page_break_after_row("what", "Rutgers TechAdvance Fund") %>%
   kable()
 ```
 
-## Teaching experience {.nohead .set-width-range}
+## Selected Teaching experience {.nohead .set-width-range}
 ```{r}
 cv_entries %>% 
   filter(type == 'teaching') %>% 
@@ -137,11 +138,11 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "22-26th March 2021") %>%
+  #manual_page_break_after_row("what", "22-26th March 2021") %>%
   kable()
 ```
 
-## Media coverage {.nohead .set-width-year}
+## Selected Media coverage {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'media') %>%
@@ -149,7 +150,7 @@ cv_entries %>%
   kable()
 ```
 
-## Service {.service .nohead .set-width}
+## Selected Service {.service .nohead .set-width}
 ```{r}
 cv_entries %>% 
   filter(type == 'service') %>% 
