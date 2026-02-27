@@ -117,7 +117,7 @@ cv_entries %>%
                         str_c(what, ", ", additional_info, ", ", where),
                         str_c(what, ", ", where))) %>% 
   select(year_begin, what) %>%
-  manual_page_break_after_row("what", "Rutgers TechAdvance Fund") %>%
+  #manual_page_break_after_row("what", "Rutgers TechAdvance Fund") %>%
   kable()
 ```
 

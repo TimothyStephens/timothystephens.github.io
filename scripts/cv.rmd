@@ -104,7 +104,7 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  manual_page_break_after_row("ref2print", "implications for reproduction and population dynamics in two sympatric Hawaiian coral") %>%
+  #manual_page_break_after_row("ref2print", "implications for reproduction and population dynamics in two sympatric Hawaiian coral") %>%
   #manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
   knitr::kable()
 ```

@@ -15,6 +15,24 @@ ul {
 
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 
+## 2026
+
+### 42\. A portable, low-cost, point-of-care DNA amplification kit with impedance-based detection for decentralized antimicrobial resistance diagnostics
+Karimi K., Arroyo M., Chille E. E., **Stephens T. G.**, Barrett D., Pelechano V., Bhattacharya D.,  and Javanmard M. *Lab on a Chip*, 2026.
+
+[[URL](https://doi.org/10.1039/D6LC00062B)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1039/D6LC00062B"></div>
+<br/><br/><br/><br/>
+### 41\. The host coral bleaching response viewed through the lens of multi-omics
+Bhattacharya D., Nandi S., Chille E. E., Arroyo M., and **Stephens T. G.** *BioEssays*, e70110, 2026.
+
+[[URL](https://doi.org/10.1002/bies.70110)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/bies.70110"></div>
+<br/><br/><br/><br/>
 ## 2025
 
 ### 40\. Shifts in the microbiome and virome are associated with stony coral tissue loss disease (SCTLD)
