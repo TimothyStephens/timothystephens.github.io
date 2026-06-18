@@ -75,7 +75,7 @@ cv_entries %>%
   filter(type == 'awards') %>% 
   mutate(what = str_c(what, ", ", where)) %>%  
   select(year_begin, what) %>% 
-  manual_page_break_after_row("what", "Merit Scholarship for academic achievement") %>%
+  #manual_page_break_after_row("what", "Merit Scholarship for academic achievement") %>%
   kable()
 ```
 
@@ -149,7 +149,7 @@ cv_entries %>%
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
   #manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
-  #manual_page_break_after_row("what", "EMBL Australia Postgraduate Symposium") %>%
+  #manual_page_break_after_row("what", "EMBL Australia PostgraduateSymposium 2017") %>%
   kable()
 ```
 

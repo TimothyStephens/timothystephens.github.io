@@ -1,3 +1,4 @@
+Sys.setenv(PAGEDOWN_CHROME = "/opt/chrome-shell/chrome-headless-shell-linux64/chrome-headless-shell")
 
 source("scripts/render_cv.r")
 render_full_cv()

@@ -138,7 +138,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  #manual_page_break_after_row("what", "22-26th March 2021") %>%
+  #manual_page_break_after_row("what", "November-1st December 2017") %>%
   kable()
 ```
 

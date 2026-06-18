@@ -17,7 +17,8 @@ render_full_cv <- function(){
   
   # Convert to PDF using Pagedown
   pagedown::chrome_print(input = tmp_html_cv_loc,
-                         output = "cv/cv.pdf")
+                         output = "cv/cv.pdf",
+                         extra_args = c("--no-sandbox"))
 }
 
 ##
@@ -37,5 +38,6 @@ render_short_cv <- function(){
   
   # Convert to PDF using Pagedown
   pagedown::chrome_print(input = tmp_html_cv_loc,
-                         output = "cv/cv_short.pdf")
+                         output = "cv/cv_short.pdf",
+                         extra_args = c("--no-sandbox"))
 }

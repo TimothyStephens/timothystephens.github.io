@@ -17,6 +17,30 @@ ul {
 
 ## 2026
 
+### 45\. Rafts of Change: Microbial and Functional Dynamics in Simulated Sargassum Strandings
+Nandi S., **Stephens T. G.**, Garcia R., Sanchez-Garcia M. A., Roberson L. M., Avalos J., Chundawat S. P. S., and Bhattacharya D. *Applied and Environmental Microbiology*, 92:e02357-25, 2026.
+
+[[URL](https://doi.org/10.1128/aem.02357-25)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1128/aem.02357-25"></div>
+<br/><br/><br/><br/>
+### 44\. Cosmopolitan gene families with known functions are hotspots for the evolution of novel genes in stony corals
+**Stephens T. G.**, Kulczyk A. W, and Bhattacharya D. *GBE*, 18:evag072-4, 2026.
+
+[[URL](https://doi.org/10.1093/gbe/evag072)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/gbe/evag072"></div>
+<br/><br/><br/><br/>
+### 43\. Metaproteome Analysis of Short-Term Thermal Stress in Three Sympatric Coral Species Reveals Divergent Host Responses
+\*Nandia S., \***Stephens T. G.**, Chille E. E., Goyen S., Bay L. K., and Bhattacharya D. *Ecology and Evolution*, 16:e73275, 2026.
+
+[[URL](https://doi.org/10.1002/ece3.73275)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ece3.73275"></div>
+<br/><br/><br/><br/>
 ### 42\. A portable, low-cost, point-of-care DNA amplification kit with impedance-based detection for decentralized antimicrobial resistance diagnostics
 Karimi K., Arroyo M., Chille E. E., **Stephens T. G.**, Barrett D., Pelechano V., Bhattacharya D.,  and Javanmard M. *Lab on a Chip*, 2026.
 
