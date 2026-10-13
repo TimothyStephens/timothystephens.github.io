@@ -16,7 +16,7 @@ ul {
 ## 2026
 
 ### 13\. Our paper <a href="https://doi.org/10.1111/jpy.70230" target="_blank">Crawling under the radar: Two novel *Paulinella* species expand knowledge about the ecology and evolution of a primary plastid?containing amoeba lineage</a> covered by <a href="https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html" target="_blank">The New York Times</a>
-<iframe src="https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html" width="600" height="400" title="News Article Header"></iframe>
+
 <br/><br/>
 ### 12\. Our Sargassum Biofuel project was featured by <a href="https://soe.rutgers.edu/news/ficus-grants-cbe-professors-research-project-access-doe-user-facilities" target="_blank">Rutgers News</a>
 
