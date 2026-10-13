@@ -21,7 +21,7 @@ ul {
 Van Etten J., Han S., Burns J. A., Lhee D., Willoughby A. C., **Stephens T. G.**, Chille E., Sleith R. S., Bhattacharya D., and Yoon H. S. *Journal of Phycology*, 2026.
 
 [[URL](https://doi.org/10.1111/jpy.70230)]  
-
+Featured by <a href="https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html" target="_blank">The New York Times</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jpy.70230"></div>
 <br/><br/><br/><br/>
@@ -37,7 +37,7 @@ dos Santos Ferreira M. C., Stephens T. G., and Brinsmade S. R. *Journal of Bacte
 Nandi S., **Stephens T. G.**, Garcia R., Sanchez-Garcia M. A., Roberson L. M., Avalos J., Chundawat S. P. S., and Bhattacharya D. *Applied and Environmental Microbiology*, 92:e02357-25, 2026.
 
 [[URL](https://doi.org/10.1128/aem.02357-25)]  
-
+Project featured by <a href="https://soe.rutgers.edu/news/ficus-grants-cbe-professors-research-project-access-doe-user-facilities" target="_blank">Rutgers News</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1128/aem.02357-25"></div>
 <br/><br/><br/><br/>
@@ -95,7 +95,7 @@ Goyen S., Chille E. E., **Stephens T. G.**, Nandi S., Bay L. K., Bhattacharya D.
 Bhattacharya D., Etten J. V., Panayotakis G., McDermott T., **Stephens T. G.** *Trend in Microbiology*, 2025.
 
 [[URL](https://doi.org/10.1016/j.tim.2025.06.004)]  
-
+Featured by <a href="https://phys.org/news/2026-07-ancient-red-algae-power-extreme.html" target="_blank">Phys.org</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.tim.2025.06.004"></div>
 <br/><br/><br/><br/>
