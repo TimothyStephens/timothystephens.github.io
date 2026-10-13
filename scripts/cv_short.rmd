@@ -31,7 +31,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
   mutate(year_end = date_end_year) %>%
   mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                       year_begin,
-                      str_c(year_begin, " --- ", year_end))) %>%
+                      str_c(year_begin, "---", year_end))) %>%
   mutate(across(2:4, as.numeric)) %>%
   arrange(-date_start_year, -date_start_month, -date_start_day)
 ```
@@ -65,7 +65,6 @@ I am a computational biologist working on understanding and characterizing funct
 cv_entries %>% 
   filter(type == 'education' | what == 'Research Associate') %>% 
   mutate(what = str_c(what, ", ", where)) %>% 
-  mutate(year = str_c(year_begin, " --- ", year_end)) %>% 
   select(year, what) %>%
   kable()
 ```

@@ -17,6 +17,22 @@ ul {
 
 ## 2026
 
+### 47\. Crawling under the radar: Two novel *Paulinella* species expand knowledge about the ecology and evolution of a primary plastid?containing amoeba lineage
+Van Etten J., Han S., Burns J. A., Lhee D., Willoughby A. C., **Stephens T. G.**, Chille E., Sleith R. S., Bhattacharya D., and Yoon H. S. *Journal of Phycology*, 2026.
+
+[[URL](https://doi.org/10.1111/jpy.70230)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jpy.70230"></div>
+<br/><br/><br/><br/>
+### 46\. In *Staphylococcus aureus*, MbcS is a refunctionalized acyl-CoA synthetase that confers a fitness advantage during intra-species competition
+dos Santos Ferreira M. C., Stephens T. G., and Brinsmade S. R. *Journal of Bacteriology*, 208:e00185-26, 2026.
+
+[[URL](https://doi.org/10.1128/jb.00185-26)]  [[Preprint](https://doi.org/10.64898/2026.03.28.714991)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1128/jb.00185-26"></div>
+<br/><br/><br/><br/>
 ### 45\. Rafts of Change: Microbial and Functional Dynamics in Simulated Sargassum Strandings
 Nandi S., **Stephens T. G.**, Garcia R., Sanchez-Garcia M. A., Roberson L. M., Avalos J., Chundawat S. P. S., and Bhattacharya D. *Applied and Environmental Microbiology*, 92:e02357-25, 2026.
 
@@ -37,7 +53,7 @@ Nandi S., **Stephens T. G.**, Garcia R., Sanchez-Garcia M. A., Roberson L. M., A
 \*Nandia S., \***Stephens T. G.**, Chille E. E., Goyen S., Bay L. K., and Bhattacharya D. *Ecology and Evolution*, 16:e73275, 2026.
 
 [[URL](https://doi.org/10.1002/ece3.73275)]  
-
+Featured by the <a href="https://sebsnjaesnews.rutgers.edu/2025/08/rutgers-researchers-chart-next-steps-for-developing-lateral-flow-covid-19-type-tests-to-monitor-coral-health" target="_blank">Rutgers Newsroom</a>. *Co-first authorship
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ece3.73275"></div>
 <br/><br/><br/><br/>
@@ -63,7 +79,7 @@ Bhattacharya D., Nandi S., Chille E. E., Arroyo M., and **Stephens T. G.** *BioE
 Nandi S., **Stephens T. G.**, Walsh K., Garcia R., Villalpando M. F., Sellares-Blasco R. I., Zubillaga A. L., Croquer A., Bhattacharya D. *ISME Communications*, ycaf226, 2025.
 
 [[URL](https://doi.org/10.1093/ismeco/ycaf226)]  [[Preprint](https://doi.org/10.1101/2025.06.19.660612)]  
-
+Featured by the <a href="https://rcei.rutgers.edu/coral-killer-scientists-uncover-new-clues-about-a-disease-devastating-caribbean-reefs" target="_blank">Rutgers Climate and Energy Institute</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/ismeco/ycaf226"></div>
 <br/><br/><br/><br/>
@@ -171,7 +187,7 @@ Bhattacharya D., **Stephens T. G.**, Chille E. E., Benites L. F., Chan C. X. *Tr
 \*Williams A., \***Stephens T. G.**, Shumaker A., and Bhattacharya D. *iScience*, 26(9):107623, 2023.
 
 [[URL](https://doi.org/10.1016/j.isci.2023.107623)]  
-
+*Co-first authorship
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.isci.2023.107623"></div>
 <br/><br/><br/><br/>
