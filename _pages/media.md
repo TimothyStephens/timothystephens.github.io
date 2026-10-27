@@ -13,6 +13,25 @@ ul {
 }
 </style>
 
+## 2026
+
+### 13\. Our paper <a href="https://doi.org/10.1111/jpy.70230" target="_blank">Crawling under the radar: Two novel *Paulinella* species expand knowledge about the ecology and evolution of a primary plastid?containing amoeba lineage</a> covered by <a href="https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html" target="_blank">The New York Times</a>
+
+<br/><br/>
+### 12\. Our Sargassum Biofuel project was featured by <a href="https://soe.rutgers.edu/news/ficus-grants-cbe-professors-research-project-access-doe-user-facilities" target="_blank">Rutgers News</a>
+
+<br/><br/>
+### 11\. Our paper <a href="https://doi.org/10.1016/j.tim.2025.06.004" target="_blank">Gene transfer drives community cooperation in geothermal habitats</a> was featured in an article by <a href="https://phys.org/news/2026-07-ancient-red-algae-power-extreme.html" target="_blank">Phys.org</a>
+
+<br/><br/>
+### 10\. Our paper <a href="https://doi.org/10.1093/ismeco/ycaf226" target="_blank">Shifts in the microbiome and virome are associated with stony coral tissue loss disease (SCTLD)</a> was covered by <a href="https://rcei.rutgers.edu/coral-killer-scientists-uncover-new-clues-about-a-disease-devastating-caribbean-reefs" target="_blank">Rutgers Climate and Energy Institute</a>
+
+<br/><br/>
+## 2025
+
+### 9\. Our paper <a href="https://doi.org/10.1002/ece3.73275" target="_blank">Metaproteome Analysis of Short-Term Thermal Stress in Three Sympatric Coral Species Reveals Divergent Host Responses</a> was covered by <a href="https://sebsnjaesnews.rutgers.edu/2025/08/rutgers-researchers-chart-next-steps-for-developing-lateral-flow-covid-19-type-tests-to-monitor-coral-health" target="_blank">Rutgers Newsroom</a>
+
+<br/><br/>
 ## 2024
 
 ### 8\. News release by the New Jersey CSIT announcing the recipients of the <a href="https://www.njeda.gov/csit-awards-3m-to-41-new-jersey-based-start-ups-through-round-3-catalyst-and-clean-tech-seed-grant-programs/" target="_blank">Clean Tech Seed Grant</a>, which includes our company, OceanOmics.

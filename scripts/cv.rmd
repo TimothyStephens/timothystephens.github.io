@@ -31,7 +31,7 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
   mutate(year_end = date_end_year) %>%
   mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
                       year_begin,
-                      str_c(year_begin, " --- ", year_end))) %>%
+                      str_c(year_begin, "---", year_end))) %>%
   mutate(across(2:4, as.numeric)) %>%
   arrange(-date_start_year, -date_start_month, -date_start_day)
 ```

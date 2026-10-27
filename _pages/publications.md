@@ -17,11 +17,27 @@ ul {
 
 ## 2026
 
+### 47\. Crawling under the radar: Two novel *Paulinella* species expand knowledge about the ecology and evolution of a primary plastid-containing amoeba lineage
+Van Etten J., Han S., Burns J. A., Lhee D., Willoughby A. C., **Stephens T. G.**, Chille E., Sleith R. S., Bhattacharya D., and Yoon H. S. *Journal of Phycology*, 2026.
+
+[[URL](https://doi.org/10.1111/jpy.70230)]  
+Featured by <a href="https://www.nytimes.com/2026/09/26/science/motel-science-discovery.html" target="_blank">The New York Times</a>
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/jpy.70230"></div>
+<br/><br/><br/><br/>
+### 46\. In *Staphylococcus aureus*, MbcS is a refunctionalized acyl-CoA synthetase that confers a fitness advantage during intra-species competition
+dos Santos Ferreira M. C., Stephens T. G., and Brinsmade S. R. *Journal of Bacteriology*, 208:e00185-26, 2026.
+
+[[URL](https://doi.org/10.1128/jb.00185-26)]  [[Preprint](https://doi.org/10.64898/2026.03.28.714991)]  
+
+
+<div class='altmetric-embed' data-badge-type='donut' data-doi="10.1128/jb.00185-26"></div>
+<br/><br/><br/><br/>
 ### 45\. Rafts of Change: Microbial and Functional Dynamics in Simulated Sargassum Strandings
 Nandi S., **Stephens T. G.**, Garcia R., Sanchez-Garcia M. A., Roberson L. M., Avalos J., Chundawat S. P. S., and Bhattacharya D. *Applied and Environmental Microbiology*, 92:e02357-25, 2026.
 
 [[URL](https://doi.org/10.1128/aem.02357-25)]  
-
+Project featured by <a href="https://soe.rutgers.edu/news/ficus-grants-cbe-professors-research-project-access-doe-user-facilities" target="_blank">Rutgers News</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1128/aem.02357-25"></div>
 <br/><br/><br/><br/>
@@ -34,10 +50,10 @@ Nandi S., **Stephens T. G.**, Garcia R., Sanchez-Garcia M. A., Roberson L. M., A
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/gbe/evag072"></div>
 <br/><br/><br/><br/>
 ### 43\. Metaproteome Analysis of Short-Term Thermal Stress in Three Sympatric Coral Species Reveals Divergent Host Responses
-\*Nandia S., \***Stephens T. G.**, Chille E. E., Goyen S., Bay L. K., and Bhattacharya D. *Ecology and Evolution*, 16:e73275, 2026.
+\*Nandi S., \***Stephens T. G.**, Chille E. E., Goyen S., Bay L. K., and Bhattacharya D. *Ecology and Evolution*, 16:e73275, 2026.
 
 [[URL](https://doi.org/10.1002/ece3.73275)]  
-
+Featured by the <a href="https://sebsnjaesnews.rutgers.edu/2025/08/rutgers-researchers-chart-next-steps-for-developing-lateral-flow-covid-19-type-tests-to-monitor-coral-health" target="_blank">Rutgers Newsroom</a>. *Co-first authorship
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1002/ece3.73275"></div>
 <br/><br/><br/><br/>
@@ -63,7 +79,7 @@ Bhattacharya D., Nandi S., Chille E. E., Arroyo M., and **Stephens T. G.** *BioE
 Nandi S., **Stephens T. G.**, Walsh K., Garcia R., Villalpando M. F., Sellares-Blasco R. I., Zubillaga A. L., Croquer A., Bhattacharya D. *ISME Communications*, ycaf226, 2025.
 
 [[URL](https://doi.org/10.1093/ismeco/ycaf226)]  [[Preprint](https://doi.org/10.1101/2025.06.19.660612)]  
-
+Featured by the <a href="https://rcei.rutgers.edu/coral-killer-scientists-uncover-new-clues-about-a-disease-devastating-caribbean-reefs" target="_blank">Rutgers Climate and Energy Institute</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/ismeco/ycaf226"></div>
 <br/><br/><br/><br/>
@@ -76,10 +92,10 @@ Goyen S., Chille E. E., **Stephens T. G.**, Nandi S., Bay L. K., Bhattacharya D.
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1007/s00338-025-02781-z"></div>
 <br/><br/><br/><br/>
 ### 38\. Gene transfer drives community cooperation in geothermal habitats
-Bhattacharya D., Etten J. V., Panayotakis G., McDermott T., **Stephens T. G.** *Trend in Microbiology*, 2025.
+Bhattacharya D., Van Etten J., Panayotakis G., McDermott T., **Stephens T. G.** *Trend in Microbiology*, 2025.
 
 [[URL](https://doi.org/10.1016/j.tim.2025.06.004)]  
-
+Featured by <a href="https://phys.org/news/2026-07-ancient-red-algae-power-extreme.html" target="_blank">Phys.org</a>
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.tim.2025.06.004"></div>
 <br/><br/><br/><br/>
@@ -142,7 +158,7 @@ Gabr A., **Stephens T. G.**, Reinfelder J. R., Liau P., Calatrava V., Grossman A
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/1758-2229.13304"></div>
 <br/><br/><br/><br/>
 ### 30\. Diverse fates of ancient horizontal gene transfers in extremophilic red algae
-Etten J. V., **Stephens T. G.**, Chille E., Lipzen A., Peterson D., Barry K., Grigoriev I. V., and Bhattacharya D. *Environmental Microbiology*, 26(5):e16629, 2024.
+Van Etten J., **Stephens T. G.**, Chille E., Lipzen A., Peterson D., Barry K., Grigoriev I. V., and Bhattacharya D. *Environmental Microbiology*, 26(5):e16629, 2024.
 
 [[URL](https://doi.org/10.1111/1462-2920.16629)]  
 
@@ -150,7 +166,7 @@ Etten J. V., **Stephens T. G.**, Chille E., Lipzen A., Peterson D., Barry K., Gr
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1111/1462-2920.16629"></div>
 <br/><br/><br/><br/>
 ### 29\. Viruses associated with extremophilic red algal mats reveal signatures of early thermal adaptation
-Benites L. F., **Stephens T. G.**, Etten J. V., James T., Christian W. C., Barry K., Grigoriev I. V., McDermott T. R. & Bhattacharya D. *Communications Biology*, 2024.
+Benites L. F., **Stephens T. G.**, Van Etten J., James T., Christian W. C., Barry K., Grigoriev I. V., McDermott T. R. & Bhattacharya D. *Communications Biology*, 2024.
 
 [[URL](https://doi.org/10.1038/s42003-024-05931-1)]  
 Featured by <a href="https://www.science.org/content/article/giant-viruses-played-key-role-early-life-study-yellowstone-hot-spring-suggests?utm_source=sfmc&utm_medium=email&utm_campaign=ScienceAdviser&utm_content=distillation&et_rid=960447322&et_cid=5171391" target="_blank">Science</a>
@@ -171,7 +187,7 @@ Bhattacharya D., **Stephens T. G.**, Chille E. E., Benites L. F., Chan C. X. *Tr
 \*Williams A., \***Stephens T. G.**, Shumaker A., and Bhattacharya D. *iScience*, 26(9):107623, 2023.
 
 [[URL](https://doi.org/10.1016/j.isci.2023.107623)]  
-
+*Co-first authorship
 
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1016/j.isci.2023.107623"></div>
 <br/><br/><br/><br/>
@@ -184,7 +200,7 @@ Bhattacharya D., **Stephens T. G.**, Chille E. E., Benites L. F., Chan C. X. *Tr
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/gbe/evad149"></div>
 <br/><br/><br/><br/>
 ### 25\. A *k*-mer-based approach for inferring phylogenetic relatedness of environmental genomic data
-Etten J. V, **Stephens T. G.**, and Bhattacharya D. *Systems Biology*, syad037, 2023.
+Van Etten J., **Stephens T. G.**, and Bhattacharya D. *Systems Biology*, syad037, 2023.
 
 [[URL](https://doi.org/10.1093/sysbio/syad037)]  
 Won the <a href="https://www.systbio.org/publishers-award.html" target="_blank">Publisher's Award for Excellence in Systematic Research</a>
@@ -192,7 +208,7 @@ Won the <a href="https://www.systbio.org/publishers-award.html" target="_blank">
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/sysbio/syad037"></div>
 <br/><br/><br/><br/>
 ### 24\. Algae obscura: The potential of rare species as model systems
-Etten J. V., Benites F. L., **Stephens T. G.**, Yoon H. S., and Bhattacharya D. *Journal of Phycology*, 59(2):293-300, 2023.
+Van Etten J., Benites F. L., **Stephens T. G.**, Yoon H. S., and Bhattacharya D. *Journal of Phycology*, 59(2):293-300, 2023.
 
 [[URL](https://doi.org/10.1111/jpy.13321)]  
 Ranked within the top 10% of most-viewed papers published by the journal in 2023.
@@ -218,7 +234,7 @@ Benites L. F., **Stephens T. G.**, and Bhattacharya D. *Virus Evolution*, 8:veac
 <div class='altmetric-embed' data-badge-type='donut' data-doi="10.1093/ve/veac101"></div>
 <br/><br/><br/><br/>
 ### 21\. Endosymbiotic ratchet accelerates divergence after organelle origin
-Bhattacharya D., Etten J. V., Benites L. F., and **Stephens T. G.** *BioEssays*, e2200165, 2022.
+Bhattacharya D., Van Etten J., Benites L. F., and **Stephens T. G.** *BioEssays*, e2200165, 2022.
 
 [[URL](https://doi.org/10.1002/bies.202200165)]  
 
