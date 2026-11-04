@@ -36,29 +36,35 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
   arrange(-date_start_year, -date_start_month, -date_start_day)
 ```
 
-<div class="grid-container"> 
-<!-- top row -->
-```{block type="grid-item", echo=TRUE}
-## Personal summary {.summary}
-I am a computational biologist working on understanding and characterizing functionally uncharacterized "dark genes", which are found in all non-model genomes, but often ignored despite their immense biological importance. I am also CTO of OceanOmics, a company dedicated to developing scalable tools for environmental health monitoring.
-```
-
+<div style="display: flex; justify-content: center; width: 100%;">
 ```{block type='grid-item', echo=TRUE}
-## Contact information {.box}
-<div class="info-box">
-
-| left | Left |
-|:-|:--------------------------------------------|
-| <i class="fas fa-map-marker-alt"></i>|Department of Biochemistry and Microbiology, Rutgers University, USA|
-| <i class="fa fa-envelope"></i> | ts942\@sebs.rutgers.edu |
-| <i class="fas fa-globe"></i> | [timothystephens.github.io](https://timothystephens.github.io) |
-| <i class="fab fa-github"></i> | [TimothyStephens](https://github.com/TimothyStephens) |
-| <i class="fab fa-twitter"></i> | [\@timstep1383](https://mobile.twitter.com/timstep1383) |
-
-</div>
+<table>
+  <!-- Top Row: Spans across the entire top layout -->
+  <tr>
+    <td colspan="3" style="text-align: center; border: none; padding-bottom: 10px;">
+      <i class="fas fa-map-marker-alt"></i> **Department of Biochemistry and Microbiology, Rutgers University, USA**
+    </td>
+  </tr>
+  <!-- Bottom Row: The remaining three elements split into columns -->
+  <tr>
+    <td style="border: none; padding: 0 15px;">
+      <i class="fa fa-envelope"></i> ts942\@sebs.rutgers.edu
+    </td>
+    <td style="border: none; padding: 0 15px;">
+      <i class="fas fa-globe"></i> [timothystephens.github.io](https://github.io)
+    </td>
+    <td style="border: none; padding: 0 15px;">
+      <i class="fab fa-github"></i> [TimothyStephens](https://github.com)
+    </td>
+  </tr>
+</table>
 ```
-
 </div>
+
+## Personal summary {.nohead .set-width-range}
+```{block type="grid-item", echo=TRUE}
+I am a computational biologist and research leader developing an independent program at the intersection of genomics, evolution, and data science. My work focuses on understanding the origin and function of genes with unknown function (i.e., "dark genes") and building computational approaches that can be applied across diverse biological systems, including microbial, environmental, biomedical, and translational research. I have led collaborative research programs, mentored graduate and undergraduate researchers, and guided projects from scientific question through analysis and publication. I am also a co-founder and former CTO of OceanOmics, where I helped translate research into scalable environmental health technologies and advance multiple platforms to proof of concept.
+```
 
 ## Education and Research Experience {.nohead .set-width-range}
 ```{r}
@@ -69,13 +75,47 @@ cv_entries %>%
   kable()
 ```
 
+## Grants {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'minor_grants' | type == 'major_grants') %>% 
+  mutate(what = if_else(!is.na(additional_info),
+                        str_c(what, ", ", additional_info),
+                        str_c(what))) %>% 
+  select(year_begin, what) %>%
+#  manual_page_break_after_row("what", "Integrated genomic approaches to understand stress tolerance in bioethanol-producing yeasts and coral reef symbionts") %>%
+  kable()
+```
+
+## Teaching {.nohead .set-width-range}
+```{r}
+cv_entries %>% 
+  filter(type == 'teaching') %>% 
+  mutate(what = ifelse(!is.na(additional_info), 
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
+  select(year, what) %>% 
+#  manual_page_break_after_row("what", "Design and conducted lectures on de novo next-generation genome and") %>%
+  kable()
+```
+
+## Professional development {.nohead .set-width-year}
+```{r}
+cv_entries %>% 
+  filter(type == 'prof-dev') %>% 
+  mutate(what = str_c(what, ", ", where)) %>% 
+  select(year_begin, what) %>% 
+#  manual_page_break_after_row("what", "UQ Idea Hub") %>%
+  kable()
+```
+
 ## Awards and honours {.nohead .set-width-year}
 ```{r}
 cv_entries %>% 
   filter(type == 'awards') %>% 
   mutate(what = str_c(what, ", ", where)) %>%  
   select(year_begin, what) %>% 
-  #manual_page_break_after_row("what", "Merit Scholarship for academic achievement") %>%
+#  manual_page_break_after_row("what", "Merit Scholarship for academic achievement") %>%
   kable()
 ```
 
@@ -104,43 +144,9 @@ publications %>%
                             ref2print)
          ) %>%
   select(year, ref2print) %>%
-  #manual_page_break_after_row("ref2print", "implications for reproduction and population dynamics in two sympatric Hawaiian coral") %>%
-  #manual_page_break_after_row("ref2print", "encode tandemly repeated single-exon genes with adaptive functions") %>%
+#  manual_page_break_after_row("ref2print", "implications for reproduction and population dynamics in two sympatric Hawaiian coral") %>%
+  manual_page_break_after_row("ref2print", "PhySortR: a fast, flexible tool for sorting phylogenetic trees in R") %>%
   knitr::kable()
-```
-
-## Grants {.nohead .set-width-year}
-```{r}
-cv_entries %>% 
-  filter(type == 'minor_grants' | type == 'major_grants') %>% 
-  mutate(what = if_else(!is.na(additional_info),
-                        str_c(what, ", ", additional_info),
-                        str_c(what))) %>% 
-  select(year_begin, what) %>%
-  #manual_page_break_after_row("what", "Integrated genomic approaches to understand stress tolerance in bioethanol-producing yeasts and coral reef symbionts") %>%
-  kable()
-```
-
-## Teaching experience {.nohead .set-width-range}
-```{r}
-cv_entries %>% 
-  filter(type == 'teaching') %>% 
-  mutate(what = ifelse(!is.na(additional_info), 
-    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
-    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
-  select(year, what) %>% 
-#  manual_page_break_after_row("what", "Design and conducted lectures on de novo next-generation genome and") %>%
-  kable()
-```
-
-## Professional development {.nohead .set-width-year}
-```{r}
-cv_entries %>% 
-  filter(type == 'prof-dev') %>% 
-  mutate(what = str_c(what, ", ", where)) %>% 
-  select(year_begin, what) %>% 
-# manual_page_break_after_row("what", "UQ Idea Hub") %>%
-  kable()
 ```
 
 ## Talks {.nohead .set-width-year}
@@ -148,8 +154,8 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'talk') %>% 
   select(year_begin, what) %>%
-  #manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
-  #manual_page_break_after_row("what", "EMBL Australia PostgraduateSymposium 2017") %>%
+#  manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
+#  manual_page_break_after_row("what", "Insights into coral reef symbiosis from the genome of cold-adapted algae") %>%
   kable()
 ```
 
@@ -167,7 +173,7 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'media') %>%
   select(year_begin, what) %>% 
-# manual_page_break_after_row("what", "Amoeba Genome Reveals Dominant Host Contribution to Plastid Endosymbiosis") %>%
+#  manual_page_break_after_row("what", "Amoeba Genome Reveals Dominant Host Contribution to Plastid Endosymbiosis") %>%
   kable()
 ```
 
@@ -188,7 +194,7 @@ cv_entries %>%
 cv_entries %>%
   filter(type == 'patent') %>%
   mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%  
-  select(year, what) %>% 
+  select(year, what) %>%
   kable()
 ```
 
