@@ -9,13 +9,13 @@ encoding: UTF-8
 
 I develop and maintain computational tools for phylogenetics, genome annotation, metagenomics, network analysis, and computational infrastructure.
 
-## Dinoflagellate Annotation Workflow
+## naive ATLAS
 
-A workflow for the prediction of protein-coding genes in dinoflagellate genomes. It integrates evidence from multiple sources, including transcriptome, proteome, and other *ab initio* gene prediction tools.
+Metagenomic workflow for the recovery and analysis of microbial genomes across prokaryotes, microbial eukaryotes, viruses, and plasmids. Workflow includes quality control, assembly, binning, gene prediction, annotation, and quantification.
 
-[Project documentation / source](https://TimothyStephens.github.io/Dinoflagellate_Annotation_Workflow)
+[Project documentation / source](https://github.com/TimothyStephens/naive_atlas)
 
-<div class="github-card" data-github="TimothyStephens/Dinoflagellate_Annotation_Workflow" data-width="400" data-height="279" data-theme="medium"></div>
+<div class="github-card" data-github="TimothyStephens/naive_atlas" data-width="400" data-height="279" data-theme="medium"></div>
 <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <hr>
@@ -35,17 +35,6 @@ Workflow for protein-coding gene prediction in dinoflagellate genomes, integrati
 [Project documentation / source](https://github.com/TimothyStephens/Dinoflagellate_Annotation_Workflow)
 
 <div class="github-card" data-github="TimothyStephens/Dinoflagellate_Annotation_Workflow" data-width="400" data-height="279" data-theme="medium"></div>
-<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-<hr>
-
-## naive ATLAS
-
-Adapted and extended the ATLAS metagenomic workflow to support recovery and analysis of microbial genomes across prokaryotes, microbial eukaryotes, viruses, and plasmids. Workflow includes quality control, assembly, binning, gene prediction, annotation, and quantification.
-
-[Project documentation / source](https://github.com/TimothyStephens/naive_atlas)
-
-<div class="github-card" data-github="TimothyStephens/naive_atlas" data-width="400" data-height="279" data-theme="medium"></div>
 <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <hr>
