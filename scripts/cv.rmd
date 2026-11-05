@@ -172,18 +172,17 @@ cv_entries %>%
 Served as a day-to-day research mentor to nine graduate students and five undergraduate researchers in computational biology, genomics, and related areas.
 
 **Graduate mentorship**
+
 - Mentored three PhD students through completion.
-
 - Each completed PhD mentee produced three to four first-author research papers during doctoral training.
-
 - One former mentee is now an Assistant Professor.
 
 **Student-led research**
-- Oversaw computational analyses for 16 student-led research papers.
 
+- Oversaw 16 student-led research papers.
 - Twelve of these papers included me as a co-first or second author.
 
-Mentoring included research-question development, computational study design, analytical troubleshooting, interpretation, reproducibility, manuscript preparation, and progressive transfer of project ownership.
+Mentoring included research-question development, computational study design, analytical troubleshooting, interpretation, reproducibility, manuscript preparation, and knowledge transfer.
 ```
 
 ## Teaching experience {.nohead .set-width-range}
