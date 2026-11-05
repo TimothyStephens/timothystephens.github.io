@@ -11,7 +11,7 @@ I develop and maintain computational tools for phylogenetics, genome annotation,
 
 ## Dinoflagellate Annotation Workflow
 
-a workflow for the prediction of protein-coding genes in dinoflagellate genomes. It integrates evidence from multiple sources, including transcriptome, proteome, and other ab initio gene prediction tools.
+A workflow for the prediction of protein-coding genes in dinoflagellate genomes. It integrates evidence from multiple sources, including transcriptome, proteome, and other *ab initio* gene prediction tools.
 
 [Project documentation / source](https://TimothyStephens.github.io/Dinoflagellate_Annotation_Workflow)
 
@@ -22,17 +22,9 @@ a workflow for the prediction of protein-coding genes in dinoflagellate genomes.
 
 ## PhySortR
 
-Creator and maintainer of the R port of a package for screening and sorting phylogenetic trees, including exclusive and non-exclusive clade detection in traditional and extended Newick formats. CRAN version 1.0.9; DOI: 10.32614/CRAN.package.PhySortR.
+Creator and maintainer of an *R* package for screening and sorting phylogenetic trees, including exclusive and non-exclusive clade detection in traditional and extended Newick formats. CRAN version 1.0.9; DOI: 10.32614/CRAN.package.PhySortR.
 
 [Project documentation / source](https://CRAN.R-project.org/package=PhySortR)
-
-<hr>
-
-## A Fast, Flexible Tool for Sorting Phylogenetic Trees
-
-Screens and sorts phylogenetic trees in both traditional and extended Newick format. Allows for the fast and flexible screening (within a tree) of Exclusive clades that comprise only the target taxa and/or Non- Exclusive clades that includes a defined portion of non-target taxa.
-
-[Project documentation / source](https://cran.r-project.org/web/packages/PhySortR/index.html)
 
 <hr>
 
@@ -49,7 +41,7 @@ Workflow for protein-coding gene prediction in dinoflagellate genomes, integrati
 
 ## naive ATLAS
 
-Adapted and extended the ATLAS metagenomic workflow for domain-agnostic recovery and analysis of prokaryotes, microbial eukaryotes, viruses, and plasmids. Derivative of upstream ATLAS; specify individual modifications and contribution accurately.
+Adapted and extended the ATLAS metagenomic workflow to support recovery and analysis of microbial genomes across prokaryotes, microbial eukaryotes, viruses, and plasmids. Workflow includes quality control, assembly, binning, gene prediction, annotation, and quantification.
 
 [Project documentation / source](https://github.com/TimothyStephens/naive_atlas)
 
@@ -60,7 +52,7 @@ Adapted and extended the ATLAS metagenomic workflow for domain-agnostic recovery
 
 ## Network Analysis Scripts
 
-Python graph-tool utilities for graph construction, connected-component extraction, vertex annotation, graph layout, and visualization.
+Python *graph-tool* utilities for graph construction, connected-component extraction, vertex annotation, graph layout, and visualization.
 
 [Project documentation / source](https://github.com/TimothyStephens/Network_Analysis_Scripts)
 
@@ -82,7 +74,7 @@ Multi-agent graph-based software-development system that coordinates code genera
 
 ## AgentBox
 
-Rootless Podman-based, project-scoped sandbox for running coding agents with explicit filesystem and network permissions. Software-infrastructure project; distinguish from biological analysis tools.
+Rootless Podman-based, project-scoped sandbox for running coding agents with explicit filesystem and network permissions.
 
 [Project documentation / source](https://github.com/TimothyStephens/AgentBox)
 
