@@ -7,7 +7,6 @@ output:
 links-to-footnotes: false
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
@@ -15,23 +14,23 @@ library(knitr)
 library(lubridate)
 source("utility-functions.R")
 
-#### publications #####
-publications <- read_csv("../publications.csv") %>%
-  mutate(date=paste(publication_date_year, publication_date_month, publication_date_day, sep='-')) %>%
+publications <- read_csv("../publications.csv", show_col_types = FALSE) %>%
+  mutate(date = paste(publication_date_year, publication_date_month,
+                      publication_date_day, sep = '-')) %>%
   mutate(year = publication_date_year) %>%
   filter(include_in_full_cv == 'y') %>%
   arrange(-publication_date_year, -publication_date_month, -publication_date_day)
 
-#### cv entries #####
-cv_entries <- read_csv("../cv_entries.csv") %>% 
+cv_entries <- read_csv("../cv_entries.csv", show_col_types = FALSE) %>%
   filter(include_in_full_cv == 'y') %>%
-  mutate(date_start=paste(date_start_year, date_start_month, date_start_day, sep='-')) %>%
-  mutate(date_end=paste(date_end_year, date_end_month, date_end_day, sep='-')) %>%
+  mutate(date_start = paste(date_start_year, date_start_month,
+                            date_start_day, sep = '-')) %>%
+  mutate(date_end = paste(date_end_year, date_end_month,
+                          date_end_day, sep = '-')) %>%
   mutate(year_begin = date_start_year) %>%
   mutate(year_end = date_end_year) %>%
-  mutate(year = ifelse((is.na(year_end) | year_begin == year_end),
-                      year_begin,
-                      str_c(year_begin, "---", year_end))) %>%
+  mutate(year = ifelse(is.na(year_end) | year_begin == year_end,
+                       year_begin, str_c(year_begin, "–", year_end))) %>%
   mutate(across(2:4, as.numeric)) %>%
   arrange(-date_start_year, -date_start_month, -date_start_day)
 ```
@@ -39,83 +38,182 @@ cv_entries <- read_csv("../cv_entries.csv") %>%
 <div style="display: flex; justify-content: center; width: 100%;">
 ```{block type='grid-item', echo=TRUE}
 <table>
-  <!-- Top Row: Spans across the entire top layout -->
   <tr>
     <td colspan="3" style="text-align: center; border: none; padding-bottom: 10px;">
-      <i class="fas fa-map-marker-alt"></i> **Department of Biochemistry and Microbiology, Rutgers University, USA**
+      **Computational Evolutionary Biologist**
     </td>
   </tr>
-  <!-- Bottom Row: The remaining three elements split into columns -->
   <tr>
     <td style="border: none; padding: 0 15px;">
-      <i class="fa fa-envelope"></i> ts942\@sebs.rutgers.edu
+      <i class="fas fa-map-marker-alt"></i> Orange, New Jersey
     </td>
     <td style="border: none; padding: 0 15px;">
-      <i class="fas fa-globe"></i> [timothystephens.github.io](https://github.io)
+      <i class="fa fa-envelope"></i> ts942@sebs.rutgers.edu
     </td>
     <td style="border: none; padding: 0 15px;">
-      <i class="fab fa-github"></i> [TimothyStephens](https://github.com)
+      <i class="fas fa-globe"></i> [Website](https://timothystephens.github.io/)
+    </td>
+    <td style="border: none; padding: 0 15px;">
+      <i class="fab fa-github"></i> [GitHub](https://github.com/TimothyStephens)
     </td>
   </tr>
 </table>
 ```
 </div>
 
-## Personal summary {.nohead .set-width-range}
+## Research profile {.nohead .set-width-range}
 ```{block type="grid-item", echo=TRUE}
-I am a computational biologist and research leader developing an independent program at the intersection of genomics, evolution, and data science. My work focuses on understanding the origin and function of genes with unknown function (i.e., "dark genes") and building computational approaches that can be applied across diverse biological systems, including microbial, environmental, biomedical, and translational research. I have led collaborative research programs, mentored graduate and undergraduate researchers, and guided projects from scientific question through analysis and publication. I am also a co-founder and former CTO of OceanOmics, where I helped translate research into scalable environmental health technologies and advance multiple platforms to proof of concept.
+Computational evolutionary biologist working at the intersection of comparative genomics, evolutionary biology, and data science. My research investigates how genes with unknown function ("dark genes") originate, diversify, and acquire biological roles. I combine comparative genomics, phylogenomic analysis, sequence- and structure-based homology detection, and multi-omics approaches to investigate gene-family evolution and prioritize functional hypotheses across diverse biological systems.
+
+My research spans coral, algal, amoebal, bacterial, and environmental microbial systems. I develop and apply computational workflows and analytical tools that address general problems in genomic discovery, from phylogenetic classification and genome annotation to metagenomic analysis and network-based interpretation. I have led collaborative computational research, mentored graduate and undergraduate researchers, and co-founded OceanOmics, translating biological research into environmental diagnostic technologies.
 ```
 
-## Education and Research Experience {.nohead .set-width-range}
-```{r}
-cv_entries %>% 
-  filter(type == 'education' | what == 'Research Associate') %>% 
-  mutate(what = str_c(what, ", ", where)) %>% 
-  select(year, what) %>% 
-  kable()
+## Research areas {.nohead .set-width-range}
+```{block type="grid-item", echo=TRUE}
+- Evolutionary genomics and gene-family evolution
+- Comparative genomics, phylogenomics, and phylogenetic methods
+- Origins and evolution of novel and poorly characterized genes
+- Genome annotation and computational protein characterization
+- Metagenomics, multi-omics, and environmental genomics
+- Reproducible bioinformatics workflows and research software
 ```
 
-## Grants {.nohead .set-width-year}
+## Academic appointments {.nohead .set-width-range}
 ```{r}
-cv_entries %>% 
-  filter(type == 'minor_grants' | type == 'major_grants') %>% 
+cv_entries %>%
+  filter(type == 'research_experience',
+         what %in% c('Postdoctoral Associate', 'Post Doctoral Associate',
+                     'Research Associate')) %>%
+  mutate(what = str_c("**", what, "**, ", where,
+                      ifelse(!is.na(additional_info),
+                             str_c("<br>", additional_info), ""))) %>%
+  select(year, what) %>%
+  kable(escape = FALSE)
+```
+
+## Selected professional and technical experience {.nohead .set-width-range}
+```{r}
+cv_entries %>%
+  filter(type == 'research_experience',
+         str_detect(what, regex('Subject-Matter Expert|Bioinformatics|Co-Founder', ignore_case = TRUE))) %>%
+  mutate(what = str_c("**", what, "**, ", where,
+                      ifelse(!is.na(additional_info),
+                             str_c("<br>", additional_info), ""))) %>%
+  select(year, what) %>%
+  kable(escape = FALSE)
+```
+
+## Education {.nohead .set-width-range}
+```{r}
+cv_entries %>%
+  filter(type == 'education') %>%
+  mutate(what = str_c("**", what, "**, ", where,
+                      ifelse(!is.na(additional_info),
+                             str_c("<br>", additional_info), ""))) %>%
+  select(year, what) %>%
+  kable(escape = FALSE)
+```
+
+## Computational expertise and methods {.nohead .set-width-range}
+```{block type="grid-item", echo=TRUE}
+**Programming and research software:** `R` package development and maintenance; Python; Perl; shell-based bioinformatics scripting; reproducible analysis and version-controlled code.
+
+**Comparative and evolutionary genomics:** phylogenetic and phylogenomic analysis; phylogenetic-tree screening and classification; gene-family comparison; genome annotation; sequence-based homology searches; comparative analysis of divergent genes.
+
+**Metagenomics and multi-omics:** Snakemake-based workflow development; metagenomic quality control, assembly, binning, gene prediction, functional annotation, and quantification; integration of transcriptomic, proteomic, and genomic evidence.
+
+**Network analysis and data structures:** graph-based network analysis using Python graph-tool; connected-component extraction, graph annotation, and network visualization.
+
+**Computational infrastructure:** Linux/HPC environments; Conda/Mamba environments; SLURM-oriented workflow execution; Snakemake; Docker, Singularity, and Podman containerization.
+```
+
+## Research software and computational tools {.nohead .set-width-range}
+```{block type="grid-item", echo=TRUE}
+**PhySortR** — Creator and maintainer of the `R` port of a package for screening and sorting large collections of phylogenetic trees, identifying exclusive and non-exclusive clades in traditional and extended Newick formats. Available through CRAN (version 1.0.9; package DOI: [10.32614/CRAN.package.PhySortR](https://doi.org/10.32614/CRAN.package.PhySortR)). Original method described in Stephens et al., *PeerJ* (2016).
+
+**Dinoflagellate Annotation Workflow** — Developed a workflow for protein-coding gene prediction in dinoflagellate genomes, integrating transcriptomic, proteomic, and *ab initio* gene-prediction evidence. Includes adaptations for non-standard dinoflagellate splice-site biology. [Source code](https://github.com/TimothyStephens/Dinoflagellate_Annotation_Workflow).
+
+**naive ATLAS** — Adapted and extended the ATLAS metagenomic workflow to support recovery and analysis of microbial genomes across prokaryotes, microbial eukaryotes, viruses, and plasmids. Workflow includes quality control, assembly, binning, gene prediction, annotation, and quantification. [Source code](https://github.com/TimothyStephens/naive_atlas).
+
+**Network Analysis Scripts** — Python utilities using `graph-tool` for graph construction, connected-component extraction, annotation, layout calculation, and visualization. [Source code](https://github.com/TimothyStephens/Network_Analysis_Scripts).
+
+**MAGS-CodeDev** — Multi-agent graph-based software-development system that decomposes code projects into dependency graphs and coordinates code generation, testing, diagnosis, review, and iteration in isolated worktrees and containers. [Source code](https://github.com/TimothyStephens/MAGS-CodeDev).
+
+**AgentBox** — Rootless Podman-based sandbox for running coding agents in project-scoped environments with explicit filesystem and network permissions. A software-infrastructure project demonstrating work in reproducible and constrained computational environments. [Source code](https://github.com/TimothyStephens/AgentBox).
+```
+
+## Research leadership and selected projects {.nohead .set-width-range}
+```{block type="grid-item", echo=TRUE}
+**Evolutionary origins of coral dark genes — NSF EDGE project**  
+*Senior personnel; computational analysis and manuscript leadership.* Led computational analyses investigating the evolutionary origins of conserved dark-gene families in stony corals and contributed to the project's first research paper. The work found that approximately 82% of conserved coral dark-gene families were consistent with previously undetected homology to characterized gene families.  
+[Related publication: Stephens et al., Genome Biology and Evolution (2026).]
+
+**Computational enzyme discovery in Sargassum-associated microbial communities — Schmidt Sciences project**  
+*Senior personnel; computational discovery.* Led computational discovery and prioritization of candidate enzyme families from microbial communities associated with Sargassum degradation, connecting comparative genomics with potential biomass-conversion applications.  
+[Related publication: Nandi et al., Applied and Environmental Microbiology (2026).]
+
+**Interdisciplinary environmental diagnostic development — OceanOmics**  
+*Co-founder; scientific/technical leadership.* Led or coordinated interdisciplinary teams spanning biology, computer science, engineering, and synthetic biology in the development of environmental diagnostic platforms. Contributed to project development, technical problem-solving, funding acquisition, and progression of platforms toward proof of concept.
+```
+
+## Grants and sponsored research {.nohead .set-width-year}
+```{r}
+cv_entries %>%
+  filter(type == 'minor_grants' | type == 'major_grants') %>%
   mutate(what = if_else(!is.na(additional_info),
                         str_c(what, ", ", additional_info),
-                        str_c(what))) %>% 
+                        str_c(what))) %>%
   select(year_begin, what) %>%
-#  manual_page_break_after_row("what", "Integrated genomic approaches to understand stress tolerance in bioethanol-producing yeasts and coral reef symbionts") %>%
   kable()
 ```
 
-## Teaching {.nohead .set-width-range}
+## Research mentoring and supervision {.nohead .set-width-range}
+```{block type="grid-item", echo=TRUE}
+Served as a day-to-day research mentor to nine graduate students and five undergraduate researchers in computational biology, genomics, and related areas.
+
+**Graduate mentorship**
+- Mentored three PhD students through completion.
+
+- Each completed PhD mentee produced three to four first-author research papers during doctoral training.
+
+- One former mentee is now an Assistant Professor.
+
+**Student-led research**
+- Oversaw computational analyses for 16 student-led research papers.
+
+- Twelve of these papers included me as a co-first or second author.
+
+Mentoring included research-question development, computational study design, analytical troubleshooting, interpretation, reproducibility, manuscript preparation, and progressive transfer of project ownership.
+```
+
+## Teaching experience {.nohead .set-width-range}
 ```{r}
-cv_entries %>% 
-  filter(type == 'teaching') %>% 
-  mutate(what = ifelse(!is.na(additional_info), 
-    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where, "<br>", additional_info),
-    str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where))) %>% 
-  select(year, what) %>% 
-#  manual_page_break_after_row("what", "Design and conducted lectures on de novo next-generation genome and") %>%
-  kable()
+cv_entries %>%
+  filter(type == 'teaching') %>%
+  mutate(what = ifelse(!is.na(additional_info),
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>",
+          where, "<br>", additional_info),
+    str_c("<span class='work-title'>", what, "</span><br class='work-break'>",
+          where))) %>%
+  select(year, what) %>%
+  kable(escape = FALSE)
 ```
 
 ## Professional development {.nohead .set-width-year}
 ```{r}
-cv_entries %>% 
-  filter(type == 'prof-dev') %>% 
-  mutate(what = str_c(what, ", ", where)) %>% 
-  select(year_begin, what) %>% 
-#  manual_page_break_after_row("what", "UQ Idea Hub") %>%
+cv_entries %>%
+  filter(type == 'prof-dev') %>%
+  mutate(what = str_c(what, ", ", where)) %>%
+  select(year_begin, what) %>%
   kable()
 ```
 
 ## Awards and honours {.nohead .set-width-year}
 ```{r}
-cv_entries %>% 
-  filter(type == 'awards') %>% 
-  mutate(what = str_c(what, ", ", where)) %>%  
-  select(year_begin, what) %>% 
-#  manual_page_break_after_row("what", "Merit Scholarship for academic achievement") %>%
+cv_entries %>%
+  filter(type == 'awards') %>%
+  mutate(what = str_c(what, ", ", where)) %>%
+  select(year_begin, what) %>%
   kable()
 ```
 
@@ -123,96 +221,67 @@ cv_entries %>%
 ```{r}
 publications %>%
   mutate(ref2print = str_c(authors_full, " ", title, ". *", journal, "*")) %>%
-  mutate(ref2print = ifelse(!is.na(ref_info), 
-                            str_c(ref2print, ", ", ref_info, ", ", year(date), "."), 
-                            str_c(ref2print, ", ", year(date), "."))
-         ) %>%
-  mutate(ref2print = ifelse(!is.na(preprint), 
-                            str_c(ref2print, " [[Preprint](", preprint, ")]"), 
-                            ref2print)
-         ) %>%
-  mutate(ref2print = ifelse(!is.na(url), 
-                            str_c(ref2print, " [[URL](", url, ")]"), 
-                            ref2print)
-         ) %>%
-  mutate(ref2print = ifelse(!is.na(pdf), 
-                            str_c(ref2print, " [[PDF](", pdf, ")]"), 
-                            ref2print)
-         ) %>%
-  mutate(ref2print = ifelse(!is.na(additional_info), 
-                            str_c(ref2print, " ", additional_info), 
-                            ref2print)
-         ) %>%
+  mutate(ref2print = ifelse(!is.na(ref_info),
+                            str_c(ref2print, ", ", ref_info, ", ", year(date), "."),
+                            str_c(ref2print, ", ", year(date), "."))) %>%
+  mutate(ref2print = ifelse(!is.na(preprint),
+                            str_c(ref2print, " [[Preprint](", preprint, ")]"),
+                            ref2print)) %>%
+  mutate(ref2print = ifelse(!is.na(url),
+                            str_c(ref2print, " [[DOI/URL](", url, ")]"),
+                            ref2print)) %>%
+  mutate(ref2print = ifelse(!is.na(pdf),
+                            str_c(ref2print, " [[PDF](", pdf, ")]"),
+                            ref2print)) %>%
+  mutate(ref2print = ifelse(!is.na(additional_info),
+                            str_c(ref2print, " ", additional_info),
+                            ref2print)) %>%
   select(year, ref2print) %>%
-#  manual_page_break_after_row("ref2print", "implications for reproduction and population dynamics in two sympatric Hawaiian coral") %>%
-  manual_page_break_after_row("ref2print", "PhySortR: a fast, flexible tool for sorting phylogenetic trees in R") %>%
+  #manual_page_break_after_row("ref2print", "PhySortR: a fast, flexible tool for sorting phylogenetic trees in R") %>%
   knitr::kable()
 ```
 
-## Talks {.nohead .set-width-year}
+## Invited talks and conference presentations {.nohead .set-width-year}
 ```{r}
-cv_entries %>% 
-  filter(type == 'talk') %>% 
+cv_entries %>%
+  filter(type == 'talk') %>%
   select(year_begin, what) %>%
-#  manual_page_break_after_row("what", "Department of Molecular Biology and Biochemistry Seminar") %>%
-#  manual_page_break_after_row("what", "Insights into coral reef symbiosis from the genome of cold-adapted algae") %>%
   kable()
 ```
 
 ## Poster presentations {.nohead .set-width-year}
 ```{r}
-cv_entries %>% 
+cv_entries %>%
   filter(type == 'poster') %>%
   select(year_begin, what) %>%
-#  manual_page_break_after_row("what", "The Extremophilic Red Algae That Underpin Hot Spring Microbial Communities In Yellowstone National Park") %>%
   kable()
 ```
 
-## Media coverage {.nohead .set-width-year}
+## Selected research coverage {.nohead .set-width-year}
 ```{r}
-cv_entries %>% 
+cv_entries %>%
   filter(type == 'media') %>%
-  select(year_begin, what) %>% 
-#  manual_page_break_after_row("what", "Amoeba Genome Reveals Dominant Host Contribution to Plastid Endosymbiosis") %>%
+  select(year_begin, what) %>%
   kable()
 ```
 
-## Service {.nohead .set-width}
+## Academic service {.nohead .set-width}
 ```{r}
-cv_entries %>% 
-  filter(type == 'service') %>% 
-  mutate(year_end = ifelse(year_end == "present", "", year_end)) %>% 
-  mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>% 
+cv_entries %>%
+  filter(type == 'service') %>%
+  mutate(year_end = ifelse(year_end == "present", "", year_end)) %>%
+  mutate(where = ifelse(!is.na(url), str_c("[", where, "](", url, ")"), where)) %>%
   mutate(what = str_c(what, ", ", where)) %>%
-  select(year, what) %>% 
-#  manual_page_break_after_row("what", "Associate Editor: Symbiotic and Parasitic Protists section") %>%
-  kable()
+  select(year, what) %>%
+  kable(escape = FALSE)
 ```
 
-## Patents {.nohead .set-width}
+## Patents and intellectual property {.nohead .set-width}
 ```{r}
 cv_entries %>%
   filter(type == 'patent') %>%
-  mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%  
+  mutate(what = ifelse(!is.na(additional_info),
+                       str_c(what, "<br>", additional_info), what)) %>%
   select(year, what) %>%
-  kable()
-```
-
-```{r eval=FALSE}
-## Reference letter writers {.nohead .set-width}
-Prof. Debashish Bhattacharya (dbhattac@rutgers.edu)
-
-Dr. Cheong Xin Chan (c.chan1@uq.edu.au)
-
-Dr. Arthur Grossman (arthurg@stanford.edu)
-```
-
-```{r eval=FALSE}
-## Personal skills & volunteering {.nohead .set-width}
-cv_entries %>%
-  filter(type == 'volunteering') %>%
-  mutate(what = str_c("<span class='work-title'>", what, "</span><br class='work-break'>", where)) %>%
-  mutate(what = ifelse(!is.na(additional_info), str_c(what, "<br>", additional_info), what)) %>%
-  select(year, what) %>%
-  kable()
+  kable(escape = FALSE)
 ```

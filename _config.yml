@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Timothy Stephens"
 title_separator          : "-"
 name                     : &name "Timothy G. Stephens"
-description              : &description "Postdoctoral Researcher, Rutgers University"
+description              : &description "Computational evolutionary biologist | Comparative genomics, phylogenomics, and research software"
 url                      : https://timothystephens.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "TimothyStephens/timothystephens.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Timothy G. Stephens" # Sidebar name
   avatar           : "profile.jpg"
-  bio              : "Postdoctoral Researcher @ Rutgers University"
+  bio              : "Computational evolutionary biologist"
   location         : "New Brunswick, NJ, USA"
   employer         :
   pubmed           : 

@@ -17,11 +17,7 @@ ul {
 
 ## 2026
 
-<<<<<<< HEAD
 ### 47\. Crawling under the radar: Two novel *Paulinella* species expand knowledge about the ecology and evolution of a primary plastid-containing amoeba lineage
-=======
-### 47\. Crawling under the radar: Two novel *Paulinella* species expand knowledge about the ecology and evolution of a primary plastid?containing amoeba lineage
->>>>>>> 52bcef72b40f51befa8e438f8c2f3da492491988
 Van Etten J., Han S., Burns J. A., Lhee D., Willoughby A. C., **Stephens T. G.**, Chille E., Sleith R. S., Bhattacharya D., and Yoon H. S. *Journal of Phycology*, 2026.
 
 [[URL](https://doi.org/10.1111/jpy.70230)]  

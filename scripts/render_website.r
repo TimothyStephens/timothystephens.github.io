@@ -183,47 +183,47 @@ render_site_media <- function(in.csv="cv_entries.csv", out.file="_pages/media.md
 ######################
 ####     Code     ####
 ######################
-render_site_code <- function(in.csv="cv_entries.csv", out.file="_pages/code.md", out.txt=""){
+render_site_code <- function(in.csv="cv_entries.csv",
+                             out.file="_pages/code.md", out.txt=""){
   print('## Creating website markdown file: Code')
-  
-  #### cv entries #####
-  suppressMessages(
-    cv_entries <- read_csv(in.csv) %>%
-      filter(type == 'software') %>%
-      mutate(across(2:4, as.numeric)) %>%
-      arrange(-date_start_year, -date_start_month, -date_start_day)
+
+  cv_entries <- read_csv(in.csv, show_col_types = FALSE) %>%
+    filter(type == 'software') %>%
+    mutate(across(2:4, ~ suppressWarnings(as.numeric(.x)))) %>%
+    arrange(order)
+
+  out.txt <- paste0(
+    '---\n',
+    'title: "Code and Software"\n',
+    'permalink: /code/\n',
+    'author_profile: true\n',
+    'encoding: UTF-8\n',
+    '---\n\n',
+    '{% include base_path %}\n\n',
+    'I develop and maintain computational tools for phylogenetics, genome annotation, ',
+    'metagenomics, network analysis, and computational infrastructure.\n\n'
   )
-  
-  out.txt <- paste(out.txt, sep='', '---\n')
-  out.txt <- paste(out.txt, sep='', 'title: "Code"\n')
-  out.txt <- paste(out.txt, sep='', 'permalink: /code/\n')
-  out.txt <- paste(out.txt, sep='', 'author_profile: true\n')
-  out.txt <- paste(out.txt, sep='', 'encoding: UTF-8\n')
-  out.txt <- paste(out.txt, sep='', '---\n')
-  out.txt <- paste(out.txt, sep='', '\n')
-  out.txt <- paste(out.txt, sep='', '{% include base_path %}\n')
-  out.txt <- paste(out.txt, sep='', '\n')
-  out.txt <- paste(out.txt, sep='', '<style>\n')
-  out.txt <- paste(out.txt, sep='', 'ul {\n')
-  out.txt <- paste(out.txt, sep='', '  list-style-type: none;\n')
-  out.txt <- paste(out.txt, sep='', '}\n')
-  out.txt <- paste(out.txt, sep='', '</style>\n')
-  out.txt <- paste(out.txt, sep='', '\n')
-  out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
-  
-  count <- nrow(cv_entries)
-  for (i in 1:count) {
-    out.txt <- paste(out.txt, sep='', "# ", cv_entries[i,]$what, '\n')
-    out.txt <- paste(out.txt, sep='', cv_entries[i,]$additional_info, '\n')
-    print(cv_entries[i,]$where)
-    if(! is.na(cv_entries[i,]$where)){
-      out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
-      out.txt <- paste(out.txt, sep='', '<div class="github-card" data-github="', cv_entries[i,]$where, '" data-width="400" data-height="279" data-theme="medium"></div>\n')
-      out.txt <- paste(out.txt, sep='', '<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n')
+
+  for (i in seq_len(nrow(cv_entries))) {
+    out.txt <- paste0(out.txt, '## ', cv_entries$what[i], '\n\n')
+    if (!is.na(cv_entries$additional_info[i])) {
+      out.txt <- paste0(out.txt, cv_entries$additional_info[i], '\n\n')
     }
-    out.txt <- paste(out.txt, sep='', '<br/><br/>\n')
+    if (!is.na(cv_entries$url[i])) {
+      out.txt <- paste0(out.txt, '[Project documentation / source](',
+                        cv_entries$url[i], ')\n\n')
+    }
+    if (!is.na(cv_entries$where[i]) && nzchar(cv_entries$where[i])) {
+      out.txt <- paste0(
+        out.txt,
+        '<div class="github-card" data-github="', cv_entries$where[i],
+        '" data-width="400" data-height="279" data-theme="medium"></div>\n',
+        '<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>\n\n'
+      )
+    }
+    out.txt <- paste0(out.txt, '<hr>\n\n')
   }
-  
+
   write(out.txt, out.file)
 }
 
