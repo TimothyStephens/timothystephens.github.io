@@ -116,7 +116,7 @@ cv_entries %>%
 
 ## Computational expertise and methods {.nohead .set-width-range}
 ```{block type="grid-item", echo=TRUE}
-**Programming and research software:** `R` package development and maintenance; Python; Perl; shell-based bioinformatics scripting; reproducible analysis and version-controlled code.
+**Programming and research software:** *R* package development and maintenance; Python; Perl; shell-based bioinformatics scripting; reproducible analysis and version-controlled code.
 
 **Comparative and evolutionary genomics:** phylogenetic and phylogenomic analysis; phylogenetic-tree screening and classification; gene-family comparison; genome annotation; sequence-based homology searches; comparative analysis of divergent genes.
 
@@ -129,13 +129,13 @@ cv_entries %>%
 
 ## Research software and computational tools {.nohead .set-width-range}
 ```{block type="grid-item", echo=TRUE}
-**PhySortR** — Creator and maintainer of the `R` port of a package for screening and sorting large collections of phylogenetic trees, identifying exclusive and non-exclusive clades in traditional and extended Newick formats. Available through CRAN (version 1.0.9; package DOI: [10.32614/CRAN.package.PhySortR](https://doi.org/10.32614/CRAN.package.PhySortR)). Original method described in Stephens et al., *PeerJ* (2016).
+**PhySortR** — Creator and maintainer of the *R* port of a package for screening and sorting large collections of phylogenetic trees, identifying exclusive and non-exclusive clades in traditional and extended Newick formats. Available through CRAN (version 1.0.9; package DOI: [10.32614/CRAN.package.PhySortR](https://doi.org/10.32614/CRAN.package.PhySortR)). Original method described in Stephens et al., *PeerJ* (2016).
 
 **Dinoflagellate Annotation Workflow** — Developed a workflow for protein-coding gene prediction in dinoflagellate genomes, integrating transcriptomic, proteomic, and *ab initio* gene-prediction evidence. Includes adaptations for non-standard dinoflagellate splice-site biology. [Source code](https://github.com/TimothyStephens/Dinoflagellate_Annotation_Workflow).
 
 **naive ATLAS** — Adapted and extended the ATLAS metagenomic workflow to support recovery and analysis of microbial genomes across prokaryotes, microbial eukaryotes, viruses, and plasmids. Workflow includes quality control, assembly, binning, gene prediction, annotation, and quantification. [Source code](https://github.com/TimothyStephens/naive_atlas).
 
-**Network Analysis Scripts** — Python utilities using `graph-tool` for graph construction, connected-component extraction, annotation, layout calculation, and visualization. [Source code](https://github.com/TimothyStephens/Network_Analysis_Scripts).
+**Network Analysis Scripts** — Python utilities using *graph-tool* for graph construction, connected-component extraction, annotation, layout calculation, and visualization. [Source code](https://github.com/TimothyStephens/Network_Analysis_Scripts).
 
 **MAGS-CodeDev** — Multi-agent graph-based software-development system that decomposes code projects into dependency graphs and coordinates code generation, testing, diagnosis, review, and iteration in isolated worktrees and containers. [Source code](https://github.com/TimothyStephens/MAGS-CodeDev).
 
@@ -149,7 +149,7 @@ cv_entries %>%
 [Related publication: Stephens et al., Genome Biology and Evolution (2026).]
 
 **Computational enzyme discovery in Sargassum-associated microbial communities — Schmidt Sciences project**  
-*Senior personnel; computational discovery.* Led computational discovery and prioritization of candidate enzyme families from microbial communities associated with Sargassum degradation, connecting comparative genomics with potential biomass-conversion applications.  
+*Senior personnel; computational discovery.* Led computational discovery and prioritization of candidate enzyme families from microbial communities associated with *Sargassum* degradation, connecting comparative genomics with potential biomass-conversion applications.  
 [Related publication: Nandi et al., Applied and Environmental Microbiology (2026).]
 
 **Interdisciplinary environmental diagnostic development — OceanOmics**  
